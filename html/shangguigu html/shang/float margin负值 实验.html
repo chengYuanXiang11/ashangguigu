@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 三栏布局
+            1.并排三个div   */
+        /* div{
+            height: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        } */
+        .left{
+            float: left;
+            width: 200px;
+        }
+        .center{
+           overflow: hidden;
+           background: red;
+        }
+        .right{
+            float: right;
+            width: 200px;
+        }
+
+        
+        div{
+            height: 200px;
+           border: 1px solid #000;
+        }
+     /*   .aside{
+           width: 100%;
+       }
+       .left{
+           float: left;
+           width: 200px;
+
+       }
+       .center{
+           margin: 0 200px;
+           word-break: break-all;
+       }
+       .right{
+           float: right;
+           width: 200px;
+
+       } */
+
+       
+       /* .aside{
+           position: relative;
+       }
+       .left{
+
+           position: absolute;
+           left: 0;
+           width: 200px;
+
+       }
+       .right{
+           position: absolute;
+           right: 0;
+           width: 200px;
+
+       }
+       .center{
+            margin: 0 200px;
+        word-break: break-all;
+       } */
+   /*     .aside{
+           display: flex;
+       }
+       .center{
+           flex: 1;
+       }
+        .left,.right{
+           width: 200px;
+       } */
+    </style>
+</head>
+<body>
+       <!--   <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>  -->
+        <div class="aside">
+            <div class="left">left</div>
+            <div class="right">right</div>
+            <div class="center">tercentercentercentercentercenterr</div>
+            
+        </div>
+
+</body>
+</html>

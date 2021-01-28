@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+    input{
+        width: 300px;
+        height: 38px;
+    margin-left: 33px;
+    margin-top: 70px;
+    }
+    .jiemian{
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    .wen{
+        margin-top: 70px;
+    margin-left: 33px;
+    width: 300px;
+    height: 158px;
+}
+    .an{
+        font-size: 24px;
+    margin: 20px 80px;
+}
+.biaoti{
+    margin: 0 0 0 134px;
+}
+    
+    </style>
+</head>
+<body>
+    <div id="buju">
+      
+        <div class="jiemian"> 
+             <h1 class="biaoti">添加点趣事吧</h1> 
+            <form action="/save_add.html" method="POST">
+        <div>
+            <div>账号<input type="text" name="name"></div>
+            <div>作者<input type="text" name="zuozhe"></div>
+            <div>密码<input type="password" name="pws"></div>   
+            <span>文章</span> 
+            <textarea name="cont" id="" cols="30" rows="10" class="wen"></textarea><br>
+            <input type="reset" value="重置" class="an">
+            <input type="submit" value="提交" class="an">
+        </div>
+    </form>
+        </div>
+    </div>
+    
+</body>
+</html>

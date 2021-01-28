@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+  a{
+        width: 300px;
+        height: 38px;
+    margin-left: 33px;
+    margin-top: 70px;
+    }
+    .jiemian{
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    .wen{
+        margin-top: 70px;
+    margin-left: 33px;
+    width: 300px;
+    height: 158px;
+}
+    .an{
+        font-size: 24px;
+    margin: 20px 80px;
+}
+.biaoti{
+    margin: 0 0 0 134px;
+}
+.yi{
+    margin-top: 53px;
+}
+    </style>
+</head>
+<body>
+   
+        <div id="buju">
+                <div class="jiemian"> 
+            <div>
+                  <a href="/add.html">增加</a>
+            </div>
+          
+            <%for(var i in list){%>
+                <div class="yi">
+                      账号 <a href=""><%=list[i].title%></a> 
+                </div>
+          
+            作者<a href=""><%=list[i].from%></a>><br>
+            密码 <a href=""><%=list[i].author%></a> <br>
+            时间 <a href=""><%=list[i].time%></a><br>
+            文章<textarea name="cont" id="" cols="30" rows="10" class="wen">
+                    <%=list[i].content%>
+            </textarea><br>
+            <div>
+                  点击量<a href=""><%=list[i].hits%></a>
+            </div>
+          <div>
+                <a href="/edit.html?id=<%=list[i]._id%>">修改</a>
+           <a href="/del.html?id=<%=list[i]._id%>">删除</a>
+          </div>
+          
+            <%}%>
+            </div>
+        </div>
+</body>
+</html>

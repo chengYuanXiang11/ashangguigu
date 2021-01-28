@@ -1,0 +1,39 @@
+body {
+  background-color: #69ff44;
+}
+html {
+  border: none;
+}
+.box1,
+.box3 {
+  width: 800px;
+  height: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #883100;
+  line-height: 20px;
+  font-size: 20px;
+}
+.box1 .box2,
+.box3 .box2 {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+.box1 .box2 > li,
+.box3 .box2 > li {
+  float: left;
+}
+.box1:hover,
+.box3:hover {
+  background-color: #bfa;
+}
+.box1::before,
+.box3::before {
+  content: "1";
+}
+.box3 {
+  font-size: 24px;
+  transition: all 2s steps(6, end);
+  border: 2px red solid;
+}

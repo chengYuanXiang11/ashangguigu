@@ -1,0 +1,30 @@
+// 淘宝导航可伸缩
+@ma:margin;
+@pa:padding;
+@20:200px;
+@0:0px;
+*{
+    margin: 0;
+    padding: 0;
+    font-size: @20;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    display: flex;
+    width:calc(20% - 20px);
+    height: @20;
+    list-style: none;
+    margin: 0 10px;
+    img{
+        width: 100%;
+        &:hover{
+            width: 20%;
+        }
+    }
+}

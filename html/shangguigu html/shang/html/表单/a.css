@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cadetblue;
+
+}
+
+/* #forms{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+}
+.nameimage{
+    width: 50%;
+    height: 150px;
+    background-image: url('../../布局/015.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+.juz{
+    position: relative;
+    left: 25%;
+}
+.namebody{}
+.nametext{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.namepassword{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.namesunmit{
+    width: 50%;
+    background-color: #fff;
+    position: relative;
+    left: 25%;
+    border: none;
+    margin: 75px 0 0 0px;
+    font-size: 24px;
+    color: #3eb18b;
+    cursor: pointer;
+}
+.namesunmit:active{
+    color: #000;
+}
+input{
+    padding: 10px 0 5px 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+}
+input:focus{
+   border-color:#3eb18b;
+} */
+#d1 {
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.d1header {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+input {
+    width: 300px;
+    margin: 10px 50px;
+    border: none;
+    padding: 10px 0 0;
+    border-bottom: 2px solid black;
+    background-color: aliceblue;
+    outline: none;
+}
+
+input:hover {
+    cursor: pointer;
+    border-bottom: 2px solid green;
+}
+
+.sun {
+    border: none;
+    font-size: 35px;
+    color: aquamarine;
+}
+
+.sun:hover {
+    border: none;
+
+
+}

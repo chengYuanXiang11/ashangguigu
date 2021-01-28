@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="h4">
+    <meta name="description" content="">
+    <title>过渡</title>
+    <style>
+        /* .box2{
+            height: 300px;
+            background-color: beige;
+        }
+        .box1{
+           width: 100px;
+           height: 100px;
+           background-color: aqua;
+           position: absolute;
+           left: 0;
+           transition: all 1s;
+           tramstion-delay:60sl
+           过度延时
+           transition-timing-function: steps(6,end); 
+           /* 过渡时间函数
+            ease 起步慢 然后加速 在减速停止
+            linear 匀速运动
+            ease-in 加速运动
+            ease-out 减速运动
+            steps   分步  start 时间刚开始动一下 end等到时间到了在动一下
+            
+        }
+        .box2:hover .box1{
+            left: 600px;
+        } */
+        /* 练习1 */
+        /* .box1{
+            height: 320px;
+            width: calc(1500px/6);
+            background-image: url(./bg2.png);
+            background-position: 0px;
+            transition: all 500ms;
+            transition-timing-function: steps(5,end);
+        }
+        .box1:hover{
+            background-position: calc(-1500px/6 * 5) 0;
+        } */
+        .box1 {
+            height: 320px;
+            width: calc(1500px/6);
+            background-image: url(./bg2.png);
+            background-position: 0px;
+            animation-name: test;
+            animation-duration: 600ms;
+            animation-delay: 0ms;
+            /* 延迟  只在第一次执行*/
+            animation-timing-function: steps(6, end);
+            /* end为默认可以省略   
+                使用动画会导致有一张图失效 这时候要直接写px 并且 steps要加1
+             */
+            animation-iteration-count: 1;
+            /* 执行次数  infinite无限
+
+            */
+            animation-play-state: running;
+            /* 动画状态
+                paused 暂停
+                running 运行 */
+            animation-direction: reverse;
+            /* 动画运行的方向 
+                normal 默认
+                reverse 反转
+                alternate 交替 第一次 normal 第二次 reverse 之后重复      
+                alternate-reverse 反转交替
+            */
+            animation: test 500ms steps(6, end) reverse infinite;
+        }
+
+        @keyframes test {
+            from {
+                background-position: 0px;
+            }
+
+            to {
+                background-position: -1500px;
+            }
+        }
+
+        .box3 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background-color: aquamarine;
+            position: absolute;
+            animation: qiu 1.5s infinite alternate;
+        }
+
+        @keyframes qiu {
+            from {
+                top: 0;
+            }
+
+            to {
+                top: 500px
+            }
+        }
+
+        .box3:nth-child(2) {
+            left: 100px;
+            background-color: antiquewhite;
+            animation-delay: 0.2s;
+        }
+
+        .box3:nth-child(3) {
+            left: 200px;
+            background-color: blue;
+            animation-delay: 0.4s;
+        }
+
+        .box3:nth-child(4) {
+            left: 300px;
+            background-color: yellowgreen;
+            animation-delay: 0.6s;
+        }
+
+        .box3:nth-child(5) {
+            left: 400px;
+            background-color: chocolate;
+            animation-delay: 0.8s;
+        }
+
+        .box3:nth-child(6) {
+            left: 500px;
+            background-color: violet;
+            animation-delay: 1s;
+        }
+
+        .box4 {
+            border: 1px solid #000;
+
+        }
+
+        .box11 {
+            position: relative;
+        }
+        .box5 {
+            width: 500px;
+            height: 500px;
+           
+            background-color: aquamarine;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* transform :变形;
+            transform: translateX() 水平平移;
+            transform: translateY() 垂直平移;
+            transform: translateZ() Z轴前后平移  需要设置视距;
+            perspective: 800px; 视距 一般在800-1200
+            transform: rotateX();
+            X轴旋转
+            transform: rotateY();
+            Y轴旋转
+            transform: rotateZ();
+            Z轴旋转
+            
+            transform: translate3d();
+            3D 转换
+
+            transform: translate(-50%,-50%);
+            2D 转换
+
+            scale(x[,y]?)	定义 2D 缩放转换。
+            scale3d(x,y,z)	定义 3D 缩放转换。
+            rotate(angle)	定义 2D 旋转，在参数中规定角度。
+            rotate3d(x,y,z,angle)	定义 3D 旋转。
+           
+            */
+        }
+        html{
+            perspective: 800px;
+        }
+        .boxs0{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 100px auto;
+            background-color: rgb(227, 241, 237);
+            transition: all 2s; 
+            transform-style: preserve-3d;
+            animation: rddong 3s reverse infinite;
+            /* 让转换的子元素保留3D转换: */
+        }
+        /* .boxs0:hover{
+            transform: rotateY(90deg);
+        } */
+        .boxs0>div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            line-height: 200px;
+            font-size: 100px;
+            text-align: center;
+            opacity: .5;
+            transition: all 2s ;
+           
+        }
+        .boxs1{
+            background-color: aqua;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .boxs2{
+            background-color: rgb(197, 116, 116);
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .boxs3{
+            background-color: blue;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .boxs4{
+            background-color: turquoise;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .boxs5{
+            background-color: springgreen;
+            transform:  rotateX(0deg) translateZ(100px);
+        }
+        .boxs6{
+            background-color:blanchedalmond;
+            transform:rotateX(180deg)  translateZ(100px);
+        }
+        @keyframes rddong {
+            from{
+               transform: rotateX(0) rotateY(0);
+            }
+            to{
+                transform: rotateX(360deg)  rotateY(360deg);
+            }
+        }
+
+
+        /* steps(60,end) 和linner */
+        .clock-wrapper{
+            width: 500px;
+            height: 500px;
+            border: 10px solid #000;
+            position: relative;
+            border-radius: 50%;
+        }
+        .second-wrapper{
+            width: 90%;
+            height: 90%;
+            animation: zhuan 60s steps(60,end) infinite;
+            /* animation-play-state:paused ; */
+        }
+        @keyframes zhuan{
+            form{
+                 transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+
+            }
+        }
+        .second{
+            height: 50%;
+            width: 5px;
+            background-color:green;
+            margin: 0 auto;
+        }
+        .branch-wrapper{
+            width: 70%;
+            height: 70%;
+            animation: zhuan 3600s steps(60,end) infinite;
+
+        }
+        .branch{
+            height: 50%;
+            width: 10px;
+            background-color:violet;
+            margin: 0 auto;
+        }
+        .hour-wrapper{
+            width: 50%;
+            height: 50%;
+            animation: zhuan 43200 steps(60,end) infinite;
+
+        }
+        .hour{
+            height: 50%;
+            width: 15px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        .z{
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            /* 转的时候有可能出现滚动条 因为转的是 */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .count{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 2s;
+            transform-origin: top right;
+            /* 指定变形原点 */
+        }
+        .card{
+            width: 500px;
+            height: 500px;
+            background-image: url(./span2.1.jpg);
+            background-size: cover;
+            position: absolute;
+            backface-visibility: hidden;
+         
+        /* 设置元素是否展示背面 */
+
+        }
+        .count:hover{
+            transform: rotateY(180deg);
+        }
+        .count:hover ~ .word{
+            transform: rotateY(0deg);
+        }
+        .word{
+            backface-visibility: hidden;
+
+            width: 500px;
+            height: 100px;
+            background-color: black;
+            font-size: 80px;
+            color: aliceblue;
+            text-align: center;
+            vertical-align: middle;
+            padding: 200px 0;
+            line-height: 100px;
+            position: absolute;
+            top: 0;
+            transform: rotateY(180deg);
+        }
+        .dd{
+            min-width: 1000px;
+            border: 1px solid red;
+            overflow: hidden;
+        } 
+         .d2{
+            width: 100%;
+            margin: 0 auto;
+            background-color: aqua;
+            height: 500px;
+            float: left;
+
+        }
+        .d1{
+            width: 200px ;
+            background-color: rgb(38, 71, 100);
+            float: left;
+            height: 500px;
+            margin-left: -100%;
+        }
+      
+        .inner{
+            padding:0 200px;
+            background-color: blanchedalmond;
+            height: 500px;
+        }
+        .d3{
+            width: 200px ;      
+            float: left;
+            height: 500px;
+            margin-left: -200px;
+            background-color: rgb(46, 157, 253);
+
+        }
+        .ddd{
+            min-width: 600px;
+            border: 1px solid red;
+            margin:  0 200px;
+        }
+        .dd1{
+            width: 200px ;
+            background-color: rgb(38, 71, 100);
+            float: left;
+            height: 500px;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+        .dd2{
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            /* 线性渐变角度75 红色0-100px 100-200红色和橘色渐变 200 3000橘色和黄色渐变 之后纯黄色 */
+            background-image:repeating-linear-gradient(75deg,red 100px ,orange 200px,yellow 300px);
+            /* repeat-line-height重复渐变 */
+
+            /* 径向渐变 
+
+                circle 圆形
+                ellipse 椭圆形
+                通过at指定圆心位置
+
+                closest-side 渐变效果显示到离圆心最近边
+                farthest-side  渐变效果显示到离圆心最远边
+                
+                closest-corner 渐变效果显示到离圆心最近的角
+                farthest-corner 渐变效果显示到离圆心最远的角
+                repeating-radial-gradient() 重复径向渐变
+            */
+            background-image:  radial-gradient(closest-side at 100px 100px,red 100px ,orange 200px,yellow 300px);
+            float: left;
+
+        }
+      
+        .dd3{
+            width: 200px ;      
+            float: left;
+            height: 500px;
+            margin-left: -200px;
+            background-color: rgb(46, 157, 253);
+            position: relative;
+            right: -200px;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box2">
+           <div class="box1"></div>
+    </div> -->
+
+    <!-- 练习1 -->
+    <!-- <div class="box1"></div>
+    <div class="box11">
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+
+    </div> -->
+
+    <!-- 旋转魔方 -->
+<!-- <div class="boxs0">
+    <div class="boxs1">1</div>
+     <div class="boxs2">2</div>
+    <div class=" boxs3">3</div>
+    <div class=" boxs4">4</div>
+    <div class=" boxs5">5</div>
+    <div class=" boxs6">6</div>
+
+</div>
+     -->
+
+      <!--   钟表 
+        <div class="clock-wrapper"> 
+              时针 
+            <div class="hour-wrapper z">
+                <div class="hour"></div>
+            </div>
+           分针 
+            <div class="branch-wrapper z">
+                <div class="branch"></div>
+            </div>
+            秒针 
+            <div class="second-wrapper z">
+                <div class="second"></div>
+            </div>
+        </div> -->
+        <!-- 卡片翻转 -->
+        <!-- <div class="count">
+            <div class="card"></div>
+        <div class="word">这是一个图</div>
+        </div> -->
+
+        <!-- 左侧固定中间自适应 老方法 不存在兼容问题  再用同样方法设置右侧固定就变成了双飞翼布局-->
+        <div class="dd">
+            <!-- 主题内容放在上面设置 width 100%  -->
+            <div class="d2">
+                <!-- 设置第二个快放内容  因为第一个div无法设置内外边距 -->
+                <div class="inner">main</div>
+            </div>
+            <!-- 左面固定宽度 margin -100% -->
+            <div class="d1">left</div>
+            <div class="d3">right</div>
+
+        </div>
+            
+        <!-- 因为双飞翼布局需要多加一层div 多seo有影响 所以出现了圣杯布局 -->
+
+        
+        <!--  最外层 margin:  0 200px; 让出左右的空间 左右定位-->
+        <div class="ddd clearfix">
+            <!-- 主题内容放在上面设置 width 100%  -->
+            <div class="dd2">
+                <!-- 设置第二个快放内容  因为第一个div无法设置内外边距 -->
+                main
+            </div>
+            <!-- 左面固定宽度 margin -100% -->
+            <div class="dd1">left</div>
+            <div class="dd3">right</div>
+
+        </div>
+
+        <script src="./a.js"></script>
+
+ 
+ <script src="../d.js"></script>   </body>
+
+</html>

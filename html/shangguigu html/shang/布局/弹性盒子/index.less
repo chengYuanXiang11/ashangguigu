@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@20: 20px;
+
+ul {
+  height: 500px;
+  margin: 0 @20;
+  // 弹性容器
+  //   flex 块级弹性容器 
+  //   inline-flex 行内弹性容器
+  // 弹性子元素是弹性容器的子元素  也叫弹性项
+  // 一个元素 可以同时是弹性容器和弹性子元素
+  display: flex;
+
+  //  设置弹性容器的主轴方向
+  //    可选值
+  //      row 左向右 横向
+  //      row-reverse 右向左
+  //      column 上向下 纵向
+  //      column-reverse 下向上
+  flex-direction: row;
+
+  // 弹性元素在主轴上是否自动换行
+  //  wrap 换行
+  //  nowrap 不换行
+  flex-wrap: wrap;
+
+  // 可同时使用flex-direction   flex-wrap 的简写
+  flex-flow: row wrap-reverse;
+
+  // 元素在主轴上的对齐方式
+  //  可选值
+  //    flex-start 主轴的起边
+  //    flex-end   主轴的终边
+  //    center      居中
+  //    space-between(空格 平均)   将空格区域平均分配到弹性元素之间
+  //    space-around  将空白空间设置到元素的前后  元素之间空间相等
+  //    space-evenly  将空白设置到元素的一侧      元素之间包括元素前后的空间也相等
+  //    stretch 拉伸将各自填满
+  justify-content: space-evenly;
+
+  // 整个元素在侧轴对齐方式 
+          //  可选值
+  //    flex-start 侧轴的起边
+  //    flex-end    侧轴的终边
+  //    center      居中
+  //    baseline: 项目的第一行文字的基线对齐。
+  //    stretch 拉伸将各自填满
+  align-items: stretch;
+
+  // 元素在辅轴上空间的分布方式
+  //    flex-start 轴的起边
+  //    flex-end    轴的终边
+  //    center      居中
+  //    space-between(空格 平均)   将空格区域平均分配到弹性元素之间
+  //    space-around  将空白空间设置到元素的前后  元素之间空间相等
+  //    space-evenly  将空白设置到元素的一侧      元素之间包括元素前后的空间也相等
+  //    stretch 拉伸将各自填满
+    align-content: space-around;
+    
+  border: 1px red solid;
+}
+
+li {
+
+      // 设置盒子伸展 当父元素有空白空间时,需要使用增长的系数,
+      // 来分配每一个元素的增长大小(按照flex-grow的比例分配)
+      flex-grow: 1;
+
+    
+
+
+
+          // 缩减系数 ===溢出的大小/(第一个元素的flex-basis*flex-shrink)+(第二个元素的flex-basis*flex-shrink)
+              // 缩减大小=== 缩减系数* flex-basis* flex-shrink
+          flex-shrink: 1;
+
+
+      // 指定弹性元素的标准大小 这个元素在横轴会使得width失效 纵轴使得height失效
+      flex-basis: @20 ;
+
+
+
+  // 如果子元素总宽度超过父元素,需要使用缩短系数,分配每一个元素的缩放大小
+          // 每一个元素缩减大小 有flex 和 flex-basis 共同按比例决定 
+
+      // 上面三个值的简写 顺序为 flex-grow  flex-shrink  flex-basis
+      flex: 1  0 @20;
+
+
+  
+
+
+  width: @20 * 10;
+  // height: @20;
+  font-size: @20;
+  line-height: @20;
+  background-color: aqua;
+  margin: @20 0;
+  text-align: center;
+  padding: @20;
+  list-style: none;
+  
+  align-self: flex-end;
+  // 设置弹性元素自身在辅轴上的对齐方式 (单个弹性元素) 用以覆盖aligin-items的属性
+
+
+order:1;
+// 指定弹性元素的排列顺序
+
+}

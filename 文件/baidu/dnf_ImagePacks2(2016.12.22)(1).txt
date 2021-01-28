@@ -1,0 +1,1607 @@
+角色时装·技能NPK
+有什么代码可以提供，我QQ是1289309989
+——————————————————————————————————
+外传职业·技能NPK（时装·武器与男鬼剑·女法师通用）
+——————————————————————————————————
+黑暗武士
+sprite_character_demonicswordsman.NPK                                                          空的
+sprite_character_demonicswordsman_effect.NPK 暗影斩、冥光斩、暗影 . 波动剑、冥魂之陨、挑击
+sprite_character_demonicswordsman_effect_ashenfork.NPK                          类似波动暗杀
+sprite_character_demonicswordsman_effect_blastblood.NPK        暗劲爆发
+sprite_character_demonicswordsman_effect_bloodsword.NPK        破魂之刃
+sprite_character_demonicswordsman_effect_bloodyrave.NPK        灭魂封魔斩
+sprite_character_demonicswordsman_effect_chargecrash.NPK       暗影升龙击 
+sprite_character_demonicswordsman_effect_combostep.NPK      施放下一个阶段技能的效果
+sprite_character_demonicswordsman_effect_dark_hadouken.NPK    邪影·波动剑
+sprite_character_demonicswordsman_effect_flowmindone.NPK       突刺
+sprite_character_demonicswordsman_effect_flowmindpowerup.NPK          突刺效果
+sprite_character_demonicswordsman_effect_flowmindthree.NPK          跃斩效果
+sprite_character_demonicswordsman_effect_flowmindtwo.NPK       跃斩
+sprite_character_demonicswordsman_effect_ghostsidewind.NPK     暗影鞭
+sprite_character_demonicswordsman_effect_ghoststepslash.NPK    禁魂斩
+sprite_character_demonicswordsman_effect_gorecross.NPK         暗黑十字斩
+sprite_character_demonicswordsman_effect_grabblastblood.NPK    暗魂之手
+sprite_character_demonicswordsman_effect_hopsmash.NPK                             类似突刺
+sprite_character_demonicswordsman_effect_illusionslash.NPK     魔影剑舞
+sprite_character_demonicswordsman_effect_jumpattackmulti .NPK       魔影剑舞效果
+sprite_character_demonicswordsman_effect_kalla.NPK             冥炎破空斩
+sprite_character_demonicswordsman_effect_momentaryslash.NPK    破灭斩
+sprite_character_demonicswordsman_effect_moonslash.NPK        暗月斩
+sprite_character_demonicswordsman_effect_outragebreak.NPK     魔狱裂魂斩
+sprite_character_demonicswordsman_effect_rapidmoveslash.NPK   突刺
+sprite_character_demonicswordsman_effect_reflectguard.NPK     冥魂珠
+sprite_character_demonicswordsman_effect_shockwavearea.NPK    凝魂波动阵
+sprite_character_demonicswordsman_effect_tripleslash.NPK                  某剑舞效果
+sprite_character_demonicswordsman_effect_triplestab.NPK       暗影三击剑
+sprite_character_demonicswordsman_effect_vaneslash.NPK        漩涡斩
+sprite_character_demonicswordsman_effect_wavespinarea.NPK     黑暗冥王阵
+
+黑武士自觉（翻译暂时缺失）
+sprite_character_demonicswordsman_effect_chargeexplosion
+sprite_character_demonicswordsman_effect_darkburst
+sprite_character_demonicswordsman_effect_darkwavefall
+sprite_character_demonicswordsman_effect_phantomsword
+sprite_character_demonicswordsman_effect_timebreak
+sprite_character_demonicswordsman_effect_timestop
+
+缔造者
+sprite_character_mage_effect_creatorfirehurricane.NPK                      烈焰飓风
+sprite_character_mage_effect_creatorfiremeteo.NPK                            炽炎星陨
+sprite_character_mage_effect_creatorfirewall.NPK                              烈火燎原
+sprite_character_mage_effect_creatoriceplate.NPK                            冰天震地
+sprite_character_mage_effect_creatoricerock.NPK                               冰霜之球
+sprite_character_mage_effect_creatoriceshield.NPK                           极冰护盾
+sprite_character_mage_effect_creatoricewoodfence.NPK                 树之屏障
+sprite_character_mage_effect_creatormodechange.NPK                    风暴
+sprite_character_mage_effect_creatortargetmark.NPK                        坐标
+sprite_character_mage_effect_creatorwindpress.NPK                           超能旋风波
+sprite_character_mage_effect_creatorwindstorm.NPK                        风暴漩涡
+sprite_character_mage_effect_magicsphere.NPK                                        鼠标
+缔造者自觉（翻译暂时缺失）
+sprite_character_mage_effect_creatorcasting
+sprite_character_mage_effect_creatorcreatespace
+sprite_character_mage_effect_creatorfamiliar
+sprite_character_mage_effect_creatorfiremeteo
+sprite_character_mage_effect_creatoriceage
+sprite_character_mage_effect_creatoriceshield
+sprite_character_mage_effect_creatorlink
+sprite_character_mage_effect_creatormagicairball
+sprite_character_mage_effect_creatormagicsphere
+sprite_character_mage_effect_creatorrange
+sprite_character_mage_effect_creatortimeforward
+sprite_character_mage_effect_creatortimeforward_cursor
+sprite_character_mage_effect_creatortimeforward_hold
+sprite_character_mage_effect_creatortimeforward_time
+sprite_character_mage_effect_creatorwindstorm
+sprite_character_mage_effect_creatorwoodfence
+
+——————————————————————————————————
+正式职业·新职业。技能·时装NPK
+——————————————————————————————————
+魔枪士/魔枪兵
+时装
+sprite_character_demoniclancer_equipment_avatar_belt.NPK        腰部
+sprite_character_demoniclancer_equipment_avatar_cap.NPK         帽子
+sprite_character_demoniclancer_equipment_avatar_coat.NPK        上衣
+sprite_character_demoniclancer_equipment_avatar_face.NPK        脸部
+sprite_character_demoniclancer_equipment_avatar_hair.NPK        头发
+sprite_character_demoniclancer_equipment_avatar_neck.NPK        胸部
+sprite_character_demoniclancer_equipment_avatar_pants.NPK       裤子
+sprite_character_demoniclancer_equipment_avatar_shoes.NPK       鞋子
+sprite_character_demoniclancer_equipment_avatar_skin.NPK        皮肤
+武器
+sprite_character_demoniclancer_equipment_weapon_halberd.npk     战戟
+sprite_character_demoniclancer_equipment_weapon_pike.npk        长矛
+sprite_character_demoniclancer_equipment_weapon_
+职业特征
+sprite_character_demoniclancer_equipment_growtype.NPK           征战者·决战者
+通用技能·技能图标
+sprite_character_demoniclancer_effect.NPK                                     征战者·决战者
+sprite_character_demoniclancer_effect_ghost.NPK                 攻城失败后的灵魂状态
+
+二次觉醒
+sprite_character_demoniclancer_effect_cutin.NPK
+        征战者·决战者二觉立绘
+魔枪技能技能（由过水沙丁鱼提供）
+sprite_character_demoniclancer_effect_demoniclancerelease.NPK 
+不灭战戟
+sprite_character_demoniclancer_effect_behead.NPK              破灭斩
+sprite_character_demoniclancer_effect_brandish.NPK            追魂斩
+sprite_character_demoniclancer_effect_headoncharge.NPK        破军突击
+sprite_character_demoniclancer_effect_bladestorm.NPK          夺命乱舞
+sprite_character_demoniclancer_effect_devastate.NPK           横扫八荒
+sprite_character_demoniclancer_effect_burstslash.NPK          断魂裂岩斩
+sprite_character_demoniclancer_effect_crescentslash.NPK       落月斩
+sprite_character_demoniclancer_effect_deadlymassacre.NPK      破灭轮回刺
+sprite_character_demoniclancer_effect_demonicinferno.NPK      血战天狱
+sprite_character_demoniclancer_effect_doomglaive.NPK          穿云裂地斩
+sprite_character_demoniclancer_effect_dreadbore.NPK           冷血突刺
+sprite_character_demoniclancer_effect_smash.NPK               霸王戟
+sprite_character_demoniclancer_effect_youdied.NPK             千魂弑
+sprite_character_demoniclancer_effect_impactsmash.NPK         战戟猛攻
+sprite_character_demoniclancer_effect_normalatk.NPK           狂暴战戟
+sprite_character_demoniclancer_effect_lungestrike.NPK         长虹贯日
+sprite_character_demoniclancer_effect_anklecut.NPK            扫堂枪
+sprite_character_demoniclancer_effect_auraforcejavelin.NPK    流云幻灭
+sprite_character_demoniclancer_effect_auralance.NPK           无双枪术
+sprite_character_demoniclancer_effect_chainlance.NPK          无谓波动枪
+sprite_character_demoniclancer_effect_crescent.NPK            三一斩月
+sprite_character_demoniclancer_effect_demoniclancecontrol.NPK 特效
+sprite_character_demoniclancer_effect_extremekillarts.NPK     极影无形杀
+sprite_character_demoniclancer_effect_ghost.NPK               攻城失败雕塑
+sprite_character_demoniclancer_effect_groundseeker.NPK        行云：疾
+sprite_character_demoniclancer_effect_helmshot.NPK            枪挑
+sprite_character_demoniclancer_effect_hookthrow.NPK           回旋钩
+sprite_character_demoniclancer_effect_indure.NPK              格挡反击
+sprite_character_demoniclancer_effect_mesocyclone.NPK         狂龙怒啸
+sprite_character_demoniclancer_effect_miragestance.NPK        行云决特效
+sprite_character_demoniclancer_effect_mystflare.NPK           极影无形杀
+sprite_character_demoniclancer_effect_paratrooper.NPK         落凤枪
+sprite_character_demoniclancer_effect_pinpointslash.NPK       夺命雷霆枪
+sprite_character_demoniclancer_effect_quickpunto.NPK          刺击
+sprite_character_demoniclancer_effect_risinglancer.NPK        行云：落
+sprite_character_demoniclancer_effect_rollingvulkan.NPK       烽火燎原
+sprite_character_demoniclancer_effect_skytooth.NPK            升龙破空枪
+sprite_character_demoniclancer_effect_spiralcharge.NPK        旋风枪特效
+sprite_character_demoniclancer_effect_sturm.NPK               旋风枪
+sprite_character_demoniclancer_effect_surroundbreak.NPK       连环枪
+sprite_character_demoniclancer_effect_swirlingspear.NPK       行云：风
+sprite_character_demoniclancer_effect_taserdrive.NPK          无双突刺
+sprite_character_demoniclancer_effect_twinpunto.NPK           双重刺击
+sprite_character_demoniclancer_effect_mystflare.NPK           流光无影闪
+
+女骑士/守护者
+时装
+sprite_character_knight_equipment_avatar_belt.NPK        腰部
+sprite_character_knight_equipment_avatar_coat.NPK        上衣  
+sprite_character_knight_equipment_avatar_cap.NPK         帽子
+sprite_character_knight_equipment_avatar_face.NPK        脸部 
+sprite_character_knight_equipment_avatar_hair.NPK        头发         
+sprite_character_knight_equipment_avatar_neck.NPK        胸部         
+sprite_character_knight_equipment_avatar_pants.NPK       裤子         
+sprite_character_knight_equipment_avatar_shoes.NPK       鞋子         
+sprite_character_knight_equipment_avatar_skin.NPK        皮肤
+武器
+sprite_character_knight_equipment_weapon_lswd.NPK        巨剑         
+sprite_character_knight_equipment_weapon_shield.NPK      盾
+sprite_character_knight_equipment_weapon_sswd.NPK        短剑
+sprite_character_knight_equipment_weapon_boneswd.NPK     短剑
+sprite_character_knight_equipment_weapon_gemswd.NPK      短剑
+sprite_character_knight_equipment_weapon_lgswd.NPK       长剑（迷）   
+sprite_character_knight_equipment_weapon_mswd.NPK        巨剑
+职业特征
+sprite_character_knight_effect.NPK                               死后&技能图标
+二次觉醒
+sprite_character_knight_effect_cutin.NPK
+星辰之光·黑魔后二觉立绘
+技能
+
+sprite_character_knight_effect_ancientboar.NPK                                   古代野猪
+sprite_character_knight_effect_ancientdeer.NPK                                    古代之鹿
+sprite_character_knight_effect_batteringram.NPK                                  破城推
+sprite_character_knight_effect_bigdaddy.NPK                                        简易召唤`创造之父
+sprite_character_knight_effect_borass.NPK                                              简易召唤`伯拉斯
+sprite_character_knight_effect_brainstorm.NPK                                       智慧风暴
+sprite_character_knight_effect_chaosattack.NPK                                       屠戮
+sprite_character_knight_effect_charge.NPK                                                 天马星光
+sprite_character_knight_effect_commoncall.NPK                                        简易召唤
+sprite_character_knight_effect_commonteleport.NPK                                简易召唤
+sprite_character_knight_effect_counterattack.NPK                                      盾袭
+sprite_character_knight_effect_crazyspin.NPK                                              简易召唤`风暴之魔
+sprite_character_knight_effect_darkshockwave.NPK                                    黑之冲击
+sprite_character_knight_effect_dementionmolt.NPK                                     某爆炸
+sprite_character_knight_effect_demonwall.NPK                                           恶魔之盾
+sprite_character_knight_effect_devaaten.NPK                                                守护者阿顿
+sprite_character_knight_effect_dimensionblade.NPK                                    次元之刃
+sprite_character_knight_effect_disarming.NPK                                                解除武装
+sprite_character_knight_effect_elementalcircle.NPK                                       属性转换
+sprite_character_knight_effect_elvishjump.NPK                                       精灵之跃
+sprite_character_knight_effect_fancytwist.NPK                                         风暴形态
+sprite_character_knight_effect_finalattack.NPK                                         终结一击
+sprite_character_knight_effect_finish.NPK                                                  终结
+sprite_character_knight_effect_gelatinmask.NPK                                       简易召唤`杰克丁马斯克
+sprite_character_knight_effect_genocidecrush.NPK                                     某旋斩
+sprite_character_knight_effect_greatvolition.NPK                                       伟大的意识
+sprite_character_knight_effect_heartqueen.NPK                                          简易召唤`心之女皇
+sprite_character_knight_effect_hellgate.NPK                                                 地狱之门
+sprite_character_knight_effect_hystericworrier.NPK                                    简易召唤`狂战士
+sprite_character_knight_effect_intercept.NPK                                                戳击
+sprite_character_knight_effect_jump.NPK                                                      跳
+sprite_character_knight_effect_jumpattack.NPK                                            跳攻
+sprite_character_knight_effect_lethalpunto.NPK                                            致命刺击
+sprite_character_knight_effect_lionkick.NPK                                                   猛狮踢
+sprite_character_knight_effect_luckywacky.NPK                                             简易召唤`乐克瓦克
+sprite_character_knight_effect_lungerevolution.NPK                                     进化之刃
+sprite_character_knight_effect_magicianbomb.NPK                                        右路自爆
+sprite_character_knight_effect_natureblessing.NPK                                          大自然的庇护
+sprite_character_knight_effect_naturesguardian.NPK                                       自然守护
+sprite_character_knight_effect_overpower.NPK                                      压制
+sprite_character_knight_effect_penetration.NPK                                      铜墙铁壁
+sprite_character_knight_effect_perfectguard.NPK                                    某盾牌
+sprite_character_knight_effect_ragehat.NPK                                              简易召唤`疯狂之首
+sprite_character_knight_effect_resonance.NPK                                           某次元斩
+sprite_character_knight_effect_riding.NPK                                                  骑士之乘
+sprite_character_knight_effect_ridingbasicattack.NPK                               独角兽普通攻击
+sprite_character_knight_effect_ridingcast.NPK                                            独角兽某闪光
+sprite_character_knight_effect_ridingkick.NPK                                            独角兽踢
+sprite_character_knight_effect_ridingrun.NPK                                             独角兽跑
+sprite_character_knight_effect_ridingtornadostab.NPK                             独角兽风暴刺
+sprite_character_knight_effect_ridingturn.NPK                                           独角兽转
+sprite_character_knight_effect_rosearmor.NPK                                          玫瑰之盔
+sprite_character_knight_effect_sacrificebomb.NPK                                     自爆
+sprite_character_knight_effect_sentense.NPK                                               宣告
+sprite_character_knight_effect_shacklesofnature.NPK                                自然束缚
+sprite_character_knight_effect_shieldcharge.NPK                                        信赖之突进
+sprite_character_knight_effect_shieldguard.NPK                                          盾牌防御
+sprite_character_knight_effect_shieldguard_counter.NPK                          盾牌防御之袭
+sprite_character_knight_effect_shieldrush.NPK                                              某按键攻击
+sprite_character_knight_effect_shieldstark.NPK                                     某攻击
+sprite_character_knight_effect_signoflife.NPK                                       生命前兆
+sprite_character_knight_effect_smash.NPK                                             粉碎
+sprite_character_knight_effect_stopattack.NPK                                     禁止攻击
+sprite_character_knight_effect_swordofforest.NPK                              新绿之剑
+sprite_character_knight_effect_twinkleartist.NPK                                  简易召唤`闪耀助手
+sprite_character_knight_effect_uppershield.NPK                                    盾击
+sprite_character_knight_effect_vampirechildren.NPK                             简易召唤`吸血小鬼
+sprite_character_knight_effect_vanguardstratsh.NPK                               革命之矛
+sprite_character_knight_effect_vicioustransfusion.NPK                            恶魔献祭
+sprite_character_knight_effect_vslash.NPK                                                  苍穹剑
+sprite_character_knight_effect_warcry.NPK                                                 呐喊
+sprite_character_knight_effect_wheeloffate.NPK                                         命运之轮
+sprite_character_knight_effect_wonderfulrush.NPK                                    魔神乱舞
+
+
+职业特征
+sprite_character_fighter_atequipment_growtype.NPK               柔道、街霸、散打
+sprite_character_fighter_effect.NPK                                             气功、技能图标、其他特效
+二次觉醒
+sprite_character_fighter_effect_cutin.NPK
+          男格斗二觉立绘
+技能
+sprite_character_fighter_effect_at108stairsex.NPK           武莲华 
+sprite_character_fighter_effect_atattack.NPK              男格斗家技能特效
+sprite_character_fighter_effect_atblockbuster.NPK           狂暴 - 砖块投掷
+sprite_character_fighter_effect_atchainkick.NPK           霹雳三重踢
+sprite_character_fighter_effect_atchargespear.NPK          彗星冲击
+sprite_character_fighter_effect_atclosepunch.NPK            冲膝
+sprite_character_fighter_effect_atcrashlowkick.NPK          碎骨
+sprite_character_fighter_effect_atcrashrope.NPK              千丝乱舞
+sprite_character_fighter_effect_atcrazymount.NPK            念兽：猛虎震地特效
+sprite_character_fighter_effect_atdashafterdash.NPK         野蛮冲撞
+sprite_character_fighter_effect_atdashpunch.NPK             肘击
+sprite_character_fighter_effect_atdefinitegrab.NPK          暴力抓取的特效
+sprite_character_fighter_effect_atdestroyearthskydrop.NPK   天崩地裂
+sprite_character_fighter_effect_atearthbreak.NPK            金刚碎
+sprite_character_fighter_effect_atenchantpoison.NPK         毒瓶投掷
+sprite_character_fighter_effect_atenergyball.NPK            念气波
+sprite_character_fighter_effect_atenergyfield.NPK          螺旋念气场
+sprite_character_fighter_effect_atfastdash.NPK              瞬步
+sprite_character_fighter_effect_atflamelegs.NPK              烈焰焚步
+sprite_character_fighter_effect_atglueyfruitthrow.NPK        爆破黏球
+sprite_character_fighter_effect_atglueyfruitthrow_appendage.NPK         爆破黏球
+sprite_character_fighter_effect_atglueyfruitthrow_explosionfruit.NPK           爆破黏球
+sprite_character_fighter_effect_atglueyfruitthrow_throwfruit.NPK            爆破黏球
+sprite_character_fighter_effect_atgrabexplosion.NPK         擒月炎
+sprite_character_fighter_effect_atgroundkick.NPK            螺旋滑铲
+sprite_character_fighter_effect_athiddensting.NPK            毒针投掷
+sprite_character_fighter_effect_atholdup.NPK                雷霆旋踢
+sprite_character_fighter_effect_athurricanespear.NPK         旋风碎心踢
+sprite_character_fighter_effect_atillusion.NPK              分身
+sprite_character_fighter_effect_atjumpsuplex.NPK             空中抓取特效
+sprite_character_fighter_effect_atjunkspin.NPK               血色风暴
+sprite_character_fighter_effect_atlegsuplex.NPK              浮空凌云踢抓取特效
+sprite_character_fighter_effect_atlightningdance.NPK       闪电之舞
+sprite_character_fighter_effect_atlightningdragon.NPK        念兽：猛虎震地
+sprite_character_fighter_effect_atmount.NPK                 骑乘金雷虎的特效
+sprite_character_fighter_effect_atneedleload.NPK           血色风暴的飞出来的血针
+sprite_character_fighter_effect_atnenflower.NPK             念兽：审判之金雷虎
+sprite_character_fighter_effect_atnenmonster.NPK             念兽：龙虎啸
+sprite_character_fighter_effect_atnenspear.NPK               念之战矛
+sprite_character_fighter_effect_atpunchafterreturn.NPK       折颈
+sprite_character_fighter_effect_atrandomkick.NPK            瞬影连环踢
+sprite_character_fighter_effect_atrisingupper.NPK           炽焰旋风腿
+sprite_character_fighter_effect_atroarstun.NPK               狮子吼
+sprite_character_fighter_effect_atshouldercharge.NPK        铁山靠
+sprite_character_fighter_effect_atsinglekick.NPK             上踢
+sprite_character_fighter_effect_atspiralcolumnex.NPK        冲云念气场
+sprite_character_fighter_effect_atspire.NPK                  浮空凌云踢
+sprite_character_fighter_effect_atstomp.NPK                  鹰踏
+sprite_character_fighter_effect_atsuplex.NPK                 膝击
+sprite_character_fighter_effect_atsuplexcyclone.NPK         地狱风火轮
+sprite_character_fighter_effect_atthrowenemy.NPK             抛投
+sprite_character_fighter_effect_atthrowweb.NPK               罗网投掷
+sprite_character_fighter_effect_attyphoon.NPK               死亡旋律
+sprite_character_fighter_effect_atvenommine.NPK             毒雷引爆
+sprite_character_fighter_effect_atwhirlwindkick.NPK          旋风踢
+sprite_character_fighter_effect_atwildcannonspike.NPK       裂石破天
+
+格斗家（女）
+时装
+sprite_character_fighter_equipment_avatar_belt.NPK          腰部
+sprite_character_fighter_equipment_avatar_cap.NPK           帽子
+sprite_character_fighter_equipment_avatar_coat.NPK          上衣
+sprite_character_fighter_equipment_avatar_face.NPK          脸部
+sprite_character_fighter_equipment_avatar_hair.NPK          头发
+sprite_character_fighter_equipment_avatar_neck.NPK          胸部
+sprite_character_fighter_equipment_avatar_pants.NPK         下装
+sprite_character_fighter_equipment_avatar_shoes.NPK         鞋子
+sprite_character_fighter_equipment_avatar_skin.NPK          皮肤
+sprite_character_fighter_equipment_avatar.NPK                      一开始的裤子
+武器
+sprite_character_fighter_equipment_weapon_arm.NPK           机械臂铠
+sprite_character_fighter_equipment_weapon_boneclaw.NPK      骨爪
+sprite_character_fighter_equipment_weapon_boxglove.NPK      拳套
+sprite_character_fighter_equipment_weapon_claw.NPK          爪
+sprite_character_fighter_equipment_weapon_gauntlet.NPK      臂铠
+sprite_character_fighter_equipment_weapon_glove.NPK         手套
+sprite_character_fighter_equipment_weapon_knuckle.NPK       指虎
+sprite_character_fighter_equipment_weapon_tonfa.NPK         东方棍
+职业特征
+sprite_character_fighter_equipment_growtype.NPK             柔道、街霸、散打
+sprite_character_fighter_effect.NPK                                 气功、技能图标、其他特效
+二次觉醒
+sprite_character_fighter_effect_cutin.NPK                         女格斗二觉立绘
+sprite_character_fighter_equipment_growtype_kaiser.NPK                  风暴女皇特征
+sprite_character_fighter_equipment_growtype_nenmaster.NPK             念帝特征
+sprite_character_fighter_equipment_growtype_poisonmaster.NPK               毒神绝特征
+sprite_character_fighter_equipment_growtype_ultimatediva.NPK               极武圣特征
+技能
+sprite_character_fighter_effect_blockbusterex.NPK          爆碎砖袭
+sprite_character_fighter_effect_chaindestruction.NPK     圣武连环破
+sprite_character_fighter_effect_closepunch.NPK               寸拳
+sprite_character_fighter_effect_crashlowkick.NPK             碎骨
+sprite_character_fighter_effect_dashafterdash.NPK            疾风连击
+sprite_character_fighter_effect_dashpunchex.NPK              破碎拳
+sprite_character_fighter_effect_dragonmine.NPK              毒龙轰天雷
+sprite_character_fighter_effect_earthbreak.NPK               金刚碎
+sprite_character_fighter_effect_energyball.NPK               念气波
+sprite_character_fighter_effect_energyfield.NPK              螺旋念气场
+sprite_character_fighter_effect_finalheaven.NPK             极舞霸皇拳
+sprite_character_fighter_effect_giantswing.NPK                末日摇篮
+sprite_character_fighter_effect_grabexplosionex.NPK          狂毒擒月炎
+sprite_character_fighter_effect_groundkick.NPK              裂地飞沙
+sprite_character_fighter_effect_hurricanesp.NPK               苍宇彗星落
+sprite_character_fighter_effect_inhaledenergyshot.NPK   聚能念气炮
+sprite_character_fighter_effect_inhaledenergyshot_absorbenergyball.NPK  聚能念气炮特效
+sprite_character_fighter_effect_jumpsuplex.NPK               霹雳肘击
+sprite_character_fighter_effect_junkspin.NPK                 街头风暴
+sprite_character_fighter_effect_junkspin_objects.NPK       街头风暴的大件垃圾
+sprite_character_fighter_effect_legsuplexex.NPK             空绞连锤
+sprite_character_fighter_effect_lightningdance.NPK           闪电之舞
+sprite_character_fighter_effect_lightningdragon.NPK         念兽：雷龙出海
+sprite_character_fighter_effect_muscleshift.NPK              柔化肌肉
+sprite_character_fighter_effect_nencharge.NPK               风之气息
+sprite_character_fighter_effect_nenflower.NPK               千莲怒放
+sprite_character_fighter_effect_nenguardex.NPK              究极念气罩
+sprite_character_fighter_effect_nenmonster_whitetiger.NPK   念兽：龙虎啸
+sprite_character_fighter_effect_nenofbrilliance.NPK        念帝旋天破
+sprite_character_fighter_effect_nenshield.NPK                念气罩
+sprite_character_fighter_effect_poisonexplosion.NPK     连环毒爆弹
+sprite_character_fighter_effect_poisonmist.NPK               死亡毒雾
+sprite_character_fighter_effect_poisonsnake.NPK              万毒噬心决
+sprite_character_fighter_effect_powerupondash.NPK            武神步
+sprite_character_fighter_effect_punchafterreturn.NPK         折颈
+sprite_character_fighter_effect_randomkick.NPK               纷影连环踢
+sprite_character_fighter_effect_risingupper.NPK              升龙拳
+sprite_character_fighter_effect_risingupperex.NPK           升龙霸
+sprite_character_fighter_effect_roarstunex.NPK               狂狮怒吼
+sprite_character_fighter_effect_saintillusion.NPK              奇袭幻影
+sprite_character_fighter_effect_shouldercharge.NPK          铁山靠
+sprite_character_fighter_effect_singlekick.NPK              上踢
+sprite_character_fighter_effect_stomp.NPK                   鹰踏
+sprite_character_fighter_effect_strongestlowkick.NPK       武神强踢
+sprite_character_fighter_effect_suplexcyclone.NPK            地狱摇篮
+sprite_character_fighter_effect_suplexcycloneex.NPK         死亡摇篮
+sprite_character_fighter_effect_suplexsubpowerup.NPK         背摔强化
+sprite_character_fighter_effect_throwenemy.NPK               抛投
+sprite_character_fighter_effect_tigerstrike.NPK                    虎啸神拳
+sprite_character_fighter_effect_torbellino.NPK                  风暴之舞
+sprite_character_fighter_effect_typhoon.NPK                 末日风暴
+sprite_character_fighter_effect_venommine.NPK                毒雷引爆
+sprite_character_fighter_effect_victory.NPK                           蓝色爆炸特效
+sprite_character_fighter_effect_wildcannonspike.NPK          裂石破天
+
+神枪手（女）
+时装
+sprite_character_gunner_atequipment_avatar_belt.NPK         腰部
+sprite_character_gunner_atequipment_avatar_cap.NPK          帽子
+sprite_character_gunner_atequipment_avatar_coat.NPK         上衣
+sprite_character_gunner_atequipment_avatar_face.NPK         脸部
+sprite_character_gunner_atequipment_avatar_hair.NPK         头部
+sprite_character_gunner_atequipment_avatar_neck.NPK         胸部
+sprite_character_gunner_atequipment_avatar_pants.NPK        裤子
+sprite_character_gunner_atequipment_avatar_shoes.NPK        鞋子
+sprite_character_gunner_atequipment_avatar_skin.NPK         皮肤
+武器
+sprite_character_gunner_atequipment_weapon_auto.NPK         自动
+sprite_character_gunner_atequipment_weapon_bowgun.NPK       手弩
+sprite_character_gunner_atequipment_weapon_hcan.NPK         手炮
+sprite_character_gunner_atequipment_weapon_musket.NPK       步枪
+sprite_character_gunner_atequipment_weapon_rev.NPK          左轮
+职业特征
+sprite_character_gunner_atequipment_growtype.NPK          枪炮、弹药、漫游
+sprite_character_gunner_effect.NPK                             机械、技能图标、其他特效
+二次觉醒
+sprite_character_gunner_effect_cutin.NPK
+          女枪二觉立绘
+技能
+sprite_character_gunner_effect_ancienttrigger.NPK            远古粒子炮
+sprite_character_gunner_effect_atnapalmbomb.NPK              光子爆弹
+sprite_character_gunner_effect_atstinger.NPK                 FM-92 mk2榴弹
+sprite_character_gunner_effect_attwingunblade.NPK            双枪极舞刃
+sprite_character_gunner_effect_empstorm.NPK                 EMP风暴
+sprite_character_gunner_effect_g0.NPK                        G-0战争领主
+sprite_character_gunner_effect_shooteffect_randomshoot.NPK   枪舞
+sprite_character_gunner_effect_veiledcut.NPK                 隐匿切割
+sprite_monster_gunner_tempesterat.NPK                       空战机械：狂风
+sprite_character_gunner_effect_atbloodystrike.NPK                 鲜血劫击
+
+神枪手（男）
+时装
+sprite_character_gunner_equipment_avatar_belt.NPK           腰部 
+sprite_character_gunner_equipment_avatar_cap.NPK            帽子 
+sprite_character_gunner_equipment_avatar_coat.NPK           上衣 
+sprite_character_gunner_equipment_avatar_face.NPK           脸部 
+sprite_character_gunner_equipment_avatar_hair.NPK           头部 
+sprite_character_gunner_equipment_avatar_neck.NPK           胸部 
+sprite_character_gunner_equipment_avatar_pants.NPK          裤子 
+sprite_character_gunner_equipment_avatar_shoes.NPK          鞋子 
+sprite_character_gunner_equipment_avatar_skin.NPK           皮肤
+武器
+sprite_character_gunner_equipment_weapon_auto.NPK           自动
+sprite_character_gunner_equipment_weapon_bowgun.NPK         手弩
+sprite_character_gunner_equipment_weapon_hcan.NPK           手炮
+sprite_character_gunner_equipment_weapon_musket.NPK         步枪
+sprite_character_gunner_equipment_weapon_rev.NPK            左轮
+职业特征
+sprite_character_gunner_equipment_growtype.NPK          枪炮、弹药、漫游
+sprite_character_gunner_effect.NPK                       机械、技能图标、其他特效 飞机
+二次觉醒
+sprite_character_gunner_effect_cutin.NPK                          男枪二觉立绘
+技能
+sprite_character_gunner_effect_blackrose.NPK                黑玫瑰特种战队
+sprite_character_gunner_effect_desperado.NPK                疯狂屠戳
+sprite_character_gunner_effect_gaebolgpunch.NPK             盖波加之拳
+sprite_character_gunner_effect_hiteffect_suddendeath.NPK     致死
+sprite_character_gunner_effect_radarstuckdown.NPK           卫星定位
+sprite_character_gunner_effect_redrose.NPK                  活动-红玫瑰军团
+sprite_character_gunner_effect_satelaser.NPK               卫星射线
+sprite_character_gunner_effect_stinger.NPK                   FM-92刺弹炮
+sprite_monster_gunner_tempester.NPK                         空战机械：风暴
+sprite_character_gunner_effect_backstep_headshot.NPK               烟
+sprite_character_gunner_effect_bursterbeam.NPK                          枪炮二觉`毁灭激光
+sprite_character_gunner_effect_countdown_all_together.NPK            机械二觉`倒计时
+sprite_character_gunner_effect_dangerclose.NPK                                 弹药二觉`危险人物
+sprite_character_gunner_effect_fastdraw.NPK                                   漫游二觉`疾速射击
+sprite_character_gunner_effect_g-38arg.NPK                                  弹药二觉`G-38ARG智能手雷
+sprite_character_gunner_effect_headshotblood.NPK                              漫游二觉`爆头一击
+sprite_character_gunner_effect_heavyweaponalteration.NPK               枪炮二觉`重火器改造
+sprite_character_gunner_effect_hellmarch.NPK                                   机械二觉`次元追击者
+sprite_character_gunner_effect_hiteffect.NPK                                                某手弩特效
+sprite_character_gunner_effect_hs-1.NPK                                                      HS-1机械
+sprite_character_gunner_effect_seismicwave.NPK                                          震波
+sprite_character_gunner_effect_seventhflow.NPK                                  漫游二觉`心灵乱射
+sprite_character_gunner_effect_stylishpunisher.NPK                                        某从天而降的射击
+sprite_character_gunner_effect_supernova.NPK                                    弹药二觉超级新星
+sprite_character_gunner_effect_victory.NPK                                              某男枪V
+sprite_character_gunner_effect_warhero.NPK                                   弹药二觉`战场英雄
+神枪手通用技能
+sprite_character_gunner_effect_bullet.NPK                   各种子弹
+sprite_character_gunner_effect_bullet_exs.NPK               毒蛇炮的子弹
+sprite_character_gunner_effect_c4remote.NPK                 C4远程炸弹
+sprite_character_gunner_effect_cannonball.NPK               加农炮
+sprite_character_gunner_effect_chargebuster.NPK             使用FM-31榴弹发射器时的特效
+sprite_character_gunner_effect_countershoot.NPK             复仇反击
+sprite_character_gunner_effect_doublegunhawk.NPK            双鹰回旋
+sprite_character_gunner_effect_dropbomblight.NPK            量子爆弹掉落特效
+sprite_character_gunner_effect_extruder.NPK                 X-1压缩量子炮
+sprite_character_gunner_effect_fastshoot.NPK                膝撞等特效
+sprite_character_gunner_effect_flamethrower.NPK             M-3喷火器
+sprite_character_gunner_effect_flamethrowerboost.NPK        聚焦喷火器
+sprite_character_gunner_effect_flashmine.NPK                闪光地雷
+sprite_character_gunner_effect_fm-31.NPK                    FM-31榴弹发射器
+sprite_character_gunner_effect_g1.NPK                       G-1科罗纳
+sprite_character_gunner_effect_g2.NPK                       G-2旋雷者
+sprite_character_gunner_effect_g3.NPK                       G-3捕食者
+sprite_character_gunner_effect_grenade.NPK                  手雷 - 投掷
+sprite_character_gunner_effect_grenade_boom.NPK             手雷 - 爆炸
+sprite_character_gunner_effect_grenade_reload.NPK           手雷 - 填装
+sprite_character_gunner_effect_grenade_ui.NPK                  手雷 - 残弹显示
+sprite_character_gunner_effect_hiteffect.NPK                子弹的命中效果
+sprite_character_gunner_effect_laserriflecharge.NPK         激光炮
+sprite_character_gunner_effect_markofdeath.NPK              死亡标记
+sprite_character_gunner_effect_multiheadshot.NPK            多重爆头
+sprite_character_gunner_effect_nielsniping.NPK              尼尔狙击
+sprite_character_gunner_effect_shooteffect.NPK              射击效果
+sprite_character_gunner_effect_shooteffect_crossshot.NPK     散弹枪
+sprite_character_gunner_effect_shooteffect_exs.NPK           Ex-S毒蛇炮的射击效果
+sprite_character_gunner_effect_sparrowfactory.NPK           拦截机工厂
+sprite_character_gunner_effect_steyrheavyrifle.NPK           反坦克炮
+sprite_character_gunner_effect_subweaponstuckdown.NPK       加BUFF时候的特效
+sprite_character_gunner_effect_tread.NPK                    踏射特效
+sprite_character_gunner_effect_uraniumbomb.NPK              量子爆弹爆炸特效
+sprite_character_gunner_effect_walkshoot.NPK                移动射击特效
+sprite_monster_gunner_exs.NPK                               Ex-S毒蛇炮
+sprite_monster_gunner_ez8.NPK                               EZ-8自爆者
+sprite_monster_gunner_fightingspirit.NPK                   斗志之歌
+sprite_monster_gunner_firerx78.NPK                          红色破坏者
+sprite_monster_gunner_headingrx78.NPK                   钢铁机器人
+sprite_monster_gunner_healrx78.NPK                        修复者格莱/神力雷克斯
+sprite_monster_gunner_rx78.NPK                              RX-78追击者
+sprite_character_gunner_effect_airraidex.NPK                 回旋劫击、炽焰劫击、音速劫击、浮空劫击
+sprite_character_gunner_effect_airraidex_old.NPK            同上
+sprite_character_gunner_effect_blizzardthrowerboost.NPK     聚焦冰息炮
+sprite_character_gunner_effect_blizzardthrowerboost_female.NPK               聚焦冰息炮
+sprite_character_gunner_effect_blizzardthrowerboost_male.NPK                           聚焦冰息炮
+sprite_character_gunner_effect_c4ex.NPK                      C4飞速炸弹
+sprite_monster_gunner_ez8ex.NPK                              Ez-10反击者
+sprite_character_gunner_effect_flashmineex.NPK               M-16地雷
+sprite_character_gunner_effect_multiheadshotex.NPK           极限多重爆头
+sprite_character_gunner_effect_stingerex.NPK                 FM-92系列的小飞弹
+
+魔法师（男）
+时装
+sprite_character_mage_atequipment_avatar_belt.NPK           腰部
+sprite_character_mage_atequipment_avatar_cap.NPK            帽子
+sprite_character_mage_atequipment_avatar_coat.NPK           衣服
+sprite_character_mage_atequipment_avatar_face.NPK           脸部
+sprite_character_mage_atequipment_avatar_hair.NPK           头部
+sprite_character_mage_atequipment_avatar_neck.NPK           胸部
+sprite_character_mage_atequipment_avatar_pants.NPK          裤子
+sprite_character_mage_atequipment_avatar_shoes.NPK          鞋子
+sprite_character_mage_atequipment_avatar_skin.NPK           皮肤
+sprite_character_mage_atequipment_face.NPK                  也是脸部
+武器
+sprite_character_mage_atequipment_weapon_pole.NPK           棍棒
+sprite_character_mage_atequipment_weapon_rod.NPK            魔杖
+sprite_character_mage_atequipment_weapon_spear.NPK          矛
+sprite_character_mage_atequipment_weapon_staff.NPK          法杖
+职业特征
+sprite_character_mage_equipment_growtype.NPK                  冰法
+sprite_character_mage_effect.NPK                                              元素、技能图标、其他特效
+sprite_character_mage.NPK                                                                   元素爆破
+二次觉醒
+sprite_character_mage_effect_cutin.NPK
+          男法二觉立绘
+技能
+sprite_character_mage_effect_atjudekatheeternal.NPK         冰结二觉
+sprite_character_mage_effect_atoverfreezeextension.NPK      冰结80级
+sprite_character_mage_effect_atarmagaddonstrike.NPK         魔皇二觉
+sprite_character_mage_effect_atconvergencecannon.NPK        魔皇80级
+sprite_character_mage_effect_atelementalfield.NPK           魔皇魔法阵
+sprite_character_mage_effect_atattack.NPK                   魔法球
+sprite_character_mage_effect_atbluedragonwill.NPK           冰魄锤击
+sprite_character_mage_effect_atbrokenarrow.NPK              冰魄之弓
+sprite_character_mage_effect_atchainlightning.NPK           雷光链
+sprite_character_mage_effect_atconcentrate.NPK              元素浓缩球
+sprite_character_mage_effect_atdarknessmantle.NPK           黑暗禁域
+sprite_character_mage_effect_atdiehard.NPK                   不死之身死亡后的恢复特效
+sprite_character_mage_effect_atelementalbuster.NPK           幻魔四重奏的攻击特效
+sprite_character_mage_effect_atelementalbuster_dark.NPK     幻魔四重奏的暗属性爆炸特效
+sprite_character_mage_effect_atelementalbuster_fire.NPK      幻魔四重奏的火属性爆炸特效
+sprite_character_mage_effect_atelementalbuster_light.NPK     幻魔四重奏的光属性爆炸特效
+sprite_character_mage_effect_atelementalbuster_water.NPK   幻魔四重奏的冰属性爆炸特效
+sprite_character_mage_effect_atelementalchange.NPK           属性变换
+sprite_character_mage_effect_atelementalchange_dark.NPK      暗属性魔法炮攻击特效
+sprite_character_mage_effect_atelementalchange_fire.NPK     火属性魔法炮攻击特效
+sprite_character_mage_effect_atelementalchange_light.NPK     光属性魔法炮攻击特效
+sprite_character_mage_effect_atelementalchange_water.NPK    冰属性魔法炮攻击特效
+sprite_character_mage_effect_atelementalrain.NPK            元素轰炸
+sprite_character_mage_effect_atelementalstrikeex_dark.NPK    暗属性的元素幻灭
+sprite_character_mage_effect_atelementalstrikeex_fire.NPK    火属性的元素幻灭
+sprite_character_mage_effect_atelementalstrikeex_light.NPK   光属性的元素幻灭
+sprite_character_mage_effect_atelementalstrikeex_nothing.NPK属性的元素幻灭
+sprite_character_mage_effect_atelementalstrikeex_water.NPK   冰属性的元素幻灭
+sprite_character_mage_effect_atfallenblossoms.NPK            寒冰连枪
+sprite_character_mage_effect_atfirepillar.NPK               旋火盾
+sprite_character_mage_effect_atfireroad.NPK                 地炎
+sprite_character_mage_effect_atflamecircle.NPK              旋炎破
+sprite_character_mage_effect_atfrozenland.NPK                冰龙旋舞
+sprite_character_mage_effect_atholonglight.NPK               幽冥火
+sprite_character_mage_effect_aticearea.NPK                  冰晶之浴
+sprite_character_mage_effect_aticechakram.NPK               冰之回旋的小冰轮攻击特效
+sprite_character_mage_effect_aticechakram_last.NPK          冰之回旋的大冰轮攻击特效
+sprite_character_mage_effect_aticecrash.NPK                 旋冰穿刺
+sprite_character_mage_effect_aticeelementalattack.NPK        冰之印的攻击特效
+sprite_character_mage_effect_aticefieldex.NPK                千里冰封
+sprite_character_mage_effect_aticeman.NPK                   极冰绽放
+sprite_character_mage_effect_aticeorb.NPK                   冰凌破
+sprite_character_mage_effect_aticeroad.NPK                  冰霜之径
+sprite_character_mage_effect_atlightningwall.NPK             雷电屏障
+sprite_character_mage_effect_atmanaburst.NPK                 魔力燃烧的特效
+sprite_character_mage_effect_atpieceofice.NPK               破冰飞刃
+sprite_character_mage_effect_atpush.NPK                      擒拿掌
+sprite_character_mage_effect_atresonance.NPK                 寒冰之境
+sprite_character_mage_effect_atteleport.NPK                  瞬移
+sprite_character_mage_effect_attundrasoul.NPK               冰冻空间的特效
+sprite_character_mage_effect_atturnwindmill.NPK             冰魄旋枪
+sprite_character_mage_effect_atvictory.NPK                       某蓝色元素
+sprite_character_mage_effect_atwatercannon.NPK                 水凝球
+sprite_character_mage_effect_atwindstrike.NPK                      魔法旋风
+sprite_character_mage_effect_crystalattack.NPK                            冰晶坠
+sprite_character_mage_effect_darkchange.NPK                                暗域扩张
+sprite_character_mage_effect_icesword.NPK                                    冰魂剑
+sprite_character_mage_effect_magiccannon.NPK                                魔法炮
+sprite_character_mage_effect_magicshield.NPK                                 元素环绕
+
+
+职业特征
+sprite_character_mage_equipment_growtype.NPK              魔道、战法、召唤
+sprite_character_mage_effect.NPK                                   元素、技能图标、其他特效
+sprite_character_mage_effect_cutin.NPK                                女法二觉立绘
+ 
+技能
+sprite_character_mage_effect_acidcloud.NPK                  魔道酸雨云
+sprite_character_mage_effect_antigravity.NPK               反重力装置
+sprite_character_mage_effect_aurashield.NPK                 魔法盾
+sprite_character_mage_effect_bellatrix.NPK                 贝亚娜斗神
+sprite_character_mage_effect_blackhole.NPK                  湮灭黑洞
+sprite_character_mage_effect_blackmantle.NPK                暗影斗篷
+sprite_character_mage_effect_broomspin.NPK                  旋转扫把
+sprite_character_mage_effect_chaser.NPK                     炫纹
+sprite_character_mage_effect_chasersexplosion.NPK          贝亚娜炫纹
+sprite_character_mage_effect_doubleswing.NPK                双重锤击
+sprite_character_mage_effect_dragonspear.NPK                煌龙偃月
+sprite_character_mage_effect_elementalchain.NPK             元素点燃
+sprite_character_mage_effect_elementalshower.NPK            陨星幻灭
+sprite_character_mage_effect_enhancedmagicmissile.NPK       改良星星弹
+sprite_character_mage_effect_equipbroom.NPK                 扫把装备特效
+sprite_character_mage_effect_familiar_blackcat.NPK          亲和暗影夜猫
+sprite_character_mage_effect_familiar_common.NPK            技能失败和成功的特效
+sprite_character_mage_effect_familiar_fluorescent.NPK       亲和光电鳗
+sprite_character_mage_effect_familiar_jackfrost.NPK          亲和冰霜雪人
+sprite_character_mage_effect_familiar_jol.NPK               亲和杰克南瓜
+sprite_character_mage_effect_flamestrike.NPK               烈焰冲击
+sprite_character_mage_effect_flamestrike_dust.NPK            烈焰冲击的尘土
+sprite_character_mage_effect_fluorecollider.NPK             电鳗碰撞机
+sprite_character_mage_effect_frostheadidolevent.NPK        心形特效
+sprite_character_mage_effect_fusioncraft.NPK                技艺融合
+sprite_character_mage_effect_fusionchaser.NPK               炫纹融合 
+sprite_character_mage_effect_heatingfurnace.NPK             暴炎加热炉
+sprite_character_mage_effect_icefield.NPK                    极冰盛宴
+sprite_character_mage_effect_lavapotion.NPK                  熔岩药瓶
+sprite_character_mage_effect_megadrill.NPK                   冰霜钻孔车
+sprite_character_mage_effect_pinkrocketevent.NPK            导弹特效
+sprite_character_mage_effect_pokethrow.NPK                  圆舞棍
+sprite_character_mage_effect_powder.NPK                     寒冰粉和猛毒粉
+sprite_character_mage_effect_randompiercestrike.NPK         流星闪影击
+sprite_character_mage_effect_sacrificespirit.NPK            精灵献祭
+sprite_character_mage_effect_shururu.NPK                    舒露露
+sprite_character_mage_effect_strengthhandstrike.NPK         强袭流星打
+sprite_character_mage_effect_successpremonition.NPK         成功预感
+sprite_character_mage_effect_summonmonsteraura.NPK          召唤光环
+sprite_character_mage_effect_summonmonsterreckless.NPK     召唤兽狂化
+sprite_character_mage_effect_sweetcandybar.NPK             幸运棒棒糖
+sprite_character_mage_effect_targetit.NPK                   魔力印记
+sprite_character_mage_effect_thunderstrike.NPK              天雷
+sprite_character_mage_effect_timerbomb_dark.NPK             暗属性炫纹爆弹攻击特效
+sprite_character_mage_effect_timerbomb_fire.NPK             火属性炫纹爆弹攻击特效
+sprite_character_mage_effect_timerbomb_light.NPK             光属性炫纹爆弹攻击特效
+sprite_character_mage_effect_timerbomb_none.NPK             无属性炫纹爆弹攻击特效
+sprite_character_mage_effect_timerbomb_water.NPK            冰属性炫纹爆弹攻击特效
+sprite_character_mage_effect_transformflapper.NPK            苍蝇拍
+sprite_character_mage_effect_unsummonmonster.NPK             解除召唤
+sprite_character_mage_effect_wallofice.NPK                   冰墙
+sprite_monster_casillas_appear.NPK                          卡西亚斯出现效果
+sprite_monster_casillas_body.NPK                           卡西亚斯身体
+sprite_monster_casillas_moveslash.NPK                      卡西亚斯必杀剑千鬼杀
+sprite_monster_casillas_slash.NPK                           卡西亚斯攻击特效
+sprite_monster_casillas_swordrain.NPK                       卡西亚斯必杀剑地狱图
+sprite_monster_monsterflower.NPK                           魔界花袄索
+sprite_monster_spikeking.NPK                                精灵王
+sprite_monster_spikeking_effect.NPK                        精灵王的攻击特效
+sprite_monster_spirit.NPK                                   精灵众
+sprite_monster_spirit_fire_higher.NPK                       火焰赫瑞克
+sprite_character_mage_effect_broomspinex.NPK                弹跳旋转扫把
+sprite_character_mage_effect_disenchant.NPK                  光电冰墙特效
+sprite_character_mage_effect_flamevolcanovoid.NPK            虚无火山
+sprite_character_mage_effect_randompiercestrikeex.NPK       流星雷连击
+sprite_character_mage_effect_swingex.NPK                    炫纹碎霸
+sprite_monster_soldier_sandorexpellerex.NPK                  愤怒的桑德尔
+sprite_monster_spirit_spiritex.NPK                        精灵EX
+sprite_character_mage_effect_transformflapperex.NPK          超级苍蝇拍
+sprite_character_mage_effect_walloficeex.NPK                光电冰墙特效
+
+圣职者
+时装
+sprite_character_priest_equipment_avatar_belt.NPK           腰部 
+sprite_character_priest_equipment_avatar_cap.NPK            帽子 
+sprite_character_priest_equipment_avatar_coat.NPK           上衣 
+sprite_character_priest_equipment_avatar_face.NPK           脸部 
+sprite_character_priest_equipment_avatar_hair.NPK           头发 
+sprite_character_priest_equipment_avatar_neck.NPK           胸部 
+sprite_character_priest_equipment_avatar_pants.NPK          裤子 
+sprite_character_priest_equipment_avatar_shoes.NPK          鞋子 
+sprite_character_priest_equipment_avatar_skin.NPK           皮肤 
+武器
+sprite_character_priest_equipment_weapon_axe.NPK            战斧
+sprite_character_priest_equipment_weapon_cross.NPK          十字架
+sprite_character_priest_equipment_weapon_rosary.NPK         念珠
+sprite_character_priest_equipment_weapon_scythe.NPK         镰刀
+sprite_character_priest_equipment_weapon_totem.NPK          图腾
+职业特征
+sprite_character_priest_effect_exorcist.NPK                            驱魔
+sprite_character_priest_equipment_growtype.NPK              蓝拳
+sprite_character_priest_effect.NPK                                        圣骑、复仇、技能图标、其他特效
+二次觉醒
+sprite_character_priest_effect_cutin.NPK
+          圣职者二觉立绘
+技能
+sprite_character_priest_effect_antiairupper.NPK              空斩打特效
+sprite_character_priest_effect_apocalypse.NPK               天启之珠
+sprite_character_priest_effect_atomicsmash.NPK              无双击
+sprite_character_priest_effect_avengerawakening.NPK          魔化执行审判者
+sprite_character_priest_effect_avengerawakening_attack.NPK   审判者的黑暗杀戮血刃特效
+sprite_character_priest_effect_avengerawakening_attack_attack1_2.NPK 
+sprite_character_priest_effect_avengerawakening_dash.NPK    审判者的移动冲击特效
+sprite_character_priest_effect_awakening.NPK                审判者的特效
+sprite_character_priest_effect_baekho.NPK                   式神·白虎
+sprite_character_priest_effect_battleauramastery.NPK       普通攻击拳气
+sprite_character_priest_effect_battleaxemastery.NPK         斧头精通特效
+sprite_character_priest_effect_bigbangpunch.NPK            泯灭神击
+sprite_character_priest_effect_bladeofpurewhite.NPK       纯白之刃
+sprite_character_priest_effect_bless.NPK                    天使祝福
+sprite_character_priest_effect_bluedragon.NPK              苍龙逐日
+sprite_character_priest_effect_chakraofcalmness.NPK         脉轮·圣光和寒冰
+sprite_character_priest_effect_chakraofpassion.NPK          脉轮·烈焰
+sprite_character_priest_effect_changehptomp.NPK             化魔
+sprite_character_priest_effect_chargeweapon.NPK             空斩打蓄满力特效
+sprite_character_priest_effect_choppinghammer.NPK           破碎之锤
+sprite_character_priest_effect_darkstrike.NPK               黑暗切割
+sprite_character_priest_effect_deflectwall.NPK               圣光沁盾
+sprite_character_priest_effect_devilstrike.NPK              审判者的攻击特效
+sprite_character_priest_effect_disaster_active.NPK           末日浩劫时的跃空特效
+sprite_character_priest_effect_disaster_exp.NPK            末日浩劫时的攻击特效
+sprite_character_priest_effect_disaster_fallingdown.NPK    末日浩劫时的空降特效
+sprite_character_priest_effect_disaster_ready.NPK           末日浩劫前的跃空特效
+sprite_character_priest_effect_divinecrush.NPK              圣拳锤击
+sprite_character_priest_effect_divinelight.NPK              圣光守护
+sprite_character_priest_effect_earthquake.NPK               裂地锤
+sprite_character_priest_effect_emblemofsafeguard.NPK        守护纹章
+sprite_character_priest_effect_enteringnirvana.NPK          破魔符
+sprite_character_priest_effect_execution.NPK                审判者执刑时的攻击特效
+sprite_character_priest_effect_fallingsoul.NPK             堕落之魂
+sprite_character_priest_effect_fastmove.NPK                 厄运之轮
+sprite_character_priest_effect_flashglobe.NPK               圣光球
+sprite_character_priest_effect_fountainoflife.NPK           生命源泉
+sprite_character_priest_effect_galesmash.NPK                疾风打
+sprite_character_priest_effect_giantswing.NPK                疾空旋风破
+sprite_character_priest_effect_gloriousbless.NPK            荣誉祝福
+sprite_character_priest_effect_gorgeouscombination.NPK      圣拳连击
+sprite_character_priest_effect_grasphandofanger.NPK         恶魔之手
+sprite_character_priest_effect_hammerofcontrition.NPK    忏悔之锤
+sprite_character_priest_effect_healwind.NPK                 圣愈之风
+sprite_character_priest_effect_heavenlycombination.NPK       神圣组合拳
+sprite_character_priest_effect_hedgehog.NPK                  复仇之刺
+sprite_character_priest_effect_highspeedslash.NPK          死亡切割
+sprite_character_priest_effect_homerun.NPK                  星落打
+sprite_character_priest_effect_hotcross.NPK                 圣光十字
+sprite_character_priest_effect_hpmaxupparty.NPK            天堂谐音
+sprite_character_priest_effect_hpmaxuppersonal.NPK         天籁之音
+sprite_character_priest_effect_hurricaneroll.NPK            极速飓风拳
+sprite_character_priest_effect_hyunmoo.NPK                  式神·玄武
+sprite_character_priest_effect_judgement.NPK                正义审判
+sprite_character_priest_effect_machinegunjab.NPK            刺拳猛击
+sprite_character_priest_effect_oppressiontalisman.NPK      压制符
+sprite_character_priest_effect_oxcrash.NPK                 断空锤击
+sprite_character_priest_effect_pandemonium.NPK             地狱之门
+sprite_character_priest_effect_powerofdarkness.NPK         黑暗权能
+sprite_character_priest_effect_quakearea.NPK                落凤锤
+sprite_character_priest_effect_repeatedsmash.NPK            狂乱锤击
+sprite_character_priest_effect_revengeoflight.NPK          光之复仇
+sprite_character_priest_effect_ripper.NPK                  黑暗之触前夕
+sprite_character_priest_effect_risingarea.NPK               升天阵
+sprite_character_priest_effect_sacrificeofsoul.NPK         灵魂牺牲
+sprite_character_priest_effect_scythemastery.NPK           镰刀精通特效
+sprite_character_priest_effect_shadowboxer.NPK              幻影分身
+sprite_character_priest_effect_shikigami.NPK               式神·殇
+sprite_character_priest_effect_sidewind.NPK               瞬拳
+sprite_character_priest_effect_slowheal.NPK                 缓慢愈合
+sprite_character_priest_effect_smasher.NPK                   虎袭特效
+sprite_character_priest_effect_spearofvictory.NPK          胜利之矛
+sprite_character_priest_effect_spincutter.NPK               旋转切割
+sprite_character_priest_effect_striking.NPK                 武器祝福
+sprite_character_priest_effect_throwweapon.NPK              巨旋风
+sprite_character_priest_effect_thunderbolttalisman.NPK     落雷符
+sprite_character_priest_effect_vermilionbirdtalisman.NPK    朱雀符
+sprite_character_priest_effect_willdriver.NPK               意念驱动
+sprite_character_priest_effect_deflectwallex.NPK            双子沁盾
+sprite_character_priest_effect_flashglobeex.NPK             圣光琉璃碎
+sprite_character_priest_effect_heavenlycombinationex.NPK    破魂组合拳
+sprite_character_priest_effect_hyunmooex.NPK                式神·真玄武
+sprite_character_priest_effect_machinegunjabex.NPK          刺拳狂击
+sprite_character_priest_effect_repeatedsmashex.NPK          狂暴锤击
+sprite_character_priest_effect_avengerguard.NPK                     审判者某动作
+sprite_character_priest_effect_corkscrewmastery.NPK              某血十字
+sprite_character_priest_effect_destroyspirittalisman.NPK             某落雷符
+sprite_character_priest_effect_devilinvitation.NPK                             黑暗之触
+sprite_character_priest_effect_hedgehog.NPK                                     某刺
+sprite_character_priest_effect_highspeedslash.NPK                              某死亡切割
+
+技能
+sprite_character_swordman_effect_addwave.NPK                               剑宗剑气特效
+sprite_character_swordman_effect_addwave_light.NP                         剑宗剑气特效
+sprite_character_swordman_effect_atautoguard.NPK                             收剑特效
+sprite_character_swordman_effect_atbalgumsool.NPK                       爆炸特效
+sprite_character_swordman_effect_atbladesoul.NPK                                斩魂术
+sprite_character_swordman_effect_atblooddance.NPK                           蛇腹剑:刺
+sprite_character_swordman_effect_atbloodseal.NPK                                  唤魔:封之印
+sprite_character_swordman_effect_atcalldaimus.NPK                              唤魔:蛇腹剑
+sprite_character_swordman_effect_atchainslash.NPK                                  连环斩
+sprite_character_swordman_effect_atchangesword.NPK                                 魔剑降临
+sprite_character_swordman_effect_atclawblade.NPK                                      血饮狂舞
+sprite_character_swordman_effect_atcounterslash.NPK                              连环斩2
+sprite_character_swordman_effect_atdarkslash.NPK                                          暗黑斩
+sprite_character_swordman_effect_atdarkstrike.NPK                                       唤魔:塔莫斯之袭
+sprite_character_swordman_effect_atdevilishness.NPK                                        处刑
+sprite_character_swordman_effect_atdevilslash.NPK                                      恶即斩
+sprite_character_swordman_effect_atdevilslash_hit.NPK                                  同上
+sprite_character_swordman_effect_atelementaleffect.NPK                       剑宗四属性武器特效
+sprite_character_swordman_effect_atelementalsword.NPK                         剑宗四种属性武器
+sprite_character_swordman_effect_atexcalibur.NPK                                        雷鸣千军破
+sprite_character_swordman_effect_atexecution.NPK                                     贪食者镓罗亚
+sprite_character_swordman_effect_atflash.NPK                                                破军旋舞斩
+sprite_character_swordman_effect_atfrenzy.NPK                                               处刑
+sprite_character_swordman_effect_atgigablade.NPK                                       空绝斩:千刃
+sprite_character_swordman_effect_atgreed.NPK                                             状态技能
+sprite_character_swordman_effect_atgroupdance.NPK                                      群魔乱舞
+sprite_character_swordman_effect_athalfmoon.NPK                                       瞬影三绝斩
+sprite_character_swordman_effect_atillusionslash.NPK                              幻剑术
+sprite_character_swordman_effect_atjackcatch.NPK                                裂刃天冲
+sprite_character_swordman_effect_atliftslash.NPK                                 幻剑术
+sprite_character_swordman_effect_atmagicswordup.NPK                  剑宗四属性武器特效
+sprite_character_swordman_effect_atmountaincrash.NPK                            跃空斩
+sprite_character_swordman_effect_atoverdrive.NPK                                   人剑合一
+sprite_character_swordman_effect_atpikesword.NPK                              蛇腹剑:缠
+sprite_character_swordman_effect_atsiryun.NPK                                         波动斩
+sprite_character_swordman_effect_atbigjang.NPK                                         如来神掌
+sprite_character_swordman_effect_atblackmirror.NPK                                    魔境幻影阵
+sprite_character_swordman_effect_atblastsword.NPK                                        回天璇鸣剑
+sprite_character_swordman_effect_atbuckshot.NPK                                           暗影禁锢
+sprite_character_swordman_effect_atcoalban.NPK                                               游龙掌
+sprite_character_swordman_effect_atcoldheart.NPK                                             某吸取特效
+sprite_character_swordman_effect_atcometblade.NPK                                          花舞千魂杀
+sprite_character_swordman_effect_atdeadlycape.NPK                                           暗影囚杀
+sprite_character_swordman_effect_atdestroyer.NPK                                               暗影禁锢2
+sprite_character_swordman_effect_atdoomsday.NPK                                             暗影盛宴
+sprite_character_swordman_effect_atdragonup.NPK                                          极奴剑术:幻剑阵
+sprite_character_swordman_effect_atdualweapon.NPK                                           两仪功
+sprite_character_swordman_effect_atsnakedance.NPK                              蛇腹剑:舞
+sprite_character_swordman_effect_atspeedslash.NPK                                        疾影斩
+sprite_character_swordman_effect_atspinslash.NPK                                         跃空斩
+sprite_character_swordman_effect_atthunderslash.NPK                                    穿云破空剑
+sprite_character_swordman_effect_attimeslash.NPK                                  极奴剑术:时空斩
+sprite_character_swordman_effect_atupperslash.NPK                                           升龙剑
+sprite_character_swordman_effect_atwhipswordbal.NPK                             蛇腹剑:破
+sprite_character_swordman_effect_atwildwhip.NPK                                       破军旋舞斩
+sprite_character_swordman_effect_atwillpower.NPK                                       唤魔:蛇腹剑
+sprite_character_swordman_effect_atecstasy.NPK                                              某火特效
+sprite_character_swordman_effect_atevolve.NPK                                                暗殿骑士特效
+sprite_character_swordman_effect_atfistofhellfire.NPK                                      红莲业火掌
+sprite_character_swordman_effect_atfivecircle.NPK                                              某爆炸特效
+sprite_character_swordman_effect_atgorecross.NPK                                              血十字剑
+sprite_character_swordman_effect_athellfire.NPK                                                    焚天练日
+sprite_character_swordman_effect_athiddenblade.NPK                                           影刃
+sprite_character_swordman_effect_atimmolation.NPK                                           魔刃轰杀
+sprite_character_swordman_effect_atinhalation.NPK                                               某走特效
+sprite_character_swordman_effect_atkatanamastery.NPK                                    极奴剑术:幻剑阵特效
+sprite_character_swordman_effect_atloyalservant.NPK                                              死亡献祭
+sprite_character_swordman_effect_atnearblow.NPK                                                    圆舞斩
+sprite_character_swordman_effect_atoverblowslash.NPK                                            乱花葬
+sprite_character_swordman_effect_atphnom.NPK                                                       唤魔:逆天之普诺
+sprite_character_swordman_effect_atpredatorgaloa.NPK                                               释魂飞弹
+sprite_character_swordman_effect_atshadowbinding.NPK                               暗影缠绕
+sprite_character_swordman_effect_atshadowharvest.NPK                                暗影旋涡
+sprite_character_swordman_effect_atshadowhiding.NPK                                  暗影缠绕
+sprite_character_swordman_effect_atshadowlancer.NPK                                   暗影之矛
+sprite_character_swordman_effect_atshadowpuppet.NPK                                 魅影暗魂斩
+sprite_character_swordman_effect_atsnakeshadow.NPK                                    三连斩
+sprite_character_swordman_effect_atsoarcut.NPK                                                两仪功特效
+sprite_character_swordman_effect_atspaceignite.NPK                                          某爆炸
+sprite_character_swordman_effect_atstarfall.NPK                                                  暗影轰杀
+sprite_character_swordman_effect_atthreeside.NPK                                              三连斩
+sprite_character_swordman_effect_atusir.NPK                                                        某技能加成
+sprite_character_swordman_effect_atzweivoltage.NPK                                          啸空十字斩
+sprite_character_swordman_effect_atearthpressure.NPK                                       碎岩裂地掌
+sprite_character_swordman_effect_atrevolvingsword.NPK                                       轮回剑
+sprite_character_swordman_effect_atscaffolt.NPK                                                     暗影禁锢
+
+          男鬼剑二觉立绘
+sprite_character_swordman_effect_blache.NPK                 第七鬼神：邪神怖拉修
+sprite_character_swordman_effect_bladephantom.NPK               幽冥剑影阵
+sprite_character_swordman_effect_blastblood.NPK            怒气爆发
+sprite_character_swordman_effect_bloodboom.NPK             浴血之怒
+sprite_character_swordman_effect_bloodevil.NPK              狂战静止时的血手
+sprite_character_swordman_effect_bloodinkanet.NPK             狂战剑气特效
+sprite_character_swordman_effect_bloodsword.NPK            血气之刃
+sprite_character_swordman_effect_bloodyrave.NPK            噬魂封魔斩
+sprite_character_swordman_effect_chargecrash.NPK             破军升龙击
+sprite_character_swordman_effect_darktoleranceup.NPK         暗月降临
+sprite_character_swordman_effect_descentsoul.NPK                鬼神诏令
+sprite_character_swordman_effect_dashattackmultihit.NPK      连突刺
+sprite_character_swordman_effect_epidemicrasa.NPK          瘟疫之罗刹
+sprite_character_swordman_effect_firewave.NPK               爆炎·波动剑
+sprite_character_swordman_effect_flowmindone.NPK          流心·刺
+sprite_character_swordman_effect_flowmindpowerup.NPK        流心·狂
+sprite_character_swordman_effect_flowmindthree.NPK       流心·升
+sprite_character_swordman_effect_flowmindtwo.NPK          流心·跃
+sprite_character_swordman_effect_frenzy.NPK              血之狂暴
+sprite_character_swordman_effect_ghostsidewind.NPK          鬼剑鞭
+sprite_character_swordman_effect_flame.NPK                            波动剑`烈焰
+sprite_character_swordman_effect_lightningpower.NPK              某剑坠
+sprite_character_swordman_effect_normalwave.NPK                 某冰火爆
+sprite_character_swordman_effect_victory.NPK                         转
+sprite_character_swordman_effect_tombstone.NPK              死亡墓碑
+sprite_character_swordman_effect_tombstoneex.NPK            墓碑三绝阵
+sprite_monster_zig.NPK                                                                       王者号令：吉格降临
+sprite_character_swordman_effect_blastbloodex.NPK          血气爆发
+sprite_character_swordman_effect_chagecrashex.NPK           破军斩龙击
+sprite_character_swordman_effect_grabblastbloodex.NPK        灭魂之手
+sprite_character_swordman_effect_icewaveex.NPK              极冰·裂波剑
+sprite_character_swordman_effect_momentaryslashex.NPK       破空拔刀斩
+sprite_character_swordman_effect_ghoststep.NPK              鬼影步.鬼影闪
+sprite_character_swordman_effect_giveblood.NPK              嗜血
+sprite_character_swordman_effect_gorecross.NPK              十字斩
+sprite_character_swordman_effect_grabblastblood.NPK          嗜魂之手
+sprite_character_swordman_effect_guard.NPK                 格挡
+sprite_character_swordman_effect_handlingsword.NPK              万剑归宗
+sprite_character_swordman_effect_hardattackcharge.NPK       噬灵鬼斩
+sprite_character_swordman_effect_hellbenter.NPK              魔狱血刹
+sprite_character_swordman_effect_hopsmash.NPK              崩山击
+sprite_character_swordman_effect_hundredsword.NPK            极 · 鬼剑术（暴风式）
+sprite_character_swordman_effect_illusionslash.NPK          幻影剑舞
+sprite_character_swordman_effect_illusionslash_finish.NPK    剑魂钝器精通追加的剑风冲击波
+sprite_character_swordman_effect_indaramang.NPK               波动剑：天网
+sprite_character_swordman_effect_indratian.NPK                        电光
+sprite_character_swordman_effect_jumpattackmulti.NPK       空中连斩
+sprite_character_swordman_effect_kalla.NPK                  冥炎之卡洛
+sprite_character_swordman_effect_lightninggod.NPK              雷神
+sprite_character_swordman_effect_meteorsword.NPK             极·神剑术（流星落）
+sprite_character_swordman_effect_momentaryslash.NPK          拔刀斩
+sprite_character_swordman_effect_outragebreak.NPK            崩山裂地斩
+sprite_character_swordman_effect_rapidmoveslash.NPK            猛龙断空斩
+sprite_character_swordman_effect_reflectguard.NPK            鬼印珠
+sprite_character_swordman_effect_shockwavearea.NPK          邪光波动阵
+sprite_character_swordman_effect_shortswordmastery.NPK     剑魂短剑精通上挑追加的剑气
+sprite_character_swordman_effect_standalonewave.NPK         无双波
+sprite_character_swordman_effect_standalonewave_light.NPK        二觉后无双波
+sprite_character_swordman_effect_stateoflimit.NPK                            极·神剑术（极限之领域）
+sprite_character_swordman_effect_swordofmind.NPK              极·神剑术（破空斩）
+sprite_character_swordman_effect_tripleslash.NPK            三段斩
+sprite_character_swordman_effect_triplestab.NPK            鬼影三击剑
+sprite_character_swordman_effect_vajra.NPK                       天雷：金刚杵
+sprite_character_swordman_effect_vaneslash.NPK            裂波斩
+sprite_character_swordman_effect_vaneslash_light.NPK        二觉后裂波斩
+sprite_character_swordman_effect_waveeye.NPK               暗天波动眼
+sprite_character_swordman_effect_waveeye_light.NPK          二觉后暗天波动眼
+sprite_character_swordman_effect_wavemark.NPK               波动刻印
+sprite_character_swordman_effect_wavespinarea.NPK           不动明王阵
+sprite_character_swordman_effect_wavespinarea_light.NPK          二觉后不动明王阵
+sprite_character_swordman_effect_weaponcombo.NPK            里·鬼剑术
+sprite_character_swordman_effect_zig.NPK                               王者号令：吉格降临
+sprite_character_swordman_effect_sayaex.NPK                  冰晶之萨亚
+
+暗夜使者
+时装
+sprite_character_thief_equipment_avatar_belt.NPK            腰部
+ sprite_character_thief_equipment_avatar_cap.NPK             帽子
+sprite_character_thief_equipment_avatar_coat.NPK            衣服
+sprite_character_thief_equipment_avatar_face.NPK            脸部
+sprite_character_thief_equipment_avatar_hair.NPK            头发
+sprite_character_thief_equipment_avatar_neck.NPK            胸部
+sprite_character_thief_equipment_avatar_pants.NPK           裤子
+sprite_character_thief_equipment_avatar_shoes.NPK           鞋子
+sprite_character_thief_equipment_avatar_skin.NPK            皮肤
+武器
+sprite_character_thief_equipment_weapon_dagger.NPK          匕首
+sprite_character_thief_equipment_weapon_twinswd.NPK         双剑
+sprite_character_thief_equipment_weapon_wand.NPK            权杖 
+职业特征
+sprite_character_thief_effect.NPK                                        死灵、刺客,忍者·影武者
+二次觉醒立绘
+sprite_character_thief_effect_cutin
+   暗夜四职业二次觉醒
+技能
+sprite_character_thief_effect_ambitionofballacre.NPK         巴拉克的野心
+sprite_character_thief_effect_anklecut.NPK                碎踝
+sprite_character_thief_effect_ballacre.NPK                   降临：暴君巴拉克
+sprite_character_thief_effect_blackarea.NPK                 暗影蛛丝阵
+sprite_character_thief_effect_blackwave.NPK                吸魂暗劲波
+sprite_character_thief_effect_blameofdead.NPK              死灵之怨
+sprite_character_thief_effect_boneshield.NPK               骨盾
+sprite_character_thief_effect_chargeeffect.NPK             蓄力的特效
+sprite_character_thief_effect_cursespear.NPK                 诅咒之箭
+sprite_character_thief_effect_darklure.NPK                   百鬼夜行
+sprite_character_thief_effect_darknail.NPK                死亡之爪
+sprite_character_thief_effect_darkritual.NPK                 暗黑仪式
+sprite_character_thief_effect_darksoul.NPK                  暗魂波
+sprite_character_thief_effect_doublepierce.NPK             双刃穿刺
+sprite_character_thief_effect_excelstrikeadd.NPK             雷光刃影
+sprite_character_thief_effect_flyingsquirrel.NPK           飞鼠
+sprite_character_thief_effect_guillotine.NPK                 巴拉克的愤怒
+sprite_character_thief_effect_hurricane.NPK                剑刃风暴
+sprite_character_thief_effect_nicolaszombie.NPK            驱使僵尸
+sprite_character_thief_effect_phantomstrom.NPK             千魂祭
+sprite_character_thief_effect_silverstream.NPK             月轮舞
+sprite_character_thief_effect_skintakeoff.NPK               忍法：影分身
+sprite_character_thief_effect_sonicassault.NPK              疾风乱舞
+sprite_character_thief_effect_sworddance.NPK               旋舞斩
+sprite_character_thief_effect_throwknife.NPK                手里剑
+sprite_character_thief_effect_verticalspiral.NPK            螺旋穿刺
+sprite_character_thief_ui.NPK                               连击点和尼古拉斯的行动模式选择
+sprite_character_thief_effect_blackareaex.NPK               死灵之缚特效
+sprite_character_thief_effect_blackwaveex.NPK                释魂暗劲波
+sprite_character_thief_effect_blameofdeadex.NPK             死灵之缚
+sprite_character_thief_effect_chainsawex.NPK                陨落螺旋刺
+sprite_character_thief_effect_verticalspiralex.NPK          旋刃冲击
+sprite_character_thief_effect_victory.NPK                                 转
+
+sprite_character_thief_effect_firemark.npk                  毕方之印
+sprite_character_thief_effect_leavetraces.npk        忍者的残影爆炸
+sprite_character_thief_effect_ilusionshuriken.NPK    幻影手里剑
+sprite_character_thief_effect_gasolinefire.NPK       火遁：蟾蜍油炎弹
+sprite_character_thief_effect_flameball.NPK          火遁：豪火球之术
+sprite_character_thief_effect_firehide.NPK           火遁：红莲
+sprite_character_thief_effect_doomfiled.NPK          火遁：冥炎业火阵
+sprite_character_thief_effect_ninjutsu.NPK           结印的火         sprite_character_thief_effect_flametornado.NPK       火遁：飓风煞
+sprite_character_thief_effect_throwknife.NPK         投掷苦无   
+sprite_character_thief_effect_deitiesrebirth.NPK     忍法：六道轮回
+sprite_character_thief_effect_kurokagenojutsu.npk    苦无暗炎标记
+sprite_character_thief_effect_bigkunai.NPK           火遁：螺旋手里剑
+sprite_character_thief_effect_chakraweapon.NPK       普通攻击特效
+sprite_character_thief_effect_migawari.NPK           忍法：替身术
+sprite_character_thief_effect_skyroads.NPK           火遁：炎天道
+sprite_monster_power_station_kohlepowerstation_fitz.NPK 天照爆炸
+sprite_character_thief_effect_flameflower.NPK        火遁：炎璇天舞
+sprite_character_swordman_effect_atfistofhellfire.npk 炎璇天舞斩击
+
+
+——————————————————————————————————
+SoundPacks·声音·音效补丁
+——————————————————————————————————
+sounds_char_demonic_lancer.NPK        魔枪士人物声音
+sounds_char_demonic_lancer_effect.npk 魔枪士技能音效
+sounds_char_demonic_lancer_weapon.npk 魔枪士打击音效
+
+sounds_char_creator.NPK               缔造者人物声音 
+sounds_char_creator_effect.NPK        缔造者技能音效
+
+sounds_char_darkknight.NPK            黑暗武士人物声音
+sounds_char_darkknight_effect.NPK     黑暗武士技能音效
+
+sounds_char_knight.NPK                守护者人物声音
+sounds_char_knight_effect.NPK         守护者技能音效
+sounds_char_knight_weapon.NPK         守护者打击音效
+
+sounds_char_wizard_m.NPK              男法人物声音
+sounds_char_wizard_m_effect.NPK       男法技能音效
+
+sounds_char_fighter.NPK               格斗家人物声音
+sounds_char_fighter_effect.NPK        格斗家技能音效   sounds_char_fighter_weapon.NPK        格斗家打击音效  
+
+sounds_char_fighter_m.NPK             男格斗人物声音
+sounds_char_fighter_m_effect.NPK      男格斗技能音效
+
+sounds_char_gunner.NPK                枪手人物声音sounds_char_gunner_effect.NPK         枪手技能音效 sounds_char_gunner_weapon.NPK         枪手打击音效  
+
+sounds_char_gunner_f.NPK              女枪人物声音sounds_char_gunner_f_effect.NPK       女枪技能音效 
+
+sounds_char_priest.NPK                大叔人物声音sounds_char_priest_effect.NPK         大叔技能音效  sounds_char_priest_weapon.NPK         大叔打击音效  
+
+sounds_char_swordman.NPK              鬼剑人物声音 sounds_char_swordman_effect.NPK       鬼剑技能音效  sounds_char_swordman_weapon.NPK       鬼剑打击音效 
+
+sounds_char_swordman_f.NPK            女鬼剑人物声音
+sounds_char_swordman_f_effect.NPK     女鬼剑技能音效
+sounds_char_swordman_f_weapon.NPK     女鬼剑打击音效
+
+sounds_char_wizard.NPK                法师人物声音 sounds_char_wizard_effect.NPK         法师技能音效  sounds_char_wizard_weapon.NPK         法师打击音效
+
+sounds_creature_common.NPK        安全区内的特殊声音
+sounds_creature_effect.NPK    （这个实在是听不出来－ －）  sounds_dialog.NPK             （这个比较搞怪   MS是HF那边的）  sounds_effect.NPK                 所有职业的特殊打击音效 sounds_effect_amb.NPK          可破坏的物品音效及副本背景音效（牛头王那里不是有狼嚎吗   就是这个了）  
+sounds_effect_magic.NPK           加持BUFF的音效及特殊怪物的攻击音效 sounds_equip_acc.NPK              更换首饰时的音效  sounds_equip_armor.NPK          好像是更换皮甲和布甲时的音效 sounds_equip_title.NPK          MS是更换称号时的音效  sounds_hookup.NPK                 PK场里的系统声音（就是在开始倒数321的时候以及在决斗结束时的女声音效）  
+sounds_mon_act1.NPK             格兰之森的所有副本怪物音效)   sounds_mon_act2.NPK             天空之城的怪物音效   另有僵尸地图和夜叉的音效 
+sounds_mon_act3.NPK             天惟地图内所有怪物的音效  sounds_mon_act4.NPK             暗黑地图内所有怪物的音效   另有盗贼地图内女盗贼的音效  
+sounds_mon_act5.NPK             雪山地图怪物音效  
+sounds_mon_act6.NPK             诺斯玛尔地图所有怪物音效 
+sounds_mon_act7.NPK             安特贝鲁峡谷怪物音效
+sounds_mon_act8.NPK             海上列车怪物音效 
+sounds_mon_act9.NPK             发电站怪物音效
+sounds_mon_actx.NPK             悲鸣洞穴音效
+sounds_mon_actx1.NPK            APC声音音效
+sounds_mon_new_act1.NPK         亚诺法森林怪物音效
+sounds_mon_new_act2.NPK         漂流洞穴怪物音效
+sounds_mon_new_act3.NPK         漂流洞穴怪物音效2
+sounds_mon_new_act4.NPK         厄运之城怪物音效
+sounds_mon_new_act5.NPK         逆流瀑布怪物音效
+sounds_mon_hellmon.NPK          所有深渊恶魔的音效  
+sounds_npc.NPK                  所有NPC的声音 
+sounds_pet.NPK                    这个听不出来了  
+sounds_stak.NPK                使用恢复道具及放置恢复道具时的音效 sounds_stak_material.NPK       放置金币 晶体的音效 sounds_stak_recipe.NPK          生产时的音效  
+sounds_stak_throw.NPK          使用攻击性道具时的音效(例如飞盘)
+sounds_ui.NPK                  主要是鼠标点击各种按键时的音效
+                           ——大部分取自百度百科 我自己又填了几条
+
+——————————————————————————————————
+Music·背景音乐
+——————————————————————————————————
+【城镇音乐】
+【转移前】
+gate_new.ogg————赛丽亚旅馆
+forest_town.ogg————艾尔文防线
+hendonmyre.ogg————赫顿玛尔
+hendonmyre_new.ogg————新版赫顿玛尔
+hendon_cityhall.ogg——赫顿玛尔市政厅
+tavern.ogg————月光酒馆
+westcoast.ogg————西海岸
+westcoast_new.ogg————新版西海岸
+alfhlyra.ogg ————阿法利亚营地
+alfhlyra_new.ogg————新版阿法利亚营地
+storm_pass.ogg————斯顿雪域
+gent_city.ogg——神之都根特
+lufthafen.ogg——鲁夫特悬空海港
+shonan.ogg——虚祖首都·素喃
+timegate.ogg——时空之门
+saint_horn——圣者之鸣号
+slough_industrial.ogg——斯曼工业基地
+shonan_outside.ogg——素喃郊外
+【转移后】
+gate_new.ogg————赛丽亚旅馆
+silver_crown——银色村庄
+sewer——赫顿玛尔废墟
+underfoot_town——暗黑城
+behemoth_town——天帷巨兽
+north_shelter——北方避难所
+gent_city.ogg——神之都根特
+lufthafen.ogg——鲁夫特悬空海港
+shonan.ogg——虚祖首都·素喃
+timegate.ogg——时空之门
+saint_horn——圣者之鸣号
+slough_industrial.ogg——斯曼工业基地
+shonan_outside——月溪镇
+noble_sky.ogg——苍穹贵族号
+zelba.ogg——克洛诺斯岛
+【交响曲版】
+silver_crown_ds——银色村庄
+sewer_ds——赫顿玛尔废墟
+underfoot_town_ds——暗黑城
+behemoth_town_ds——天帷巨兽
+north_shelter_ds——北方避难所
+gent_city_ds.ogg——神之都根特
+lufthafen_ds.ogg——鲁夫特悬空海港
+shonan_ds.ogg——虚祖首都·素喃
+saint_horn_ds——圣者之鸣号
+slough_industrial_ds.ogg——斯曼工业基地
+
+【活动·副本】（远古图.归类到了转移后）
+
+【转移前】
+【洛兰地区】
+forest01_new.ogg 洛兰
+forest02.ogg洛兰BOSS
+【格兰之森】
+forest02.ogg 格兰之森部分BOSS
+forest01_old 格兰之森改版前
+mirkwood.ogg 新幽暗密林.幽暗密林深处  
+mirkwood_boss.ogg 新幽暗密林.幽暗密林深处Boss
+sunderland.ogg 新雷鸣废墟.猛毒雷鸣废墟
+sunderland_boss.ogg 新雷鸣废墟.猛毒雷鸣废墟Boss
+grakkarak_new.ogg 新格拉卡.烈焰格拉卡  
+grakkarak_new_boss.ogg 新格拉卡.烈焰格拉卡Boss区域
+secret.ogg 暗黑雷鸣废墟/暗黑雷鸣废墟boss
+【天空之城】
+draconian_tower.ogg龙人之塔
+
+draconian_tower_boss.ogg/sc_b02.ogg龙人之塔Boss
+hall_of_doll.ogg人偶玄关
+
+hall_of_doll_boss.ogg人偶玄关Boss
+golem_tower.ogg石巨人塔
+
+golem_tower_boss.ogg石巨人塔Boss
+
+darkness_enter.ogg天空之海-黑暗玄廊
+
+darkness_enter_boss.ogg/sc_b01.ogg天空之海-黑暗玄廊Boss
+palace_of_load.ogg天空之海-城主宫殿
+
+palace_of_load_boss.ogg天空之海-城主宫殿Boss
+float_castle.ogg悬空城
+
+sc_b03.ogg悬空城Boss.王的遗迹
+
+sc_01.ogg国服第一章时的亚蒙下层
+mocean.ogg国服第一章时的深海
+
+b_float_castle.ogg悬空城背景音乐（国服没用过）
+【天帷巨兽】
+behemoth.ogg神殿外围.树精丛林
+
+behemoth_b01.ogg神殿外围.树精丛林Boss（旧版）
+behemoth_b01_1.ogg 神殿外围、树精丛林Boss（新版）
+purgatory.ogg炼狱.极昼
+
+behemoth_b02.ogg 炼狱.极昼Boss（旧版）
+behemoth_b02_1.ogg炼狱、极昼Boss（新版）
+spinalcord.ogg第一脊椎.第二脊椎
+
+behemoth_b03.ogg第一脊椎.第二脊椎Boss
+
+bloodhell.ogg天帷禁地
+
+bloodhell_boss.ogg天帷禁地Boss
+【诺伊佩拉、暗黑城】
+underfoot.ogg 浅栖之地.蜘蛛洞穴  
+shallow_keep_b01.ogg 浅栖之地.蜘蛛洞穴Boss 
+darkelf_amb.ogg 暗精灵墓地  
+darkelf_boss.ogg 暗精灵墓地Boss 
+Npera.ogg 诺伊佩拉  
+Npera_boss.ogg 诺伊佩拉Boss 
+magma_cave.ogg 熔岩穴  
+kings_ruins.ogg 熔岩穴Boss 
+shadow_maze.ogg 暗影迷宫  
+shadow_maze_boss.ogg 暗影迷宫Boss
+underfoot_entrance.ogg 暗黑城入口  
+underfoot_entrance_boss.ogg 暗黑城入口Boss
+【万年雪山】
+cold_boy.ogg冰心少年
+
+charnakridge.ogg山脊.利库天井.白色废墟
+charnakridge_boss.ogg山脊.白色废墟Boss
+riku_cave.ogg利库天井洞穴
+
+riku_boss.ogg利库天井Boss
+bwanga.ogg布万家的训练场
+
+bwanga_boss.ogg布万家的训练场Boss
+icepalace.ogg冰雪宫殿
+
+icepalace_boss.ogg冰雪宫殿Boss
+skasa.ogg斯卡萨之巢
+
+skasa_boss.ogg斯卡萨之巢Boss
+【月光酒馆】
+aganzo.ogg 月光酒馆
+aganzo_boss.ogg 月光酒馆boss
+【诺斯玛尔】
+thief.ogg堕落的盗贼
+
+thief_boss.ogg堕落的盗贼Boss
+hameln.ogg“迷乱之村”哈穆林
+
+hameln_boss.ogg“迷乱之村”哈穆林Boss
+bloodbutterfly.ogg血蝴蝶之舞
+
+bloodbutterfly_boss.ogg血蝴蝶之舞Boss
+suspicion.ogg困惑之城
+
+suspicion_boss.ogg困惑之城Boss
+【堕落之殿】
+GBLarad.ogg GBL阿拉德分部 
+GBLarad_boss.ogg GBL阿拉德分部BOSS
+GBLarad_lab.ogg
+GBLarad_lab_boss.ogg  GBL研究所BOSS
+GBLarad_hatchery.ogg  GBL孵化场 
+GBLarad_hatchery_boss.ogg GBL孵化场BOSS
+【陌路者要塞】
+shallow_keep.ogg 绿都格罗兹尼 
+grozny_boss_new.ogg 绿都格罗兹尼BOSS
+odesa _new.ogg 热血八番街 
+odesa_boss_new.ogg 热血八番街BOSS
+【女鬼剑专属地图】
+black_stone.ogg 黑石监狱 滚石监狱
+black_stone_boss.ogg 黑石监狱 滚石监狱
+red_stone.ogg 火石监狱
+red_stone_boss.ogg 火石监狱BOSS
+empire_rempart.ogg 帝国城墙
+street_battle.ogg 艾尔文防线突袭战（赫顿玛尔攻防战）
+street_battle_boss.ogg 艾尔文防线突袭战boss（赫顿玛尔攻防战）
+
+【转移后】
+【亚诺法森林】
+luteon——炽晶森林/冰晶森林
+luteon_boss——炽晶森林/冰晶森林boss
+glassfey——水晶矿脉/被污染的水晶矿脉
+glassfey_boss——水晶矿脉/被污染的水晶矿脉boss
+ringwood_prison——幽冥监狱
+ringwood_prison_boss——幽冥监狱boss
+prison_underground——幽冥监狱下层
+prison_underground_boss——幽冥监狱下层boss
+whiteland——遗忘之森
+whitenight_boss——遗忘之森boss
+【厄运之城】
+mushroom_garden——蘑菇庄园
+mushroom_garden_boss——蘑菇庄园boss
+salif——蚁后的巢穴
+salif_boss——蚁后的巢穴boss
+decay_area——腐烂之地
+decay_area_boss——腐烂之地boss
+old_town——赫顿玛尔旧街区
+old_town_boss——赫顿玛尔旧街区boss
+chessboard_despair——绝望的棋局
+chessboard_despair_boss——绝望的棋局boss
+dendroid——陷落的村庄
+whiteland_boss——陷落的村庄boss
+【漂流洞穴】
+spider_kingdom——蜘蛛王国
+spider_kingdom_boss——蜘蛛王国boss
+tomb_of_the_hero——英雄冢
+tomb_of_the_hero_boss——英雄冢boss
+despot_king_altar——暴君的祭坛
+despot_king_altar_boss——暴君的祭坛boss
+gold_cave——黄金矿洞
+gold_cave_boss——黄金矿洞boss
+ancient_times_heart——远古墓穴深处
+ancient_times_heart_boss——远古墓穴深处boss
+shadow_maze——黄金王的秘密洞穴
+shadow_maze_boss——黄金王的秘密洞穴boss
+dragon_seal——邪龙的封印
+dragon_seal_boss——邪龙的封印boss
+【逆流瀑布】
+durban——鲨鱼栖息地
+durban_boss——鲨鱼栖息地boss
+humiliation_reef——人鱼的国度
+humiliation_reef_boss——人鱼的国度boss
+goddess_temple——GBL女神殿
+goddess_temple_boss——GBL女神殿boss
+breeding_place——树精繁殖地
+breeding_place_boss——树精繁殖地boss
+lotus_nest——罗特斯的宫殿
+lotus_nest_boss——罗特斯的宫殿boss
+bloodhell——疯狂的祭典
+corrupt_temple_boss——疯狂的祭典boss
+【绝望冰崖】
+thorn_garden——冰刺庭院
+thorn_garden_boss——冰刺庭院boss
+snake_nest——极光幻境
+snake_nest_boss——极光幻境boss
+corrupt_temple——失落的神殿
+corrupt_temple_boss——失落的神殿boss
+pollution_area——暮色之城
+pollution_area_boss——暮色之城boss
+black_snowmountain——黑色雪山
+black_snowmountain_boss——黑色雪山boss
+in_depth——噩梦之源
+in_depth_boss——噩梦之源boss
+endless_nightmare——无尽的噩梦
+endless_nightmare_boss——无尽的噩梦boss
+riku_cave——冰霜洞穴
+riku_boss——冰霜洞穴boss
+【安特贝鲁峡谷】
+gentgate_outside.ogg——根特外围
+gentgate_outside_boss.ogg——根特外围boss
+gentgate_east.ogg——根特东门
+gentgate_east_boss.ogg——根特东门boss
+gentgate.ogg——根特南门
+gentgate_boss.ogg——根特南门boss
+gentgate_north.ogg——根特北门
+gentgate_north_boss.ogg——根特北门boss
+gentgate_defence.ogg——根特防御战
+gentgate_defence_boss.ogg——根特防御战boss
+nightattack.ogg——夜间袭击战
+nightattack_boss.ogg——夜间袭击战
+interception.ogg——补给线阻断战
+interception_boss.ogg——补给线阻断战boss
+pursuit.ogg——追击歼灭战
+pursuit_boss.ogg——追击歼灭战boss
+odesa_new.ogg——决战哈尔特山
+odesa_boss_new.ogg——决战哈尔特山boss
+【海上列车】
+pirate.ogg——列车上的海贼/特快列车追击战
+pirate_boss.ogg——列车上的海贼/特快列车追击战boss
+seatrain.ogg——夺回西部线
+seatrain_boss.ogg——夺回西部线boss
+seatrain_kong.ogg——小美人鱼空空伊登场
+haze.ogg——雾都赫伊斯
+haze_boss.ogg——雾都赫伊斯boss
+arden.ogg——阿登高地
+arden_boss.ogg——阿登高地boss
+【时空之门】
+t_chaos_begin(conflagration).ogg——格兰之火
+t_rage(conflagration_boss).ogg——格兰之火boss
+t_land_of_darkness(epidemic).ogg——瘟疫之源 
+t_skull_knight(epidemic_boss).ogg——瘟疫之源boss 
+t_we_are_desperado(cartel).ogg——卡勒特之初 
+t_adios_verrickt(cartel_boss).ogg——卡勒特之初boss
+t_black_holy_war(b_church).ogg——暗黑圣战
+t_out_of_control(b_church_boss).ogg——暗黑圣战boss 
+t_failed_metastasis(s_area).ogg——绝密区域 
+t_the_kerberos(s_area_boss).ogg——绝密区域boss 
+t_conspiracy(old_scave).ogg——昔日悲鸣 
+t_confrontation(old_scave_boss).ogg——昔日悲鸣boss
+t_three_dragons(beginning).ogg——凛冬
+t_young_skasa(beginning_boss).ogg——凛冬boss
+t_iris_song.ogg——谜之觉悟
+t_consciousness.ogg——谜之觉悟boss
+odesa_new.ogg——时空裂痕
+GBLarad_hatchery_boss.ogg——时空裂痕boss
+【武斗大会】
+tournament_ready.ogg——黄龙大会/青龙大会（准备）
+tournament_stage_01.ogg——黄龙大会/青龙大会1
+tournament_stage_02.ogg——黄龙大会/青龙大会2
+【月溪镇】
+nen_area——纳特拉的复仇
+nen_area_boss——纳特拉的复仇boss 
+in_cave——双子巨人的背叛
+in_cave_boss——双子巨人的背叛boss 
+the_nest_of_neitram——圣地 龙之魂
+【远古遗迹】
+sc_b03.ogg——王的遗迹
+kings_ruins.ogg——王的遗迹boss
+vilmark.ogg——比尔马克帝国试验场
+vilmark_boss.ogg——比尔马克帝国试验场boss
+screaming_cave.ogg——悲鸣洞穴
+screaming_cave_boss.ogg——悲鸣洞穴boss
+Npera.ogg——诺伊佩拉
+Npera_boss.ogg——诺伊佩拉boss
+ghost_train.ogg——幽灵列车
+ghost_train_boss.ogg——幽灵列车boss
+leshphon.ogg——痛苦之村列瑟芬
+leshphon_boss.ogg——痛苦之村列瑟芬boss
+cartel_jump_down.ogg——卡勒特指挥部（下降途中）
+cartel_headquater.ogg——卡勒特指挥部
+cartel_headquater_boss.ogg——卡勒特指挥部boss
+【异次元裂缝】
+gblkingdom.ogg——哥布林王国
+gblkingdom_boss.ogg——哥布林王国boss
+skycastle.ogg——蠕动之城
+skycastle_boss.ogg——蠕动之城boss
+squadwar.ogg——兰蒂卢斯的鹰犬
+squadwar_boss.ogg——兰蒂卢斯的鹰犬boss
+dimensionspace.ogg——虚无之境
+dimensionspace_boss.ogg——虚无之境boss
+blackearth.ogg——黑色大地
+blackearth_named.ogg——黑色大地（圣者米歇尔出场）
+blackearth_boss.ogg——黑色大地boss
+bakalcastle.ogg——巴卡尔之城
+bakalcastle_intro.ogg——巴卡尔之城boss（巴卡尔变身前）
+bakalcastle_boss.ogg——巴卡尔之城boss（巴卡尔变身后）
+【能源中心】
+Kohle.ogg——克雷发电站
+Kohle_boss.ogg——克雷发电站boss
+fruz.ogg——普鲁兹发电站
+fruz_boss.ogg——普鲁兹发电站boss
+trombe.ogg——特伦斯发电站
+trombe_boss.ogg——特伦斯发电站boss 
+grandine.ogg——格兰迪发电站
+grandine_boss.ogg——格兰迪发电站boss
+helix_lab——赫拉斯研究所（前两图）
+helix_lab_trap.ogg——赫拉斯研究所（前两图后）
+helix_lab_boss.ogg——赫拉斯研究所boss
+kohle_boss.ogg——斯洛特发电站（摧毁发电机）
+GBLarad_lab.ogg——斯洛特发电站（逃离发电站）
+【安图恩】
+anton_phase1——黑雾之源、震颤的大地、擎天之柱
+anton_phase1_boss——黑雾之源、震颤的大地、擎天之柱BOSS
+anton_phase2——能量阻截战、黑色火山BOSS
+anton_phase2_boss——能量阻截战、黑色火山BOSS
+【寂静城】 
+up_to_the_castle——倒悬的瞭望台（上升途中） 
+watch_tower——倒悬的瞭望台 
+watch_tower_boss——倒悬的瞭望台BOSS
+lukerinje——卢克的聚光镜 
+lukerinje_boss——卢克的聚光镜boss 
+metals_brakium——钢铁之臂 
+metals_brakium_boss——钢铁之臂boss
+brazier_of_salamander——能源熔炉 
+brazier_of_salamander_boss——能源熔炉boss 
+banquet_hall_of_light——光之舞会 
+banquet_hall_of_light_boss——光之舞会boss 
+empire_rempart——王的书库 
+GBLarad_boss——王的书库boss
+【格兰之森山麓】
+Gseeker01.ogg——南部溪谷
+Gseeker01_boss.ogg——南部溪谷boss
+wedding_honeymoon.ogg——爱之摩伽陀
+grakkarak_new——牛头怪乐园
+grakkarak_new_boss——牛头怪乐园
+largus_01.ogg 封印的藏宝地
+nen_area.ogg  封印的藏宝地BOSS
+【亡者峡谷】
+illusiontower.ogg————迷妄之塔
+evilspirit.ogg————最老版的死亡塔BGM
+eviltower_01.ogg——死亡之塔（下阶）＆领主之塔
+eviltower_02.ogg——死亡之塔（上阶）
+Bloodtower_01.ogg——无尽祭坛·极限祭坛
+Bloodtower_02.ogg——无尽祭坛
+Bloodtower_03.ogg——无尽祭坛
+despair_tower_under.ogg——绝望之塔/叹息之塔（下阶）
+despair_tower_top.ogg——绝望之塔/叹息之塔（上阶）
+【决斗场】
+pvp_gate.ogg——PK场（等待）
+pvp_area.ogg——PK场（准备）＆PK场（鹰吉处）
+pvp_bwanga.ogg——PK场（雪山修炼场）
+pvp_tower.ogg——PK场（死亡之塔）
+pvp_colosseum.ogg——PK场（斗兽场）
+pvp_pub.ogg——PK场（酒馆）
+pvp_practice.ogg——PK场（风云道场）＆练习模式
+Gseeker01.ogg——南部溪谷＆PK场（斗魂坛）
+pvp_odesa.ogg——PK场（热血八番街）
+pvp_counter.ogg——PK场（追击歼灭战）
+
+【活动】
+character_stage.ogg——新版频道选择
+seria_gate.ogg——赛丽亚旅馆
+carol_gate.ogg——赛丽亚旅馆（圣诞节特别版）
+sera_shop_new.ogg——商城
+carol_shop.ogg——商城（圣诞节特别版）
+wedding_march.ogg——结婚
+wedding_room.ogg——婚房
+church.ogg——结婚礼堂
+intro.ogg——开场漫画
+job_guide.ogg——转职画面
+result.ogg——地下城通关
+GBLarad.ogg——特殊地下城过场
+hellmonster.ogg——深渊派对
+attendance_event.ogg——摇骰子活动
+town_pvp.ogg——街头争霸
+【三国】
+ournament_ready.ogg     蜀营.武斗大会准备
+3kingdom_intro          三国副本开场
+3kingdom_normal         三国副本
+3kingdom_boss           三国副本BOSS
+【马戏团】
+eventbgm                旧版马戏团
+event_bgm_01            旧版马戏团
+event_bgm_02            八周年飞镖音乐
+event_bgm_03            未知的音乐（貌似没用上）
+event_bgm_04            大胃王争霸赛
+circus_event_gate       新版马戏团城镇
+circus_event            新版马戏团关卡
+circus_event_boss       新版马戏团关卡BOSS
+【众神之墓】
+Event_kronos       众神关卡
+Event_kronos_boss  众神BOSS
+Event_kronos_gate  众神城镇
+kronos_room        众神议会所
+【miss神秘·战舰格拉西亚】
+Battle_Festa_waiting.ogg    miss·神秘
+aircaft_carrier.ogg         战舰格拉西亚
+aircaft_carrier_boss.ogg    战舰格拉西亚BOSS
+【堕落的泰拉遗迹】
+piece_of_tera_booster_01.ogg 泰拉遗迹 狂热时间
+piece_of_tera_booster_02.ogg 泰拉遗迹 真·狂热时间
+piece_of_tera_normal.ogg     泰拉遗迹
+【末日之都坎特温】
+Battle_Festa_01.ogg      末日之都坎特温
+Battle_Festa_02.ogg      末日之都坎特温
+Battle_Festa_loading.ogg 末日之都坎特温
+Battle_Festa_waiting.ogg 末日之都坎特温
+【圣诞节专用】
+carol_gate.ogg 赛丽亚房间·圣诞
+carol_rock.ogg 通关·圣诞
+carol_shop.ogg 商城·圣诞
+【战场】
+grenselos_battle.ogg 战场
+grenselos_ready.ogg  战场
+grenselos_truce.ogg  战场
+【赏金之路】
+largus_01.ogg 赏金之路
+largus_02.ogg 赏金之路
+【生化模式】
+zombie_virus_01 生化模式
+zombie_virus_02 生化模式
+【遗忘之地】
+ forgotten_island              遗忘之地
+forgotten_island_boss          遗忘之地
+boss、forgotten_island_hidden  遗忘之地（监视者之塔）
+【守护者祭坛】
+ad_altar_normal.ogg   守护者祭坛
+ad_altar_boss.ogg     守护者祭坛
+ad_altar_hugewave.ogg 守护者祭坛
+【暗精灵遗迹】
+temple_core.ogg       暗精灵遗迹
+temple_entrance.ogg   暗精灵遗迹
+temple_groop_boss.ogg 暗精灵遗迹
+temple_maze.ogg       暗精灵遗迹
+                        ———大部分代码取自DNF背景音乐吧 转载请注意
+
+——————————————————————————————————
+后续记录
+——————————————————————————————————
+
+
+
+
+                              ————截止自2016.12.22.后续会继续更新
+                              有什么代码可以提供，我QQ是1289309989
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=3.0,minimum-scale=1.0">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>图片</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .tabs{
+            border: 1px solid #ebebeb;
+        }
+        .aside li{
+            min-width: 200px;
+            min-height: 200px;
+            display: none;
+        }
+        .aside,.nav{
+            display: inline-block;
+            padding: 10px;
+        }
+        .aside::after,.nav::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        li{
+            float: left;
+            padding: 10px;
+            border: 1px solid #ebebeb;
+        }
+        .aside .nav1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+            <ul class="nav" onclick="tabsdisplay(event)">
+               
+            </ul>
+            <div>
+                 <ul class="aside">
+                 
+                </ul>
+            </div>
+        
+    </div>
+    <form action="图片分类.html" method="get">
+        <input type="text" name="username">
+        <input type="password" name="password" id="">
+        <input type="submit" value="tijiao">
+    </form>
+
+
+
+    <script src="../public/选项卡.js"></script>
+    <script>
+        tabs('jpeg','jpeg支持多种颜色,不可透明,常用于照片')
+        tabs('gif','gif支持少量颜色,动态可透明,常用于动态图')
+        tabs('png','png支持多种颜色,可透明,相对来说有些大')
+        tabs('webp','png支持多种颜色,可透明,目前相对较完美的图片格式,但ie不兼容')
+        tabs('base64','将图片二进制转化为字符串,可直接在页面使用,通常用于特殊情况,比如背景图片必须先加载,图片传递到后台')
+
+    </script>
+</body>
+</html>

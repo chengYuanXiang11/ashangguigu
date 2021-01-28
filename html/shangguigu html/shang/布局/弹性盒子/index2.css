@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 200px;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  display: flex;
+  width: calc(20% - 20px);
+  height: 200px;
+  list-style: none;
+  margin: 0 10px;
+}
+li img {
+  width: 100%;
+}
+li img:hover {
+  width: 20%;
+}

@@ -1,0 +1,74 @@
+body{
+    // darnk()函数 用于加深颜色
+    //     第一个参数颜色 第二参数百分度
+    background-color: darken(#bfa,20%);
+}
+    // 使用@定义变量
+    @a:10px;
+
+    // 引入外部less  可以分模块来写
+@import "demo2";
+      
+.box1{
+    // less运算
+    width: 300 + 500px;
+    height: 2 * 300px;
+    margin: 60 / 6px auto;
+    padding: 100 - 90px;
+    background-color: darken(#b40,10%);
+    // $样式名 可直接饮用其他样式熟系
+    line-height:$padding * 2;
+    // 变量
+    font-size: @a*2px;
+    
+    // 也可以将变量的值作为选择器使用
+    @b:box2;
+    .@{b}{
+        width: 200px;
+        height: @a*20px;
+        &{
+            padding: 10px;
+        }
+        & > li{
+            float: left;
+        }
+    } 
+     // 等同于
+        // .box1 .box2 {
+        //     width: 200px;
+        //     height: 200px;
+        //   }
+
+    &:hover{
+        background-color: #bfa;
+    }
+    &::before{
+        content: "1";
+    }
+} 
+
+// .box3{
+//     // Mixins 混入 混合使用 
+//     .box1 .box2();
+//     color:red;
+// }
+
+//扩展 加all之后会扩展box1包括子元素  .box1,.box3{}
+.box3:extend(.box1 all){
+    font-size: 24px;
+
+    //使用时可以指定 也可默认
+    .hello(@b:2px,@a:2s);
+    // .hello(2s);
+
+}
+
+// extend通过分组选择器进行扩展 minxins是全部复制 extend较好
+
+
+// 定义minxins时 加了()则 不会被编译  minxins可指定参数
+// ()中的指定参数相当于定义了一个未赋值的变量 可以默认参数
+.hello(@a,@b:1px){
+    transition: all @a steps(6,end);
+    border: @b red solid;
+}
