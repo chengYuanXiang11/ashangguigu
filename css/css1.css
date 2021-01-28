@@ -1,5 +1,9 @@
+html{
+  --a:20px;
+  /* css自带的定义变量 --变量名 */
+}
 .font{
-  font-size: 20px;
+  font-size: var(--a);
   font-weight:bold;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
@@ -9,7 +13,7 @@
   text-decoration:underline;
   list-style: none;
   text-align: center;
-  line-height: 20px;
+  line-height: var(--a);
 }
 
 .a:link{

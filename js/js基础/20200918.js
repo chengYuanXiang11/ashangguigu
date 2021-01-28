@@ -4,8 +4,9 @@
     d
     decodeURI 
 */
-
+ 
 // shift+alt+a 多行注释
+
 
 /* 
     //输入框
@@ -58,7 +59,7 @@ var [a,b] = exchangeValues(1,2)
 
 
 /*
-//sitch
+//switch
  switch('1'){
     case '1':
         console.log('1');
@@ -478,13 +479,49 @@ arrd.getMost() */
 
 // jq
 $(function(){ //dom加载完成后执行此回调
-    $('.dmeta').click(function(event){ //查询所有匹配  封装成jq对象 伪数组
-        console.log(event.target.innerHTML)
-        console.log(  $('.dmeta').index())
+    $('.dmeta1').click(function(event){ //查询所有匹配  封装成jq对象 伪数组
+        
+     /*    //   查询所有div
+                 console.log($('div'))
+            //  查询所有id为d1
+                console.log($('#d1'))
+            //  查询所有class为demeta1
+                console.log($('.demeta1'))
+            //  查询所有div,span
+                console.log($('div,span'))
+            //  查询所有class为demeta的div元素
+                console.log($('div.dmeta11')) 
+            //  查询div下所有的span
+                $('div span')
+            //  查询div下所有的子元素span
+                $('div>span').css('background','pink')
+            //  查询.dmeta1的下一个span
+                $('.dmeta1 + div').css('background','pink')
+            //  查询.dmeta1下的所有兄弟元素
+                 $('.dmeta1 ~').css('background','pink')
+
+
+            //  选择第一个div/最后一个div
+                $('div:first').css('background','pink')
+
+            //  div class不是dmeta1
+                $('div:not(.dmeta1)').css('background','pink')
+            //  第2第3个div
+                $('div:gt(0):lt(2)').css('background','pink')
+            //  查询.dmeta的第2第三个div兄弟元素
+                $('.dmeta1 ~div:lt(1),.dmeta1 ~div:gt(1):lt(2)').css('background','pink')
+            //  查询内容为dddd1的span元素
+                $('div:contains(dddd1)').css('background','pink')
+            //  查询所有隐藏元素
+                $('div:hidden')
+            */
+        
+        // console.log(event.target.innerHTML)
+        // console.log(  $('.dmeta').index( $('.dmeta1')[0]))
         // $('.dmeta').css('background','pink')
         // $(this).hide()
         //$(this).show()
-        // $('.dmeta').fadeOut()
+        // $('.dmeta1').fadeOut()
         // $('.dmeta').slideUp()
         // $('.dmeta').slideDown()
      /*    $('.dmeta').animate({
@@ -504,29 +541,30 @@ $(function(){ //dom加载完成后执行此回调
  */
 
  //元素内添加
-var d1= document.createElement('div')
-d1.innerHTML = 'd1'
+// var d1= document.createElement('div')
+// d1.innerHTML = 'd1'
 // $(this).append(d1)
 // $(this).prepend(d1)
 //元素外添加
-$(this).after(d1)
+// $(this).after(d1)
 // $(this).before(d1)
-
-
-
-        
+     
     })
     $('.meta').click(function(event){ //查询所有匹配  封装成jq对象 伪数组
+        $('div:hidden').show()
+       
         // $('.dmeta').stop("slow",function(){
         //     console.log('stop')
         // })
-        console.log(event)
-          $('.dmeta').each(function(){
-              console.log($(this))
-          })
-        // $('.dmeta').toggle()
+
+        // console.log(event)
+        //   $('.dmeta').each(function(){
+        //       console.log($(this))
+        //   })
+        // $('.dmeta1').toggle()
         // $('.dmeta').fadeIn()
-        // $('.dmeta').fadeToggle()
+        // $('.dmeta1').fadeToggle()
+        // $('.dmeta1').fadeToggle()
         // $('.dmeta').fadeTo("fadeToggle",0.7)
         // $('.dmeta').slideToggle()
     //    console.log( $('.meta').attr('src','')) 
