@@ -44,8 +44,11 @@ $(function(){
                 // 所以0被排除,剩下123,lt从1开始,所以lt(2)
                 $('div:gt(0):lt(2)').css('background','pink')
 
-            //  查询.dmeta的第2第三个div兄弟元素
-                $('.dmeta1 ~div:lt(1),.dmeta1 ~div:gt(1):lt(2)').css('background','pink')
+            //  查询.dmeta的第2个 第3个div兄弟元素
+           $('.inner ~.dmeta:lt(3):gt(0)').css('background','pink');
+
+             //  查询.dmeta的第2个 第45个div兄弟元素
+            $('.dmeta1 ~div:lt(1),.dmeta1 ~div:gt(1):lt(2)').css('background','pink')
             //  查询内容为dddd1的span元素
                 $('div:contains(dddd1)').css('background','pink')
             //  查询所有隐藏元素
