@@ -1,8 +1,8 @@
 /*
-    debuggerd
+    Android Debuggerd 
     d
     d
-    decodeURI 
+    decodeURI  
 */
  
 // shift+alt+a 多行注释
@@ -74,8 +74,8 @@ var [a,b] = exchangeValues(1,2)
 
 
 
-/*
-
+/* 
+打印 0-n
 var a1= prompt('a1')
  for (let i = 0; i <a1; i++) {
     let s =''
@@ -131,7 +131,7 @@ function triangle (index){
  */
 
 
-/* //冒牌排序
+/* //冒泡排序
 function solted(a){
     for (let i = 0; i < a.length; i++) {
         for(let j=0;j<a.length-1-i;j++){
@@ -153,6 +153,7 @@ function solted(a){
     var b = 2
     return a+b
 })() */
+
 
 
 
@@ -329,6 +330,58 @@ twoArr(arr) */
 
     str.charCodeAt(8)
 
+//     valueOf偏向于运算，toString偏向于显示。
+
+// 在进行对象转换时，将优先调用toString方法，如若没有重写 toString，将调用 valueOf 方法；
+// 果两个方法都没有重写，则按Object的toString输出。
+
+// 在进行强转字符串类型时，将优先调用 toString 方法，强转为数字时优先调用 valueOf。
+
+// 使用运算操作符的情况下，valueOf的优先级高于toString。
+    // class A{
+    //     constructor(a){
+    //         this.a = a;
+    //     }
+    //     toString(){
+    //         return this.a++;
+    //     }
+    //     value(){
+    //         return this.a++;
+    //     }
+    // }
+    
+    // const a = new A(1);
+    // console.log(a == 1 && a==2 && a == 3 );
+
+//     全等(===)：严格等于不会进行隐式转换，这里使用 Object.defineProperty 数据劫持的方法来实现
+    
+// let value = 1;
+// Object.defineProperty(window,'a',{
+//     get( ){
+//         return value++
+//     }
+// })
+
+// if (a === 1 && a === 2 && a === 3) {
+//     console.log("Hi Libai!")}
+
+    
+// 查询字符串中出现最多的字符和次数 用对象
+// var str2="1234561234444455566";
+// var obj2={ };
+// for(var i=0;i<str2.length;i++){
+//     if(obj2[str2[i]]){
+//         obj2[str2[i]]++
+//     }else{
+//         obj2[str2[i]] = 1
+//     }
+// }
+// console.log(obj2)  //{1: 2, 2: 2, 3: 2, 4: 6, 5: 4, 6: 3}
+
+
+
+
+
     // es6
 
     str.includes('12')          //判断字符串中是否存在子串
@@ -379,26 +432,30 @@ twoArr(arr) */
     })
     console.log(findindexarr)  
 
+// 判断字符串中最多出现的字符和次数 
+    // 方法1
+//  var len = str.split('')
+// var json=[]
+// var json2=[]
 
-/* var len = str.split('')
-var json=[]
-var json2=[]
+// for (let i = 0; i < len.length; i++) {
+//     if(!json.includes(len[i])){
+//         json.push(
+//            len[i]
+//         )
+//         json2.push(
+//            1
+//          )
 
-for (let i = 0; i < len.length; i++) {
-    if(!json.includes(len[i])){
-        json.push(
-           len[i]
-        )
-        json2.push(
-           1
-         )
+//     }else{
+//        json2[json.indexOf(len[i])]+=1
+//     }
+// }
+// console.log(json,json2)
+// console.log('最多是'+json[json2.indexOf(Math.max.apply(null,json2))]+'出现了'+Math.max.apply(null,json2)+'次') 
+    
 
-    }else{
-       json2[json.indexOf(len[i])]+=1
-    }
-}
-console.log('最多是'+json[json2.indexOf(Math.max.apply(null,json2))]+'出现了'+Math.max.apply(null,json2)+'次') */
-
+// // 方法2
 // var json3={}
 // var value=null;
 // var key= 0;
@@ -413,193 +470,94 @@ console.log('最多是'+json[json2.indexOf(Math.max.apply(null,json2))]+'出现�
        
 // }
 // console.log(value,key)
+// // var c = Math.max.apply(null,json2)
 
 
-// var c = Math.max.apply(Math,[json3].map((value)=>{console.log(value)}))
+// var c = Math.max.apply(Math,[json2].map((value)=>{console.log(value)}))
 // console.log(c)
 
-/* var json3={}
-var values=null;
-var keys= 0;
-var arr=[1,2,3,4,5]
 
-str.split('').reduce((cb,value,key,arr)=>{
-    var char = str.charAt(key)
-console.log(char,key)
+// // 方法3
+// var json3={}
+// var values=null;
+// var keys= 0;
+// var arr=[1,2,3,4,5]
+// array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+// str.split('').reduce((total,value,key,arr)=>{
+//     var char = str.charAt(key)
      
-        json3[char]? json3[char] +=1:json3[char] = 1
-        if(json3[char]>keys){
-            values= char
-            keys =  json3[char]
-        }
-    return value
-},0)
-console.log(values,keys)
- */
+//         json3[char]? json3[char] +=1:json3[char] = 1
+//         if(json3[char]>keys){
+//             values= char
+//             keys =  json3[char]
+//         }
+//     return value
+// },0)
+// console.log(values,keys)
 
 
+// // 方法4(装逼用)
 /* Array.prototype.getMost = function(){
     //返回值,当前元素,当前元素索引,当前元素对象
     // function(total,value,key,arr){}
     var obj = this.reduce((p,n)=>(
-
-        p[n]++ || (p[n] =1),
+        p[n]++ || (p[n] =1), 
      p.max =p.max>=p[n] ? p.max : p[n],
      p.key =p.max>p[n] ? p.key : n,
-     console.log(p,n),
-        //逗号运算符返货最后一个 既返回p
-     p),{})
-     //把{}作为第一个数传进去 
+        //逗号运算符返回最后一个 既返回p
+     console.log(p,n),   
+                    //p = {}, n = "d" 
+                    //p = {d: 1, max: 1, key: "d"}, n = "d"
+                    //p = {d: 1, max: 1, key: "d"}, n = "k"
+     p),{}) 
+     //把{}作为初始值 
+     console.log(obj);
+
     return obj.key +''+obj.max
-
-      
 }
-
-
 arrd =['d','k','h','yfr',4,87,'h']
 arrd.getMost() */
 
-/* window.onload=function(){
+
+
+//轮播图 点击修改 也可自动
+/*  window.onload=function(){
     var num = 0
     var btn = this.document.getElementsByClassName('meta')[0]
     var imgArr=['./images/1.png','./images/2.png','./images/3.png','./images/4.png']
-    btn.onclick=function(ev){
-        var ev = ev || window.event
-        var target = ev.target || ev.srcElement
-        console.log(target)
-        // target.nodeName.toLowerCase() 
-        // target = target.parentNode;
+    var st= setInterval(() => {
         num ++;
         if(num >=imgArr.length) num = 0
         btn.src = imgArr[num%imgArr.length]
         console.log(num)
+    }, 1000);
+    // btn.onclick=function(ev){
+    //     var ev = ev || window.event
+    //     var target = ev.target || ev.srcElement
+    //     console.log(target)
+    //     // target.nodeName.toLowerCase() 
+    //     // target = target.parentNode;
+    //     num ++;
+    //     if(num >=imgArr.length) num = 0
+    //     btn.src = imgArr[num%imgArr.length]
+    //     console.log(num)
+    // }
+    btn.onmouseover=function(){
+        clearInterval(st);
+        btn.onclick=function(){
+            num ++;
+        if(num >=imgArr.length) num = 0
+        btn.src = imgArr[num%imgArr.length]
+        }
+    }
+    btn.onmouseout=function(){
+        st= setInterval(() => {
+            num ++;
+            if(num >=imgArr.length) num = 0
+            btn.src = imgArr[num%imgArr.length]
+            console.log(num)
+        }, 1000);
     }
 } */
 
 
-// jq
-$(function(){ //dom加载完成后执行此回调
-    $('.dmeta1').click(function(event){ //查询所有匹配  封装成jq对象 伪数组
-        
-     /*    //   查询所有div
-                 console.log($('div'))
-            //  查询所有id为d1
-                console.log($('#d1'))
-            //  查询所有class为demeta1
-                console.log($('.demeta1'))
-            //  查询所有div,span
-                console.log($('div,span'))
-            //  查询所有class为demeta的div元素
-                console.log($('div.dmeta11')) 
-            //  查询div下所有的span
-                $('div span')
-            //  查询div下所有的子元素span
-                $('div>span').css('background','pink')
-            //  查询.dmeta1的下一个span
-                $('.dmeta1 + div').css('background','pink')
-            //  查询.dmeta1下的所有兄弟元素
-                 $('.dmeta1 ~').css('background','pink')
-
-
-            //  选择第一个div/最后一个div
-                $('div:first').css('background','pink')
-
-            //  div class不是dmeta1
-                $('div:not(.dmeta1)').css('background','pink')
-            //  第2第3个div
-                $('div:gt(0):lt(2)').css('background','pink')
-            //  查询.dmeta的第2第三个div兄弟元素
-                $('.dmeta1 ~div:lt(1),.dmeta1 ~div:gt(1):lt(2)').css('background','pink')
-            //  查询内容为dddd1的span元素
-                $('div:contains(dddd1)').css('background','pink')
-            //  查询所有隐藏元素
-                $('div:hidden')
-            */
-        
-        // console.log(event.target.innerHTML)
-        // console.log(  $('.dmeta').index( $('.dmeta1')[0]))
-        // $('.dmeta').css('background','pink')
-        // $(this).hide()
-        //$(this).show()
-        // $('.dmeta1').fadeOut()
-        // $('.dmeta').slideUp()
-        // $('.dmeta').slideDown()
-     /*    $('.dmeta').animate({
-            width:'300px',
-            left:'300px',
-            opacity:0.6,
-            height:'300px'
-        })
-
-        $('.dmeta').animate({
-            width:'100px',
-            left:'0px',
-
-            opacity:1,
-            height:'100px'
-        })
- */
-
- //元素内添加
-// var d1= document.createElement('div')
-// d1.innerHTML = 'd1'
-// $(this).append(d1)
-// $(this).prepend(d1)
-//元素外添加
-// $(this).after(d1)
-// $(this).before(d1)
-     
-    })
-    $('.meta').click(function(event){ //查询所有匹配  封装成jq对象 伪数组
-        $('div:hidden').show()
-       
-        // $('.dmeta').stop("slow",function(){
-        //     console.log('stop')
-        // })
-
-        // console.log(event)
-        //   $('.dmeta').each(function(){
-        //       console.log($(this))
-        //   })
-        // $('.dmeta1').toggle()
-        // $('.dmeta').fadeIn()
-        // $('.dmeta1').fadeToggle()
-        // $('.dmeta1').fadeToggle()
-        // $('.dmeta').fadeTo("fadeToggle",0.7)
-        // $('.dmeta').slideToggle()
-    //    console.log( $('.meta').attr('src','')) 
-
-    //删除 .dmetta
-        // $('.dmeta').remove()
-    //删除 .dmete的子元素
-        // $('.dmeta').empty()
-
-    })
-  /*   console.log( $('.dmeta3').parent())
-    console.log( $('.dmeta3').parents())
-    console.log( $('.dmeta3').parentsUntil('dmeta1')) */
-//    $('.dmeta1').children().css('background','red')
-    // $('.dmeta1').find('.dmeta3').css('background','red')
-    // console.log( $('.dmeta1').find('.dmeta2'))
-
-   /*  同级(所有)
-    console.log($('.dmeta1').siblings()) */
-
-    //同级(下一个)
-    // console.log($('.dmeta1').next())
-
-    //同级(所有)
-    // console.log($('.dmeta1').nextAll())
-
-      //同级(两个元素之间))
-    // console.log($('.dmeta1').nextUntil('.dmeta11'))
-
-    // console.log($('.dmeta1 div').first())
-    // console.log($('.dmeta1 div').last())
-    // console.log($('div').filter('.dmeta1'))
-    // console.log($('div').not('.dmeta1'))
-
-
-
-
-})

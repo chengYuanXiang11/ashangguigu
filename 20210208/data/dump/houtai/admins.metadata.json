@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"houtai.admins"}],"uuid":"a7d058f0e8b5475ea83e2cd2f86689f2"}

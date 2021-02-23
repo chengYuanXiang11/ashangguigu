@@ -1,0 +1,56 @@
+@url = http://localhost:3001
+
+###查询
+GET {{url}}/api/data/finnan
+
+###注册
+POST {{url}}/api/denglu/register
+Content-Type: application/json
+
+{
+    "username":"a2fdsff",
+    "password":"a2dsfds"
+}
+
+
+###登录
+POST {{url}}/api/denglu/login
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+
+###获取个人信息
+
+POST {{url}}/api/denglu/profile
+Authorization: :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWQwOWQ2NDEzOTI4ODQxYzgwNTc2YzMiLCJpYXQiOjE1OTA5MDkwNDh9.uWinl2dgv9jNehtVmiNMtKdKOeUtrU85AgZ29KzsiVs
+
+
+###
+GET  {{url}}/api/denglu/cookies
+Content-Type: application/json
+
+    { "username":"adm",
+    "password":"admin"}
+
+###
+POST  {{url}}/api/denglu/finde
+Content-Type: application/json
+
+
+###
+POST  {{url}}/api/in/df
+Content-Type: application/json
+
+    # { "category":"admin",
+    # "name":"dwed",
+    # "password":"admin"}
+###
+POST    {{url}}/api/reply/addreply
+Content-Type: application/json
+
+
+

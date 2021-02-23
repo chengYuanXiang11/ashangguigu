@@ -4,3 +4,21 @@
     background-image: url(../练习/布局/015.png);
     background-clip: border-box;
 }
+/* css 初始化 */
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}

@@ -50,17 +50,19 @@ import {menuList} from '../../data/index'
             this.loading = true;
             var data = JSON.parse(JSON.stringify(this.loginForm));
             data.password = md5(data.password);
-            this.api.post("/login/auth", data).then((res)=>{
-              sessionStorage.setItem("token", res.data.token);  // 保存登录信息
-              this.$store.dispatch("ROOT_AXIOS_TIP", {that: this, res, cb: ()=>{  // 提示登录结果
-                this.$store.dispatch("ROOT_GET_MENU", {that: this, cb: (res)=>{ //登录成功后续
-                  if(res.data.length == 0) res.data = menuList;  //如果后台没有菜单则使用前台测试菜单
-                  this.$store.commit("ROOT_SET_MENU_ROUTER", {menuList: res.data})
-                  this.$router.push({path: '/'});                  
-                }})
-                this.loading = false;
-              }});
-            })            
+            // this.api.post("/login/auth", data).then((res)=>{
+            //   sessionStorage.setItem("token", res.data.token);  // 保存登录信息
+            //   this.$store.dispatch("ROOT_AXIOS_TIP", {that: this, res, cb: ()=>{  // 提示登录结果
+            //     this.$store.dispatch("ROOT_GET_MENU", {that: this, cb: (res)=>{ //登录成功后续
+            //       if(res.data.length == 0) res.data = menuList;  //如果后台没有菜单则使用前台测试菜单
+            //       this.$store.commit("ROOT_SET_MENU_ROUTER", {menuList: res.data})
+            //       this.$router.push({path: '/'});
+            //     }})
+            //     this.loading = false;
+            //   }});
+            // })
+            var resdata = menuList;
+                  this.$store.commit("ROOT_SET_MENU_ROUTER", {menuList: resdata})
           }
         })
       }

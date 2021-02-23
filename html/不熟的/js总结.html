@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maxmun-scale=1.0,minmun-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+        overflow: hidden;
+    }
+    .warp{
+        width: 100%;
+
+    }
+    .scrollBar{
+        width: 8px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #f5f6f7;
+        border-left: 1px solid #e8e8ed;
+        border-right:1px solid #e8e8ed;
+    }
+    .scrollIn{
+        /* position: absolute;
+        left: 50%;
+        height: 50px;
+        transform: translateX(-50%);
+        top: 0; */
+        width: 8px;
+        background-color: #fff;
+
+    }
+    .box{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .imgsc{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: aqua;
+    }
+</style>
+<body>
+    <!-- 拖拽
+    <div class="box">
+        ddasfasfdfsd
+    </div>
+    <div class="imgsc"></div> -->
+
+    <!-- 滚动条 -->
+    <div class="warp">
+        <div class="scrollBar">
+            <div class="scrollIn"></div>
+        </div>
+    </div>
+    && 判断&&之前是否为真,如果为真，则取后面的值,否则就取前面的值
+    || 判断||之前是否为假,如果为假，则取前面的值,否则就取后面的值
+
+    类型转换
+    number
+    undefined => NaN
+    null => 0
+
+
+    - textContent 会获取style= “display:none” 中的文本，而innerText不会
+    - textContent 会获取style标签里面的文本，而innerText
+
+
+    onfocus:当元素获取到焦点的时候触发
+
+    onblur：当元素失去焦点的时候触发
+
+    设置随机颜色
+    var r=Math.floor(Math.random()*256);
+    var g=Math.floor(Math.random()*256);
+    var b=Math.floor(Math.random()*256);
+    'rgb('+r+','+g+','+b+')';
+
+    div 获取焦点
+    <div tabindex="1" class="d1">d1</div>
+    tabIndex值是正数的对象根据递增的值顺序和代码中的位置顺序来被选择
+    tabIndex值是0的对象根据在代码中的位置顺序被选择
+    tabIndex值是负数的对象会被忽略
+
+    oneL[i].index = i; //添加索引,便于下方调用
+
+
+    鼠标事件 onkeyup onkeydown event.keyCode键码
+
+
+    onmouseenter onmouseleave 如果是一个父子元素模型，对父元素添加移入和移出，当鼠标移入父元素里面的子元素的时候，
+    事件并没有移出然后再移入。也就是说事件元素没有切换；
+
+
+    onmouseover onmouseout 这两对之间的区别
+    如果是一个父子元素模型，对父元素添加移入和移出，当鼠标移入父元素里面的子元素的时候，
+    事件会移出然后再移入。也就是说事件元素会有切换；事件委派的时候，必须使用这一对；
+
+
+    1. window对象概念，使用
+    function add(){
+    }
+    add()
+    window.add()
+    2. location window.location可以让用户获取当前页面地址以及重定向到一个新的页面。
+    window.location.href 可以读也可以写，写的时候相当于转向另外一个页面
+
+    history 对象包含浏览器的历史记录，window可以省略。这些历史记录以栈（FIFO）的形式保存。页面前进则入栈，页面返回则出栈。
+    navigator 是一个只读对象，它用来描述浏览器本身的信息，包括浏览器的名称、版本、语言、系统平台、用户特性字符串等信息。
+    screen 提供了用户显示屏幕的相关属性，比如显示屏幕的宽度、高度，可用宽度、高度。
+
+    3. window.onload
+    window.onresize //浏览器窗口发生改变，就会执行这个事件；
+
+    1. event概念，作用
+    系统给我们封装的，任何事件都会有这个event对象，就是回调函数的第一个形参；
+    2. event兼容性处理
+    3. event.target || event.srcElement作用
+    4. clientX & clientY 拿的是鼠标相对视口的 水平距离和垂直距离 相对的是视口的左上角（以视口左上角为原点）
+    pageX pageY 拿的是鼠标相对页面的 水平距离和垂直距离 相对的是页面的左上角（以页面左上角为原点）
+    offsetX offsetY 拿的是鼠标相对自身元素的 水平距离和垂直距离 相对的是自身元素左上角（以自身元素左上角为原点）
+
+
+    clearInterval(timer);
+ 
+
+    getBoundingClientRect().left 计算元素到视口上方和左边的距离  只能读不能写
+
+    Offset系列 只读
+    offsetWidth 拿的是盒子 内容 + padding + border的宽；
+    offsetHeight 拿的是盒子 内容 + padding + border的高；
+
+
+    offsetLeft 拿的是元素的偏倚量：可以认为就是拿的定位left值
+    offsetTop 拿的是元素的偏倚量：可以认为就是拿的定位top值
+
+    案例：盒子左右摇摆
+
+    clientTop 拿的是盒子上边框大小；
+
+    视口宽高求法
+    document.documentElement.clientWidth
+    document.documentElement.clientHeight
+
+
+    Scroll系列
+    scrollWidth 只读
+    //当内容比盒子小的时候，拿的是盒子的clientWidth
+    // //当内容比盒子大的时候，拿的是内容的offsetWidth + 盒子的一侧内边距；
+    scrollHeight 只读
+    //当内容比盒子小的时候，拿的是盒子的clientHeight
+    // //当内容比盒子大的时候，拿的是内容的offsetHeight + 盒子的一侧内边距；
+
+
+    scrollTop 可写
+    //拿的是盒子内容向上滚动的距离
+    scrollLeft 可写
+    //拿的是盒子内容向左滚动的距离
+
+    系统滚动事件兼容
+    document.documentElement.scrollTop || document.body.scrollTop;
+
+    元素的大小：宽和高的获取；
+    以后我们拿元素的宽和高 先看元素有没有边框 如果没有边框 那么clientWidth和offsetWidth是一样的
+    如果有边框，看你需要不，需要的话就用offsetWidth 不需要就用clientWidth;
+    scrollWidth几乎不用；
+
+
+
+   ---- 初始包含块及系统滚动条的控制
+
+    html和body这两个元素overflow的scroll属性，控制着系统的滚动条
+    系统的滚动条有两个，一个是body身上的 一个是document身上的。我们平时看到的那个滚动条
+    是document身上的。，如果我们想要控制系统滚动条哪个显示哪个关闭分以下情况：
+
+    1、单独的给body或者html 设置overflow:scroll 滚动条打开的全部都是document的
+
+    2、如果两个元素同时设置overflow属性，body设置的是scroll,html设置是hidden,那么
+    document的滚动条被关闭，body身上的滚动条会打开。相反，body身上被关闭，document身上的被打开。
+
+    3、如果两个元素同时设置overflow:hidden；那么系统的两个滚动条全部被关闭；
+
+    4、如果两个都设置overflow:scroll,那么html会打开document身上的，而body会打开自己身上的滚动条；
+
+    由此我们也引出如何禁止系统的滚动条：
+
+
+    html,body{
+    height:100%; //这个属性加上只是为了让设置的overflow:hidden;更有说服力，只有内容超出才会被掩藏或者出现滚动条
+    //如果不设置，那么body和html高度将由内容自动撑开，也就是说body当中的内容永远不会溢出。
+    overflow:hidden;
+    }
+
+    鼠标滚轮
+    ie/chrome : mousewheel(dom2的标准模式)
+			event.wheelDelta
+				上：120
+				下：-120
+
+
+		firefox : DOMMouseScroll(dom2的标准模式)
+			event.detail
+				上：-3
+				下：3
+
+				
+		return false阻止的是  dom0 所触发的默认行为
+		dom2 需要通过event下面的event.preventDefault();
+    <!-- <script src="./总结.js"></script> -->
+    <!-- <script src="./js/兼容封装元素绑定事件.js"></script> -->
+    <!-- <script src="./js/拖拽.js"></script> -->
+
+
+    /1278/
+    /^/d{11}$/
+	i:忽略大小写
+		g: 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+		m:执行多行匹配
+	
+	方括号
+		方括号用于查找某个范围内的字符：
+		[abc]    查找abc任意一个
+		[^abc]   查找不是abc的任意一个
+		[0-9]    查找任意一个数字    \d
+		[a-z]    查找任意一个小写字母
+		[A-Z]   查找任意一个大写字母
+	元字符
+		.  匹配任意字符不包含\n（换行和结束符）
+		\d  任意数字  等价于[0-9]
+		\D  任意非数字  等价于[^0-9]
+		\w  任意单词字符 数字 字母  下划线  [a-z A-Z 0-9 _]
+		\W  任意非单词字符 [^a-z A-Z 0-9 _]
+		\s   任意空白字符
+		\S   任意非空白字符
+		\b   单词边界
+		\B   非单词边界
+		\n   换行符
+		\f   换页符
+		\r   回车符
+		\t   制表符
+		\v   垂直制表符
+	量词
+		+   1个或者多个前一个字符   \d+
+		*   0个或者多个前一个字符   \d*
+		？  0个或者1个前一个字符 \d?
+		{n}  n个前一个字符      \d{2}     (\d{11})\1;
+		{m,n} m到n个前一个字符  \d{2,4}
+		{m,} 至少m个前一 个字符   \d{2,}
+		$   结       ^\d{11}$
+		^   开头
+	分组
+		（）分组后的反向引用
+		 | 
+	贪婪和非贪婪
+		量词后面的？代表非贪婪
+
+第二节:  字符串正则相关方法
+	正则对象的方法：
+		Reg.test()  true
+			test() 方法用于检测一个字符串是否匹配某个模式，如果字符串中含有匹配的文本，则返回 true，否则返回 false。
+
+			判断字符串当中是否含有数字
+			判断字符串当中是否含有abcd	
+			判断字符串是否是一个11位的数字
+		
+		Reg.exec()
+			exec() 方法用于检索字符串中的正则表达式的匹配。
+			该函数返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。
+			注意：此方法每次只会返回一个结果，如果要找到所有的，需要循环去调用必须全局匹配修饰；
+
+			找到字符串当中符合正则的子串
+			找到字符串当中所有符合正则的子串
+	
+
+	字符串方法使用正则
+		str.match()：在字符串中搜索符合规则的内容，搜索成功就返回内容，格式为数组，失败就返回null。如果不加g，那么返回第一次符合的结果，加g返回所有结果的数组
+
+		找一个是详细进行展示  找多个只是在一个数组展示找到的内容子串
+
+
+
+		str.search()：在字符串搜索符合正则的内容，搜索到就返回出现的位置（从0开始，如果匹配的不只是一个字母，那只会返回第一个字母的位置）， 如果搜索失败就返回 -1 	只能返回第一次；
+
+
+
+		注意：上面两个方法类似正则的方法 test和exec
+		Reg.exec()和str.match()     
+		当不使用全局匹配时，两者的匹配效果都是返回第一次匹配成功的结果：
+
+
+		reg.test（）和str.search（）  前者返回的是true或者false   后者返回到的是匹配到的子串位置或者-1；
+
+
+		str.replace():查找符合正则的字符串，就替换成对应的字符串。返回替换后的内容。
+			这个方法象当于做了两件事     先查找匹配    然后再用新的串把匹配到的串替换掉	
+            a.replace(a.match(par)[1],'****')
+		
+
+            闭包
+            function fun(n,o){
+                console.log(n);
+                
+                console.log(o);
+                return {
+                    fun:function(m){
+                        return fun(m,n)
+                    }
+                }
+            }
+            var a =fun(0) //0,undefined
+            a.fun(1)    //1.0
+            a.fun(2)    //2.0
+            a.fun(3)    //3.0
+            
+            
+            var b =fun(0).fun(1).fun(2).fun(3)  //0,undefined  1,0 2,1 3,2
+            
+            var c = fun(0).fun(1) //0,undefined  1,0
+            c.fun(2)    //2,1
+            c.fun(3) //3,1
+    <script src="./js/滚动条.js"></script>
+
+</body>
+
+</html>

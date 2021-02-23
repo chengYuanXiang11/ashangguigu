@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+#box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: aqua;
+  margin: 50px auto;
+  transition: 2s;
+}
+#box:hover {
+  background-color: darkgray;
+}
+#box .top,
+#box .bottom {
+  width: 0;
+  height: 30px;
+  position: absolute;
+  transition: 2s;
+}
+#box .top {
+  right: 0;
+  top: 0;
+  background-color: blueviolet;
+}
+#box .bottom {
+  left: 0;
+  bottom: 0;
+  background-color: darkcyan;
+}

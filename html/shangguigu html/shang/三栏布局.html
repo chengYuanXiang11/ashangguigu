@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 三栏布局
+            并排三个div   
+
+           
+            */
+        div{
+            height: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        } 
+
+        /* 第一个左浮动,第二个右浮动,第三个overflow:hidden； */
+        /* .left{
+            float: left;
+            width: 200px;
+        }
+        .center{
+           overflow: hidden;
+           background: red;
+        }
+        .right{
+            float: right;
+            width: 200px;
+        }
+
+        
+        div{
+            height: 200px;
+           border: 1px solid #000;
+        } */
+
+     /*  
+        /* 第一个左浮动,第二个右浮动,第三个左右各200外边距 */
+        
+        .aside{
+           width: 100%;
+       }
+       .left{
+           float: left;
+           width: 200px;
+
+       }
+       .center{
+           margin: 0 200px;
+           word-break: break-all;
+       }
+       .right{
+           float: right;
+           width: 200px;
+
+       } 
+
+       
+       /* 
+       定位
+       .aside{
+           position: relative;
+       }
+       .left{
+
+           position: absolute;
+           left: 0;
+           width: 200px;
+
+       }
+       .right{
+           position: absolute;
+           right: 0;
+           width: 200px;
+
+       }
+       .center{
+            margin: 0 200px;
+        word-break: break-all;
+       } */
+
+       
+
+   /*  
+    弹性盒子
+   .aside{
+           display: flex;
+       }
+       .center{
+           flex: 1;
+       }
+        .left,.right{
+           width: 200px;
+       } */
+    </style>
+</head>
+<body>
+       <!--   <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>  -->
+        <div class="aside">
+            <div class="left">left</div>
+            <div class="right">right</div>
+            <div class="center">tercentercentercentercentercenterr</div>
+            
+        </div>
+        <details>
+            <summary>
+                11
+                33
+            </summary>
+            <ul>
+                <li>22</li>
+            </ul>
+        </details>
+
+        <progress value="80" max="100"></progress>
+        <meter optimum="10" min="40" max="150" low="80"></meter>
+       
+</body>
+</html>

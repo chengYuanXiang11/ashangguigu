@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"houtai.itemizes"},{"v":{"$numberInt":"2"},"unique":true,"key":{"category":{"$numberInt":"1"}},"name":"category_1","ns":"houtai.itemizes","background":true}],"uuid":"341b2190230f4971857168afd660c51b"}

@@ -39,8 +39,9 @@ export default {
   },
   // 统一请求提示语
   ["ROOT_AXIOS_TIP"]({}, {res, that, cb}){
-    if(res.code == 200){ that.$message.success(res.msg); cb(); }
-    else{ that.$message.error(res.msg); }
+    if(res.code ==  200){ that.$message.success(res.msg); cb(); }
+    else{
+      that.$message.error(res.msg); }
   },
   ["ROOT_GET_MENU"]({state, commit}, {that, cb}){
     that.api.get("/menu/getMenuTree").then((res)=>{
@@ -52,7 +53,7 @@ export default {
   ["ROOT_LOGOUT"]({state,dispatch}, {that}){
     dispatch("ROOT_CONFIRM", {that, msg: '确定登出系统？', cb: ()=>{
       that.api.post("/login/loginOut").then((res)=>{
-        if(res.code == 200){ 
+        if(res.code == 200){
           sessionStorage.removeItem("token");
           sessionStorage.removeItem("menuList");
           window.location.href = "/login" // 为了重新实例化vue-router对象 避免bug
@@ -60,21 +61,21 @@ export default {
         }
         else{ that.$message.error(res.msg); }
       })
-    }})    
+    }})
   },
   // 通用新增修改请求
   ["ROOT_ADD_OR_UPDATE"]({state, dispatch}, {that, type, url, data, cb}){
     if(type == 'update'){
-      that.api.put('/' + url + '/update',data).then((res)=>{  
+      that.api.put('/' + url + '/update',data).then((res)=>{
         dispatch("ROOT_AXIOS_TIP", {that, res, cb: ()=>{
           cb();state.dialogBottomShake = false;
-        }})      
+        }})
       })
     }else{
-      that.api.post('/' + url + '/create',data).then((res)=>{  
+      that.api.post('/' + url + '/create',data).then((res)=>{
         dispatch("ROOT_AXIOS_TIP", {that, res, cb: ()=>{
           cb();state.dialogBottomShake = false;
-        }})      
+        }})
       })
     }
   }

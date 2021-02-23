@@ -1,0 +1,123 @@
+.wraper_header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+    height: 48px;
+    a{
+        color: #fff;
+    }
+    .line1,.line3,.line2{
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: all 1s;
+        transform-origin: left center;// 设置变形原点
+
+    }
+    .line2{
+        margin-left: 5px;
+    }
+    .menu{
+        .line{
+            width: 30px;
+            height: 30PX;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            &:hover .line1{
+                transform: rotateZ(45deg);
+            }
+            &:hover .line2{
+                opacity: 0;
+            }  &:hover .line3{
+                transform: rotateZ(-45deg);
+            }
+            &:hover ~ .menu_no{
+                opacity: 1;
+             }
+            
+        }
+        .menu_no{
+            // height: 0px;
+            // opacity: 0;
+        // overflow: hidden;
+        // opacity: 0;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        li{
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+            margin: 0 10px;
+            display: flex;
+        }
+            a{
+                height: 44px;
+                line-height: 44px;
+                margin: 0;
+                font-size: 14px;
+            }
+            span{
+                line-height: 44px;
+                margin-left: 20px;
+            }
+        }
+     
+    }
+  
+    
+
+    .logo a{
+        // text-indent: -9999px;
+        color: coral;
+        font-size: 24px;
+    }
+    .user{
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media screen and (min-width:784px){
+    .logo{
+        order: 1;
+    }
+    .user{
+        order: 3;
+    }
+   .menu{
+       order: 2;
+       position: relative;
+       flex: auto;
+    //    加上这个伸缩,因为ul的空间已经没有了
+   }
+   .wraper_header .menu .line{
+    display: none;
+
+   }
+   .wraper_header .menu .menu_no{
+       opacity: 1;
+     position: static; 
+       display: flex;
+       justify-content: space-evenly;
+       li{
+           list-style: none;
+           margin: 0;
+           border-bottom: none;
+           span{
+               display: none;
+           }
+        }
+    //    a{
+    //        display: block;
+    //    }
+   }
+}

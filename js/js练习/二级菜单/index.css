@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.oneList {
+  background-color: darkcyan;
+  position: relative;
+  width: 100px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  border-bottom: 1px solid red;
+}
+.twoList {
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  background-color: aqua;
+  display: none;
+}
+.twoList li {
+  width: 60px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  border-bottom: 1px solid red;
+}
+.bannerList li:nth-last-child(1) {
+  border-bottom: none;
+}
+.twoList li:nth-last-child(1) {
+  border-bottom: none;
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+input {
+  outline: none;
+}
+.banner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.banner .bannaerlist {
+  width: 3000px;
+  height: 300px;
+  overflow: hidden;
+}
+.banner .bannaerlist li {
+  float: left;
+  width: 300px;
+  height: 300px;
+}
+.banner .left,
+.banner .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.banner .left {
+  left: 0;
+}
+.banner .right {
+  right: 0;
+}
+.banner .cut {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.banner .cut li {
+  float: left;
+  margin-left: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}

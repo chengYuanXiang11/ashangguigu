@@ -20,7 +20,7 @@ ul {
   //      row 左向右 横向
   //      row-reverse 右向左
   //      column 上向下 纵向
-  //      column-reverse 下向上
+  //      column-reverse 下向上 
   flex-direction: row;
 
   // 弹性元素在主轴上是否自动换行
@@ -36,15 +36,15 @@ ul {
   //    flex-start 主轴的起边
   //    flex-end   主轴的终边
   //    center      居中
-  //    space-between(空格 平均)   将空格区域平均分配到弹性元素之间
-  //    space-around  将空白空间设置到元素的前后  元素之间空间相等
+  //    space-between(空格 平均)   将空格区域平均分配到弹性元素之间 (格子位于最左最右各一个)
+  //    space-around  将空白空间设置到元素的前后  相当于给格子加外边距
   //    space-evenly  将空白设置到元素的一侧      元素之间包括元素前后的空间也相等
   //    stretch 拉伸将各自填满
   justify-content: space-evenly;
 
   // 整个元素在侧轴对齐方式 
           //  可选值
-  //    flex-start 侧轴的起边
+  //    flex-start 侧轴的起边 使之变为被内容撑开
   //    flex-end    侧轴的终边
   //    center      居中
   //    baseline: 项目的第一行文字的基线对齐。
@@ -63,7 +63,10 @@ ul {
     
   border: 1px red solid;
 }
-
+img{
+  width: 50px;
+  height: 50px;
+}
 li {
 
       // 设置盒子伸展 当父元素有空白空间时,需要使用增长的系数,
@@ -99,7 +102,7 @@ li {
   font-size: @20;
   line-height: @20;
   background-color: aqua;
-  margin: @20 0;
+  margin: @20;
   text-align: center;
   padding: @20;
   list-style: none;

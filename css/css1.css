@@ -30,3 +30,18 @@ html{
   font-size: 30px;
   color: violet;
 }
+/* 媒体查询 */
+    /* all 所有设备
+    print 打印机
+    speech 阅读器
+    screen 显示屏 
+    
+    only 主要解决兼容问题
+    and   多个条件成立
+    */
+
+@media screen and (max-width:400px){
+  body{
+    background-color: red;
+  }
+}
