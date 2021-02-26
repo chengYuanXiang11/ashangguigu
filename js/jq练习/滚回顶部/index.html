@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner {
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner"></div>
+
+    <script src="../../jq/jquery.js"></script>
+    <script>
+        var flag = true;
+        $('.inner').click(function () {
+            if (flag) {
+                flag = false;
+                var timeO = 300;
+                var time = 10;
+                var offTop = $('html').scrollTop() + $('body').scrollTop();
+                var offAr = offTop / (timeO / time);
+                // $('html,body').click(function(){
+                //     $(this).scrollTop(600)
+                // })
+                var timesetIn = setInterval(() => {
+                    offTop -= offAr;
+                    if (offTop <= 0) {
+                        offTop = 0;
+                        clearInterval(timesetIn);
+                flag = true;
+
+                    }
+                    $('html,body').scrollTop(offTop)
+                }, time);
+                console.log(flag)
+            }
+            else {
+                return false
+            }
+        })
+
+    </script>
+</body>
+
+</html>

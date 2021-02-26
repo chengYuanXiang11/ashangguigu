@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            align-items: center;
+        }
+
+        tr {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        td,
+        th,
+        label {
+            width: 60px;
+            overflow: hidden;
+            word-spacing: normal;
+            text-overflow: ellipsis;
+        }
+
+        .d3 {
+            width: 120px;
+        }
+
+        .shanchu {
+            border: none;
+            background-color: #fff;
+            color: blue;
+            text-decoration: underline;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .subm {
+            width: 60px;
+            margin-left: 100px;
+        }
+
+        span {
+            text-align: right;
+        }
+
+        .content label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <table border="1" cellspacing="0" cellpadding="10">
+            <caption>员工</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="d3">Email</th>
+                    <th>Salary</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOM</td>
+                    <td class="d3">tom@qq.com</td>
+                    <td>5000</td>
+                    <td><button class="shanchu">elelte</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="content">
+        <h3>添加员工</h3>
+        <div><label> name:</label> <input type="text"></div>
+        <div> <label>email:</label> <input type="text"></div>
+        <div> <label>salaryfdg:</label> <input type="text"></div>
+        <input type="submit" value="submit" class="subm">
+
+    </div>
+    <script src="../../jq/jquery.js"></script>
+    <script>
+        // $('html').click(function(){
+        //     $(this).toggle(1000)
+        // })
+        $('input:submit').click(function () {  
+            // name email salary
+                var int0 = $('input:text:eq(0)').val();
+                var int1 = $('input:text:eq(1)').val();
+                var int2 = $('input:text:eq(2)').val();
+            if (confirm('你确定要添加'+int0+'吗')) {
+               
+               
+                // 最后一个tr
+                var lastTbody = $('tbody:last');
+
+                //拼装节点
+                $('<tr></tr>').append('<td>' + int0)
+                    .append('<td class="d3">' + int1)
+                    .append('<td>' + int2)
+                    .append('<td><button class="shanchu">elelte')
+                    .appendTo('.content tbody');
+                // console.log('1')
+
+            } 
+            $('input:text:eq(0)').val('');
+            $('input:text:eq(1)').val('');
+            $('input:text:eq(2)').val('');
+        })
+
+        $('table').delegate('.shanchu','click',function(event){
+            //阻止默认行为 
+            // 如果是a标签,会自动跳转
+            event.preventDefault();
+            var Index = $(this).parent().parent().index();
+            var name =  $(this).parent().prevAll().last().text()
+            $('table tr:eq(Index)').empty()
+            if (confirm("你确定要删除"+name+"的个人信息吗")) {
+                $("tbody tr:eq("+Index+")").remove();
+                //移除事件委托
+                $('table').undelegate('click');
+            }
+           
+        })
+
+    </script>
+</body>
+
+</html>

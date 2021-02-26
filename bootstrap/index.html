@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+       crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+         div {
+            background-color: aqua;
+            border: 1px solid #000;
+        }
+        img{
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    特小 <576px     .col-
+    Small ≥576px    .col-sm-
+	Medium≥768px    .col-md-
+	Large≥992px     .col-lg-
+	特大≥1200px     .col-xl- -->
+
+
+    <!-- row行   一行12个col
+        row-cols-2  一行2个col  
+        align-items-center          元素设置位置同  align-item
+        justify-content-between      元素设置位置同  justify-content
+
+
+        col列  
+        col-5   5/row 
+        col-md-5   md时5/row 
+
+
+
+
+
+        w-100   列换行的位置来创建跨多行的等宽列 分栏符
+      <div class="w-100 d-none d-md-block"></div>
+        
+
+        .container-fluid 切换成流式布局 width占据满
+
+
+        order 使用.order-类来控制内容的视觉顺序
+        order-1
+        order-last order-first
+
+        mx-lg-n  margin 上下  lg大小时  n5
+        my-lg-n  margin 左右 lg大小时
+
+        px-lg-n  padding 上下  lg大小时  n5
+        py-lg-n  padding 左右 lg大小时
+
+        offset-md-*  使用.offset-md-*类将列向右移动。这些类逐*列增加一列的左边距
+
+        mr-auto         ml是margin-left   mr是margin-right   迫使同级列彼此远离。
+-->
+
+<!-- 轮播
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <button id="prev">向前</button>
+       <button id="next">向后</button>
+       <button id="pause">停止</button>
+       <button id="start">开始</button>
+      <button id="jump">到第二张</button>
+ -->
+
+<!--   折叠
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div> -->
+
+
+ <!--      下拉菜单
+      <div class="dropdown">
+        <button class="btn btn-secondary dbuttonropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+
+        <div class="dropdown-menu dropright" aria-labelledby="dropdownMenuButton">
+                     <a  href="#" class="btn btn-secondary dbuttonropdown-toggle dropdown-item" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</a>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        </div>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+ -->
+
+
+<!-- 表单 -->
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,//轮播间隔
+           pause:"hover", //鼠标悬停在轮播图上，是否停止滚动
+        //    touch:'true'//轮播是否应支持触摸屏设备上的向左/向右滑动交互。
+})
+$("#prev").click(function(event) {
+           $('.carousel').carousel('prev')// 周期上一个项目。
+         });
+ 
+         $("#next").click(function(event) {
+           $('.carousel').carousel('next')// 周期到下一个项目。
+         });;
+ 
+         $("#pause").click(function(event) {
+           $('.carousel').carousel('pause')// 从通过项目循环停止传送带。
+         });;
+ 
+         $("#start").click(function(event) {
+           $('.carousel').carousel('cycle')// 通过传送带项目周期从左到右。
+         });;
+ 
+         $("#jump").click(function(event) {
+           $('.carousel').carousel(1)// 循环传送带到一个特定的帧（0为主，类似于数组）。
+         });;
+//          .carousel('dispose')
+// 销毁元素的轮播。
+
+// slide.bs.carousel	//slide调用实例方法时，将立即触发此事件。
+// slid.bs.carouse	//当轮播已完成其幻灯片过渡时，会触发此事件。复制
+// $('#myCarousel').on('slide.bs.carousel', function () {
+//   console.log('ok')
+// })
+
+$("#prev").click(function(event) {
+    console.log('prev')
+    $('#collapseExample').collapse('toggle')
+         });
+    </script>
+</body>
+
+</html>
