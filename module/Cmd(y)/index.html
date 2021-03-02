@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amd</title>
+    <script src="js/lib/require.js" defer async="true" ></script>
+    <!-- async属性表明这个文件需要异步加载，避免网页失去响应。IE不支持这个属性，只支持defer，所以把defer也写上。 -->
+</head>
+<body>
+    
+
+    <!-- data-main属性的作用是，指定网页程序的主模块。
+    在上例中，就是目录下面的app.js，这个文件会第一个被require.js加载。
+    由于require.js默认的文件后缀名是js，所以可以把app.js简写成app。 -->
+    　　<script src="js/lib/require.js" data-main="./app.js"></script>
+</body>
+</html>

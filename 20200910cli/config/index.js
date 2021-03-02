@@ -2,7 +2,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 module.exports = {
+  // 构建产品时使用的配置
   build: {
+        // 环境变量
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),

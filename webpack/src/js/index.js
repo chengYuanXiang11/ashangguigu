@@ -8,7 +8,8 @@ import '../css/index.less';
 
  console.log(mu1d.mu1(1,2));
 
-
+let x =2;
+console.log(x);
             ads()
 
 

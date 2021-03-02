@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,user-scalable=0,minmun-scale=1.0,maxmun-scale=1.0">
+    <title>Module</title>
+</head>
+
+<body>
+
+    commonjs => browserify
+    es6 => babel => browserify
+
+
+
+
+    module.exports.a =0;
+
+    let obj={
+    data:'1',
+    name:'cheng',
+    text(){
+    console.log(this.name);
+    }
+    }
+    module.exports=obj;
+
+
+    <!-- module.exports= exports = {}; -->
+    module.exports= obj;
+    这时改变了 module.exports 的指向,
+
+    CommonJS
+    暴露的本质是module.exports所指向的那个对象。
+    module.exports 和 exports.xxx 不能混用 如果混用 以module.exports为主
+
+    -g 全局
+    -save-dev 局部
+
+    引入第三方模块,直接写模块名.
+    引入自定义的模块,必须写路径.
+
+    require is not defined at
+    这时需要 browserify 用于把commonJS的模块化语法,翻译成浏览器认识的语法
+    执行 browserify js/src/app.js -o js/dist/bundle.js
+
+
+    default 默认暴露只能报漏一次
+
+
+
+
+    babel 使用时用
+
+    全局安装 babel browserify
+    npm install babel-cli browserify -g
+    局部安装 babel下的preset-es2015
+    npm install babel-preset-es2015 --save-dev
+    创建.babelrc文件(给babel指定具体的任务)，内容如下：
+    {
+    "presets": ["es2015"]
+    }
+    * 第一步：使用Babel将ES6编译为ES5代码
+    命令为: ```babel js/src -d js/build```
+    * 第二步：使用Browserify编译js上一步生成的js
+    命令为: ```browserify js/build/app.js -o js/build/build.js```
+    * 备注：第一步操作后Babel将es6的模块化语法，转换成了CommonJS模块化语法（浏览器不识别），所以需要第二步用Browserify再次编译。
+
+
+
+    es6转es5
+    jsx => js
+
+    <script src="./js/dist/dist.js"></script>
+</body>
+
+</html>

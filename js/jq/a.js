@@ -1,4 +1,35 @@
 $(function () {
+    // 防抖 时间内 多次点击只执行一次
+//     let ide;
+// $('html').click(function(){
+//     let v = $(this).val();
+//     clearInterval(ide);
+//     ide = setTimeout(() => {
+//         console.log('1');
+//     }, 500);
+// });
+
+// 节流  时间内 多次点击只执行一次    
+// let timeStart =0;
+//  let timeEnd =0;   
+//   let v =true;
+// $('html').click(function(){
+//     if(!v){
+//         timeEnd = new Date().getTime();
+//         let time = timeEnd - timeStart;
+//         console.log(((5000 - time)/1000).toFixed(2) +'s后再次点击')
+//         return false;
+//     }
+//     v = false;
+//     timeStart = new Date().getTime();
+//     setTimeout(() => {
+//         console.log('1');
+//         v = true;
+        
+//     }, 5000);
+// });
+
+
     $('.inner').click(function () {
         // console.log($(this).html())
 

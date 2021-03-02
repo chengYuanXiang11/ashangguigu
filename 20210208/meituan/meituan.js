@@ -16,7 +16,7 @@ const SECRET = 'tokqianmingjiaoyan'
 app.use(session({
 	name: 'session-name', // 这里是cookie的name，默认是connect.sid
 	secret: 'my_session_secret', // 建议使用 128 个字符的随机字符串
-	rolling:true,
+	rolling:true, 
 	saveUninitialized: false,
 		resave: false,
   store: new MongoStore({   
