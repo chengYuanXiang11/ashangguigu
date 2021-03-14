@@ -76,23 +76,78 @@ export default {
     }     
   },
   methods: {
+      getTreeData(data) {
+      // 循环遍历json数据
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].children.length < 1) {
+          // children若为空数组，则将children设为undefined
+          data[i].children = undefined;
+        } else {
+          // children若不为空数组，则继续 递归调用 本方法
+          this.getTreeData(data[i].children);
+        }
+      }
+      return data;
+    },
+    tds(data) {
+      var arr = [];
+      for (var i = 0; i < data.length; i++) {
+        if (typeof data[i].parentId == "number") {
+          for (var j = 0; j < data.length; j++) {
+            if (data[j].children == undefined) {
+              data[j].children = [];
+            }
+            if (data[j].id == data[i].parentId) {
+              data[j].children.push(data[i]);
+              //  this.orgState.tableListTree = [data[j]]
+            }
+            //    if(data[i][j].id == data[i].parentId){
+            //      data[i][j].children.push(data[i])
+            //    this.orgState.tableListTree = [data[j]]
+            //   this.tds(data[i][i])
+            //  }
+          }
+        } else {
+          //  this.orgState.tableListTree = data
+          //  console.log(  this.orgState.tableListTree)
+        }
+      }
+      data.forEach((value) => {
+        if (value.parentId == null) {
+          arr.push(value);
+        }
+      });
+       this.orgList = this.getTreeData(arr);
+    },
     _open(){  
       this.userState.dialogReset = false;
       this.getOrgTree();
     },
     _close(){ this.$refs["form"].resetFields(); },
+    //获取列表
+    // getOrgTree(){
+    //   this.api.get("/api/organization/listTree").then((res)=>{
+    //     if(res.status == 200){
+    //       this.orgList = res.data;
+    //       console.log(this.orgList)
+    //     }
+    //   })
+    // },
     //获取机构列表
-    getOrgTree(){
-      this.api.get("/organization/listTree").then((res)=>{
-        if(res.code == 200){
-          this.orgList = res.data;
-        }
-      })
-    },
-    //获取机构列表
-    getRoleList(orgId){
+    async getOrgTree(){
+       try {
+        let listTree = await this.api.get("/api/organization/listTree");
+        // this.orgState.tableListTree = listTree.data;
+        // Object.values(listTree.data).forEach((value)=>{
+        this.tds(listTree.data);
+        // console.log( 'this.orgState.tableListTree')
 
+        // })
+      } catch (error) {
+        console.log(error);
+      }
     },
+    
     inputFouce(){ this.userState.dialogShowIcon = true }
   }  
 }

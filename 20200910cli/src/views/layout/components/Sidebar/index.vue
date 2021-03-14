@@ -28,6 +28,9 @@
         'permission_routers',
         'sidebar'
       ]),
+      mounted() {
+        // console.log(rootState)
+      },
       isCollapse() {
         return !this.sidebar.opened
       }

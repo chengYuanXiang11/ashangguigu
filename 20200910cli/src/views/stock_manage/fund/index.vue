@@ -40,7 +40,7 @@ export default {
     getTableList(current){
       if(current) this.rootState.current = current;
       this.api.post("/user/getList?current=" + this.rootState.current + "&size=" + this.rootState.size, this.userState.searchForm).then((res)=>{
-        if(res.code == 200){
+        if(res.status == 200){
           this.userState.tableList = res.data.records;
           this.rootState.total = res.data.total;
           this.$store.dispatch("ROOT_UPDATE_TABLE_HEIGHT", {$}); // 动态设置表格高度
@@ -69,7 +69,7 @@ export default {
     deleteEvent(idList){      
       this.$store.dispatch("ROOT_CONFIRM", {that: this, msg: '此操作将删除记录, 是否继续?',cb: ()=>{
           this.api.put("/user/deleteList",{idList}).then((res)=>{
-            if(res.code == 200){
+            if(res.status == 200){
               this.getTableList();
               this.userState.selectList = [];
               this.$message.success(res.msg);

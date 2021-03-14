@@ -4,7 +4,8 @@
       ref="singleTable"
       border
       :data="orgState.tableListTree"
-      row-key="id"
+      row-key="data"
+          default-expand-all
       :tree-props="{children: 'children', hasChildren: 'hasChildren'}"
       style="width: 100%"
     >
@@ -32,7 +33,8 @@ import { mapState } from "vuex";
 
 export default {
   data() {
-    return {};
+    return {
+    };
   },
   computed: {
     ...mapState({
@@ -47,6 +49,7 @@ export default {
     },
     //删除
     del(id, index) {
+      console.log(id,index)
       this.$emit("deleteEvent", { data: { id, index } });
     },
   },

@@ -21,9 +21,7 @@ const cookieParser = require('cookie-parser');
 
 var session = require('express-session');
 
-
-var MongoStore = require('connect-mongo')(session);
-
+const MongoStore = require('connect-mongo').default;
 
 
 const SECRET = 'tokqianmingjiaoyan'
@@ -35,7 +33,8 @@ app.use(session({
 	saveUninitialized: false,
 		resave: false,
   store: new MongoStore({   
-	    url: 'mongodb://localhost:27017/meituan',
+	mongoUrl: 'mongodb://localhost:27017/hou',
+	touchAfter: 24 * 3600 //24小时只更新一次
 }),
 	cookie: { maxAge: 300000 , httpOnly: true}
 
@@ -106,17 +105,22 @@ const router = require('./router/shou.js')  //  引入路由
 const login = require('./router/login.js')  //  引入路由
 const site = require('./router/site.js')  //  引入路由
 const ding = require('./router/ding.js')  //  引入路由
-const hongbao = require('./router/hongbao.js')  //  引入路由
+const org = require('./router/org')  //  引入机构路由
+
+const user = require('./router/user.js')  //  引入路由
 
 const pinglun = require('./router/pinglun.js')  //  引入路由
 
 
 //  使用路由 /index 是路由指向名称
-app.use(`/api/data`,router)
-app.use(`/api/login`,login)
-app.use(`/api/site`,site)
-app.use(`/api/ding`,ding)
-app.use(`/api/pinglun`,pinglun)
+app.use(`/api/data`,router);
+app.use(`/api/login`,login);
+app.use(`/api/site`,site);
+app.use(`/api/user`,user);
+app.use(`/api/ding`,ding);
+app.use(`/api/pinglun`,pinglun);
+app.use(`/api/organization`,org);
+
 const multer = require('multer')
  const fullPath=path.resolve(__dirname+"/uploads");
 

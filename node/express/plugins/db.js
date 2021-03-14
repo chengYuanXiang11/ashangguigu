@@ -1,6 +1,6 @@
 module.exports = app =>{
     const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/meituan',{
+mongoose.connect('mongodb://localhost:27017/carsale',{
     useNewUrlParser:true, //使用一个新的URL解析器,用于解决一些安全性问题
     useFindAndModify:false,
     useCreateIndex:true,

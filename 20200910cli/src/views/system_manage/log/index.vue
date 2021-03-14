@@ -32,7 +32,7 @@ export default {
     getTableList(current){
       if(current) this.rootState.current = current;
       this.api.post("/log/getList?current=" + this.rootState.current + "&size=" + this.rootState.size, this.logState.searchForm).then((res)=>{
-        if(res.code == 200){
+        if(res.status == 200){
           this.logState.tableList = res.data.records;
           this.rootState.total = res.data.total;
           this.$store.dispatch("ROOT_UPDATE_TABLE_HEIGHT", {$}); // 动态设置表格高度

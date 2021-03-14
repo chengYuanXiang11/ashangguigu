@@ -45,7 +45,7 @@ export default {
     // 获取菜单列表
     getTableList(current) {
       this.api.get("/menu/getMenuTree").then((res) => {
-        if (res.code == 200) {
+        if (res.status == 200) {
           this.menuState.tableList = res.data;
           this.menuState.listRoot[0].children = res.data;  //弹出层使用
           this.$store.dispatch("ROOT_UPDATE_TABLE_HEIGHT", { $ }); // 动态设置表格高度
@@ -83,7 +83,7 @@ export default {
               res,
               cb: () => {},
             });
-            if (res.code == 200) {
+            if (res.status == 200) {
               this.getTableList();
               this.menuState.selectList = [];
               this.$message.success(res.msg);

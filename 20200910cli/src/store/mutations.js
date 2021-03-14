@@ -27,10 +27,10 @@ export default {
                 sessionStorage.setItem("menuList", JSON.stringify(menuList));
             }
             res();
-         })
+         })                                            
     },
     // 刷新页面后根据路由展开菜单
-    ["ROOT_AUOT_SELECT_ROUTER"](state, {that}){
+    ["ROOT_AUOT_SELECT_ROUTER"](state, {that}){ 
         var menuList = JSON.parse(sessionStorage.getItem("menuList")), route = that.$route;
         that.$store.commit("ROOT_SET_MENU_ROUTER", {menuList});
     }

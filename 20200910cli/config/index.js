@@ -27,18 +27,21 @@ module.exports = {
     env: require('./dev.env'),
     // host: '192.168.2.116',
     host: 'localhost',
-
-    port: 9521,
+    port: 9522,
     autoOpenBrowser: true,
     autoOpenPage: '/login',
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://192.168.2.191:8088',
-        pathRewrite: {
-          '^/api': '/'
-        }
+        // target: 'http://192.168.2.191:8088',
+        target: 'http://localhost:3001',
+         // 将主机标头的原点更改为目标URL
+         changeOrigin: true
+
+        // pathRewrite: {
+        //   '^/api': '/'
+        // }
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

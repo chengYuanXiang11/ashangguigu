@@ -39,13 +39,13 @@ export default {
   },
   // 统一请求提示语
   ["ROOT_AXIOS_TIP"]({}, {res, that, cb}){
-    if(res.code ==  200){ that.$message.success(res.msg); cb(); }
+    if(res.status ==  200){ that.$message.success(res.msg); cb(); }
     else{
       that.$message.error(res.msg); }
   },
   ["ROOT_GET_MENU"]({state, commit}, {that, cb}){
     that.api.get("/menu/getMenuTree").then((res)=>{
-      if(res.code == 200){ cb(res); }
+      if(res.status == 200){ cb(res); }
       else{ that.$message.error(res.msg); }
     })
   },
@@ -53,7 +53,7 @@ export default {
   ["ROOT_LOGOUT"]({state,dispatch}, {that}){
     dispatch("ROOT_CONFIRM", {that, msg: '确定登出系统？', cb: ()=>{
       that.api.post("/login/loginOut").then((res)=>{
-        if(res.code == 200){
+        if(res.status == 200){
           sessionStorage.removeItem("token");
           sessionStorage.removeItem("menuList");
           window.location.href = "/login" // 为了重新实例化vue-router对象 避免bug

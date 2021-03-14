@@ -22,6 +22,7 @@ export default {
     addEvent() {
       this.orgState.dialogType = "新增机构";
       this.orgState.dialogShow = true;
+      //清空
       this.plugins.resetObjectValue(this.orgState.dialogForm);
     },
   },

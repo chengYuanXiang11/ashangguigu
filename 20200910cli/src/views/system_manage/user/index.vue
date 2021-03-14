@@ -39,17 +39,19 @@ export default {
     // 获取用户列表
     getTableList(current){
       if(current) this.rootState.current = current;
-      this.api.post("/user/getList?current=" + this.rootState.current + "&size=" + this.rootState.size, this.userState.searchForm).then((res)=>{
-        if(res.code == 200){
+      this.api.post("/api/login/finde?current=" + this.rootState.current + "&size=" + this.rootState.size, this.userState.searchForm).then((res)=>{
+        if(res.status == 200){
           this.userState.tableList = res.data.records;
           this.rootState.total = res.data.total;
           this.$store.dispatch("ROOT_UPDATE_TABLE_HEIGHT", {$}); // 动态设置表格高度
+          console.log(  this.userState.tableList)
         }
       });
     },
     // 新增或修改用户
     addOrUpdateEvent(){
       this.$refs.DialogArea.$refs["form"].validate((valid)=>{
+        console.log(this.userState)
         if(valid){
           if(this.userState.dialogData.passwordNew) this.userState.dialogData.password = md5(this.userState.dialogData.passwordNew);
           this.$store.dialogBottomShake = true;
@@ -70,7 +72,7 @@ export default {
     deleteEvent(idList){      
       this.$store.dispatch("ROOT_CONFIRM", {that: this, msg: '此操作将删除记录, 是否继续?',cb: ()=>{
           this.api.put("/user/deleteList",{idList}).then((res)=>{
-            if(res.code == 200){
+            if(res.status == 200){
               this.getTableList();
               this.userState.selectList = [];
               this.$message.success(res.msg);

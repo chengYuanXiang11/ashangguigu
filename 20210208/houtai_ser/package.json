@@ -8,6 +8,7 @@
     "express-session": "^1.17.1",
     "jsonwebtoken": "^8.5.1",
     "multer": "^1.4.2",
+    "multi-items-input": "^0.2.0",
     "redis": "^3.0.2"
   }
 }

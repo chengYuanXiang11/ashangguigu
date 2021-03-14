@@ -82,38 +82,71 @@ router.post('/register',jiami,async(req,res) =>{
 // });
 //登录
 router.post('/login',async(req,res) =>{
-   
-        const user = await Login.findOne({
-            username:req.body.username
-        })
-        if(!user){
-				return res.status(421).send({
-					message:'没有这个账户哦  请注册一个吧'
-						})
-                }else{
-        //密码验证
-			const isPassword = require('bcryptjs').compareSync(req.body.password,user.password)
-			if(!isPassword){
-						return res.status(422).send({
-							message:'密码错误'
-						})
-				}
-        //生产token
-        const jwt = require('jsonwebtoken')
-            //签名
-            const token = jwt.sign({
-                _id : String(user._id)
-            },SECRET)
-        // const Login = String(Logins)
-        res.send({
-            user,
-            token,
-            message:'登陆成功'
-        })
-    
-    
-}
+//     const user = await Login.findOne({
+//         username:req.body.username
+//     })
+//     if(!user){
+//             return res.status(421).send({
+//                 message:'没有这个账户哦  请注册一个吧'
+//                     })
+//             }else{
+//     //密码验证
+//         const isPassword = require('bcryptjs').compareSync(req.body.password,user.password)
+//         if(!isPassword){
+//                     return res.status(422).send({
+//                         message:'密码错误'
+//                     })
+//             }
+//     //生产token
+    const jwt = require('jsonwebtoken')
+        //签名
+        const token = jwt.sign({
+            // _id : String(user._id)
+            _id : String(req.body.password)
+        },SECRET)
+    // const Login = String(Logins)
+    res.send({
+        // user,
+        token,
+        // message:'登陆成功'
+    })
+
+
+// }
 })
+// router.post('/login',async(req,res) =>{
+   
+//         const user = await Login.findOne({
+//             username:req.body.username
+//         })
+//         if(!user){
+// 				return res.status(421).send({
+// 					message:'没有这个账户哦  请注册一个吧'
+// 						})
+//                 }else{
+//         //密码验证
+// 			const isPassword = require('bcryptjs').compareSync(req.body.password,user.password)
+// 			if(!isPassword){
+// 						return res.status(422).send({
+// 							message:'密码错误'
+// 						})
+// 				}
+//         //生产token
+//         const jwt = require('jsonwebtoken')
+//             //签名
+//             const token = jwt.sign({
+//                 _id : String(user._id)
+//             },SECRET)
+//         // const Login = String(Logins)
+//         res.send({
+//             user,
+//             token,
+//             message:'登陆成功'
+//         })
+    
+    
+// }
+// })
 router.post('/forget',jiami,async(req,res) =>{
 	const email = await Login.findOne({
 	    email:req.body.email
@@ -139,11 +172,19 @@ router.post('/forget',jiami,async(req,res) =>{
 router.post('/profile',auth,async(req,res) =>{
      res.send(req.user)
 })
-// //返回所有用户信息
-// router.post('/finde',async(req,res)=>{
-//     const article = await Login.find()
-//     res.send(article)
-// })
+//返回所有用户信息
+router.post('/finde',async(req,res)=>{
+    console.log(req.query)
+    var a =(req.query.current-1)*req.query.size;
+    var b =req.query.size;
+
+    const toter = await Login.find().count()
+    const article = await Login.find().skip(0).limit(20)
+    res.send({
+        total:toter,
+        records:article
+    })
+})
 // //返回单个权限用户信息
 // router.post('/user',async(req,res)=>{
 //     const article = await Login.find({"user":req.body.label})

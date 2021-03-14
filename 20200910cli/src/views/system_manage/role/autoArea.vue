@@ -47,7 +47,7 @@ export default {
     // 获取授权树节点
     getAuthInfo(id){
       this.api.get("/role/getMenuTreeByRoleId?id=" + id).then((res)=>{
-         if(res.code === 200) {
+         if(res.status === 200) {
           this.menuList = res.data.menuList
           this.$refs.permissionTree.setCheckedKeys(res.data.refreshRole.split(','))
         }

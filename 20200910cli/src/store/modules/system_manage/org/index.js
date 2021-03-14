@@ -10,6 +10,7 @@ export default {
         total: 0,
         dialogType: "",
         dialogShow: false,
+      cascaderKey:1,
         dialogForm: {
             address: "",
             comment: "",

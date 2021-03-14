@@ -40,7 +40,7 @@ export default {
     getTableList(current){
       if(current) this.rootState.current = current;
       this.api.post("/user/getList?current=" + this.rootState.current + "&size=" + this.rootState.size, this.stockState.searchForm).then((res)=>{
-        if(res.code == 200){
+        if(res.status == 200){
           // this.stockState.tableList = res.data.records;
           this.stockState.tableList.parentId = 0
           this.rootState.total = res.data.total;
@@ -73,7 +73,7 @@ export default {
       this.$store.dispatch("ROOT_CONFIRM", {that: this, msg: '此操作将删除记录, 是否继续?',cb: ()=>{
           // this.api.put("/user/deleteList",{idList}).then((res)=>{
             console.log('删除id'+'      '+idList)
-          //   if(res.code == 200){
+          //   if(res.status == 200){
           //     this.getTableList();
           //     this.stockState.selectList = [];
           //     this.$message.success(res.msg);

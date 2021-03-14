@@ -75,6 +75,11 @@ export default {
       orgList: [],
     }     
   },
+  computed:{
+    f1(){
+      return this.o
+    }
+  },
   methods: {
     _open(){  
       this.userState.dialogReset = false;
@@ -83,8 +88,8 @@ export default {
     _close(){ this.$refs["form"].resetFields(); },
     //获取机构列表
     getOrgTree(){
-      this.api.get("/organization/listTree").then((res)=>{
-        if(res.code == 200){
+      this.api.get("/api/organization/listTree").then((res)=>{
+        if(res.status == 200){
           this.orgList = res.data;
         }
       })

@@ -10,16 +10,22 @@
       center
     >
       <el-form ref="form" :rules="rules" :model="orgState.dialogForm" label-width="80px">
-        <el-form-item label="机构名称" prop="name">
-          <el-input v-model="orgState.dialogForm.name"></el-input>
+        <el-form-item label="机构名称" prop="label">
+          <el-input v-model="orgState.dialogForm.label"></el-input>
         </el-form-item>
         <el-form-item label="所在机构" prop="parentId">
           <el-cascader
             v-model="orgState.dialogForm.parentId"
             :options="orgState.tableListTree"
+              @change="handleChange"
             :show-all-levels="false"
-            :props="{ checkStrictly: true, emitPath: false,value:'id' }"
-          ></el-cascader>
+            :props="{ checkStrictly: true,emitPath:false,value:'id'}"
+           
+          ></el-cascader> 
+      <!-- ,emitPath: false -->
+          <div class="block">
+  <span class="demonstration">默认 click 触发子菜单</span>
+</div>
         </el-form-item>
         <el-form-item label="公司状态" prop="status">
           <el-select v-model="orgState.dialogForm.status" placeholder="公司状态">
@@ -57,10 +63,13 @@ export default {
   computed: {
     ...mapState({
       orgState: (state) => state.Organization,
-    }),
+    })
+  
   },
   data() {
     return {
+      cascaderKey:0,
+      value:'',
       rules: {
         status: [
           { required: true, message: "请选择公司状态", trigger: "change" },
@@ -81,13 +90,14 @@ export default {
   },
   methods: {
     submitForm(formName) {
-      this.$refs[formName].validate((valid) => {
-        if (valid) {
-          this.$emit("upDateOrCreate");
-        } else {
-          return false;
-        }
-      });
+        this.$emit("upDateOrCreate");
+      // this.$refs[formName].validate((valid) => {
+      //   if (valid) {
+      //     this.$emit("upDateOrCreate");
+      //   } else {
+      //     return false;
+      //   }
+      // });
     },
     //取消
     resetForm(formName) {
@@ -102,7 +112,11 @@ export default {
       //清除验证规则
       this.$refs.form.resetFields();
       this.plugins.resetObjectValue(this.orgState.dialogForm);
-    },
+    }, 
+     handleChange(value) {
+      this.orgState.dialogForm.parentId = value
+      console.log(this.orgState.dialogForm.parentId)
+      }
   },
 };
 </script>
