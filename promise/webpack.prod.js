@@ -24,7 +24,6 @@ module.exports  = {
 
   //配置loader
   /*
-  module 模块 rules 规则
     1.所有的laoder都要配置在module对象中的rules属性中
     2.rules是一个数组，数组中的每一个对象就是一个loader
     3.loader特点：下载后无需引入，只需声明
@@ -33,7 +32,7 @@ module.exports  = {
     rules: [
       //解析less(不完美)
       {
-        test: /\.less$/, //匹配所有的less文件 正则?
+        test: /\.less$/, //匹配所有的less文件
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader', //将less编译后的css转换成为CommonJs的一个模块。

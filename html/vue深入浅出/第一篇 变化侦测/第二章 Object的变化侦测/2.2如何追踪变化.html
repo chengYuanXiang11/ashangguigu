@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.defineProperty变化追踪(2.0双向绑定)</title>
+</head>
+
+<body>
+
+    <script>
+        // Object.defineProperty(obj,prop,descriptor) 解读
+        // obj 要定义的属性 obj
+        // prop 要定义或修改的属性的名称
+        // descriptor 要定义或修改的属性描述符{configurable等}。
+        // const obj = {};
+
+        // obj.property1 = 77;
+
+        // var descriptor = Object.create(null);
+
+        // console.log(descriptor)
+
+        // Object.defineProperty(obj,"key",{
+        //     //  是否可删除
+        //     configurable:true,
+        //     // 是否可枚举
+        //     enumerable:false,
+        //     value:"key",
+        //     // 可被运算符号赋值
+        //     writable:true
+
+        // })
+        // console.log(obj);
+
+        // 实现
+        function defineProperty(obj,prop,property) {
+            Object.defineProperty(obj,prop,property)
+         }
+
+    </script>
+</body>
+
+</html>

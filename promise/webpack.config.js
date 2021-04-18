@@ -1,9 +1,8 @@
 /* webpack 是一个模块打包  此文件是webpack的配置文件 webpack基于nodejs
-    loader 下载后不需要引入,只需要声明,loader在内存中运行
  */
 
 
-const path = require('path');
+const path = require('path')
 module.exports = {
     entry: path.join(__dirname, './src/js/index.js'),//入口文件
     output: {
@@ -20,7 +19,7 @@ module.exports = {
               }, {
                   loader: "css-loader" // 将CSS编译后的css 转换成CommonJS的一个模块
               }, {
-                  loader: "less-loader" //less 编译成 CSS ,但不生成单独css，在内存中
+                  loader: "less-loader" //less 编译成 CSS ,但不生成单独css，再内存中
               }] */
             use: ['style-loader', 'css-loader', 'less-loader'],//简写 顺序不能错
         }, {
