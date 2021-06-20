@@ -1,0 +1,10 @@
+function HS3()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("0.5F;99;1~10;1~10;1~10;256::25", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("0.1", gg.TYPE_FLOAT)
+gg.toast("开启成功")
+gg.clearResults()
+end
